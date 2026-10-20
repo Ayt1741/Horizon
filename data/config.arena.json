@@ -86,12 +86,31 @@
     "repo": "llama.cpp",
     "enabled": true,
     "profile": "free-ai"
+   },
+   {
+    "type": "user_events",
+    "username": "pacocartones",
+    "enabled": true,
+    "profile": "free-ai"
+   },
+   {
+    "type": "user_events",
+    "username": "dhaulagani",
+    "enabled": true,
+    "profile": "free-ai"
+   },
+   {
+    "type": "repo_releases",
+    "owner": "pollinations",
+    "repo": "pollinations",
+    "enabled": true,
+    "profile": "free-ai"
    }
   ],
   "hackernews": {
    "enabled": true,
    "fetch_top_stories": 50,
-   "min_score": 30,
+   "min_score": 20,
    "profile": "free-ai"
   },
   "rss": [
@@ -150,44 +169,44 @@
     {
      "subreddit": "LocalLLaMA",
      "enabled": true,
-     "sort": "hot",
-     "time_filter": "day",
-     "fetch_limit": 25,
+     "sort": "top",
+     "time_filter": "year",
+     "fetch_limit": 30,
      "min_score": 15,
      "profile": "free-ai"
     },
     {
      "subreddit": "artificial",
      "enabled": true,
-     "sort": "hot",
-     "time_filter": "day",
-     "fetch_limit": 15,
+     "sort": "top",
+     "time_filter": "year",
+     "fetch_limit": 20,
      "min_score": 10,
      "profile": "free-ai"
     },
     {
      "subreddit": "MachineLearning",
      "enabled": true,
-     "sort": "hot",
-     "time_filter": "day",
-     "fetch_limit": 10,
+     "sort": "top",
+     "time_filter": "year",
+     "fetch_limit": 20,
      "min_score": 50,
      "profile": "free-ai"
     },
     {
      "subreddit": "ollama",
      "enabled": true,
-     "sort": "hot",
-     "time_filter": "day",
-     "fetch_limit": 12,
+     "sort": "top",
+     "time_filter": "year",
+     "fetch_limit": 15,
      "min_score": 10,
      "profile": "free-ai"
     },
     {
      "subreddit": "selfhosted",
      "enabled": true,
-     "sort": "hot",
-     "time_filter": "day",
+     "sort": "top",
+     "time_filter": "year",
      "fetch_limit": 15,
      "min_score": 10,
      "profile": "free-ai"
@@ -195,8 +214,8 @@
     {
      "subreddit": "opensource",
      "enabled": true,
-     "sort": "hot",
-     "time_filter": "day",
+     "sort": "top",
+     "time_filter": "year",
      "fetch_limit": 10,
      "min_score": 8,
      "profile": "free-ai"
@@ -277,7 +296,7 @@
   },
   "gdelt": {
    "enabled": true,
-   "query": "free AI OR open source LLM OR free LLM API",
+   "query": "free LLM API OR free AI API key OR free inference API OR no credit card AI OR free tier LLM",
    "mode": "ArtList",
    "max_records": 50,
    "timespan": null,
@@ -288,7 +307,7 @@
   },
   "google_news": {
    "enabled": true,
-   "query": "free AI API OR free LLM OR open source AI model",
+   "query": "free LLM API OR free AI API key OR free inference API OR no credit card AI OR free tier LLM",
    "language": "en",
    "country": "US",
    "ceid": null,
