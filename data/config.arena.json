@@ -1,9 +1,9 @@
 {
   "ai": {
     "provider": "openai",
-    "model": "openai/gpt-oss-120b",
-    "base_url": "https://api.groq.com/openai/v1",
-    "api_key_env": "GROQ_API_KEY",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "base_url": "https://api.kilo.ai/api/gateway",
+    "api_key_env": "KILO_API_KEY",
     "temperature": 0.3,
     "max_tokens": 4096,
     "throttle_sec": 1,
