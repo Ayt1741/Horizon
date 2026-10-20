@@ -35,7 +35,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           KILO_API_KEY: ${{ secrets.KILO_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run horizon --hours 8760  # TEMP YEAR-HUNT
+        run: uv run horizon --hours 26280  # TEMP 3-YEAR-HUNT
 
       - name: Set current date
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
