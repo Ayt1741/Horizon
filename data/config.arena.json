@@ -6,7 +6,7 @@
   "api_key_env": "KILO_API_KEY",
   "temperature": 0.3,
   "max_tokens": 4096,
-  "throttle_sec": 1,
+  "throttle_sec": 60,
   "languages": [
    "ru",
    "en"
@@ -170,7 +170,7 @@
      "subreddit": "LocalLLaMA",
      "enabled": true,
      "sort": "top",
-     "time_filter": "year",
+     "time_filter": "all",
      "fetch_limit": 30,
      "min_score": 15,
      "profile": "free-ai"
@@ -179,7 +179,7 @@
      "subreddit": "artificial",
      "enabled": true,
      "sort": "top",
-     "time_filter": "year",
+     "time_filter": "all",
      "fetch_limit": 20,
      "min_score": 10,
      "profile": "free-ai"
@@ -188,7 +188,7 @@
      "subreddit": "MachineLearning",
      "enabled": true,
      "sort": "top",
-     "time_filter": "year",
+     "time_filter": "all",
      "fetch_limit": 20,
      "min_score": 50,
      "profile": "free-ai"
@@ -197,7 +197,7 @@
      "subreddit": "ollama",
      "enabled": true,
      "sort": "top",
-     "time_filter": "year",
+     "time_filter": "all",
      "fetch_limit": 15,
      "min_score": 10,
      "profile": "free-ai"
@@ -206,7 +206,7 @@
      "subreddit": "selfhosted",
      "enabled": true,
      "sort": "top",
-     "time_filter": "year",
+     "time_filter": "all",
      "fetch_limit": 15,
      "min_score": 10,
      "profile": "free-ai"
@@ -215,7 +215,7 @@
      "subreddit": "opensource",
      "enabled": true,
      "sort": "top",
-     "time_filter": "year",
+     "time_filter": "all",
      "fetch_limit": 10,
      "min_score": 8,
      "profile": "free-ai"
