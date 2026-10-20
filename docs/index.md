@@ -53,4 +53,17 @@ Welcome to [Horizon](https://github.com/thysrael/Horizon), an AI-driven informat
   {% endfor %}
 </ul>
 
+## Дайджест на русском / Russian digest
+
+<ul>
+  {% assign ru_posts = site.posts | where: "lang", "ru" %}
+  {% for post in ru_posts limit:20 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.date | date: "%Y-%m-%d" }}</a>
+    </li>
+  {% else %}
+    <li><em>Пока пусто</em></li>
+  {% endfor %}
+</ul>
+
 </div>
