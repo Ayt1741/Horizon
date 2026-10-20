@@ -1,254 +1,331 @@
 {
-  "ai": {
-    "provider": "openai",
-    "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-    "base_url": "https://api.kilo.ai/api/gateway",
-    "api_key_env": "KILO_API_KEY",
-    "temperature": 0.3,
-    "max_tokens": 4096,
-    "throttle_sec": 1,
-    "languages": ["ru", "en"],
-    "analysis_concurrency": 3,
-    "enrichment_concurrency": 3
-  },
-  "processing": {
-    "profiles_dir": "profiles",
-    "default_profile": "free-ai",
-    "profile_settings": {
-      "free-ai": {
-        "threshold": 6.0,
-        "topic_dedup": true
-      }
-    }
-  },
-  "display": {
-    "icon_style": "emoji"
-  },
-  "email": {
-    "enabled": false,
-    "smtp_server": "smtp.qq.com",
-    "smtp_port": 465,
-    "imap_server": "imap.qq.com",
-    "imap_port": 993,
-    "email_address": "xxx@qq.com",
-    "sender_name": "Horizon Daily",
-    "subscribe_keyword": "SUBSCRIBE",
-    "unsubscribe_keyword": "UNSUBSCRIBE"
-  },
-  "sources": {
-    "github": [
-      {
-        "type": "user_events",
-        "username": "karpathy",
-        "enabled": true,
-        "profile": "free-ai"
-      },
-      {
-        "type": "repo_releases",
-        "owner": "ollama",
-        "repo": "ollama",
-        "enabled": true,
-        "profile": "free-ai"
-      },
-      {
-        "type": "repo_releases",
-        "owner": "huggingface",
-        "repo": "transformers",
-        "enabled": true,
-        "profile": "free-ai"
-      },
-      {
-        "type": "repo_releases",
-        "owner": "vllm-project",
-        "repo": "vllm",
-        "enabled": true,
-        "profile": "free-ai"
-      },
-      {
-        "type": "repo_releases",
-        "owner": "open-webui",
-        "repo": "open-webui",
-        "enabled": true,
-        "profile": "free-ai"
-      }
-    ],
-    "hackernews": {
-      "enabled": true,
-      "fetch_top_stories": 30,
-      "min_score": 50,
-      "profile": "free-ai"
-    },
-    "rss": [
-      {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
-        "enabled": true,
-        "category": "ai-tools",
-        "profile": "free-ai",
-        "content_extractor": "trafilatura"
-      },
-      {
-        "name": "vLLM Blog",
-        "url": "https://vllm.ai/blog/rss.xml",
-        "enabled": true,
-        "category": "llm-inference",
-        "profile": "free-ai",
-        "content_extractor": "trafilatura"
-      },
-      {
-        "name": "HuggingFace Blog",
-        "url": "https://huggingface.co/blog/feed.xml",
-        "enabled": true,
-        "category": "open-models",
-        "profile": "free-ai",
-        "content_extractor": "trafilatura"
-      }
-    ],
-    "reddit": {
-      "enabled": true,
-      "subreddits": [
-        {
-          "subreddit": "LocalLLaMA",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 15,
-          "min_score": 30,
-          "profile": "free-ai"
-        },
-        {
-          "subreddit": "artificial",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 20,
-          "profile": "free-ai"
-        },
-        {
-          "subreddit": "MachineLearning",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 150,
-          "profile": "free-ai"
-        },
-        {
-          "subreddit": "ollama",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 8,
-          "min_score": 10,
-          "profile": "free-ai"
-        }
-      ],
-      "users": [],
-      "fetch_comments": 5
-    },
-    "twitter": {
-      "enabled": false,
-      "users": ["karpathy", "ylecun"],
-      "keywords": [],
-      "fetch_limit": 10,
-      "fetch_reply_text": false,
-      "max_replies_per_tweet": 3,
-      "max_tweets_to_expand": 10,
-      "reply_min_likes": 5,
-      "profile": "free-ai"
-    },
-    "openbb": {
-      "enabled": false,
-      "fetch_filings": false,
-      "filings_provider": "sec",
-      "watchlists": []
-    },
-    "ossinsight": {
-      "enabled": true,
-      "period": "past_24_hours",
-      "languages": ["All", "Python", "TypeScript"],
-      "keywords": [],
-      "min_stars": 10,
-      "max_items": 30,
-      "profile": "free-ai"
-    },
-    "telegram": {
-      "enabled": true,
-      "channels": [
-        {
-          "channel": "ai_machinelearning_big_data",
-          "enabled": true,
-          "fetch_limit": 20,
-          "profile": ["free-ai"]
-        },
-        {
-          "channel": "durov",
-          "enabled": true,
-          "fetch_limit": 10,
-          "profile": ["free-ai"]
-        },
-        {
-          "channel": "telegram",
-          "enabled": true,
-          "fetch_limit": 10,
-          "profile": ["free-ai"]
-        },
-        {
-          "channel": "BotNews",
-          "enabled": true,
-          "fetch_limit": 10,
-          "profile": ["free-ai"]
-        }
-      ]
-    },
-    "gdelt": {
-      "enabled": false,
-      "query": "artificial intelligence",
-      "mode": "ArtList",
-      "max_records": 75,
-      "timespan": null,
-      "language": null,
-      "country": null,
-      "category": "news",
-      "profile": "free-ai"
-    },
-    "google_news": {
-      "enabled": true,
-      "query": "free AI API OR free LLM OR open source AI model",
-      "language": "en",
-      "country": "US",
-      "ceid": null,
-      "max_results": 30,
-      "category": "news",
-      "profile": "free-ai"
-    }
-  },
-  "collection": {
-    "time_window_hours": 24
-  },
-  "digest": {
-    "max_items": 25,
-    "profile_order": ["free-ai"],
-    "category_groups": {},
-    "default_group": "other",
-    "default_group_limit": null
-  },
-  "webhook": {
-    "enabled": false,
-    "url_env": "HORIZON_WEBHOOK_URL",
-    "delivery": "summary",
-    "overview_position": "first",
-    "platform": "discord",
-    "layout": "markdown",
-    "fallback_layout": "markdown",
-    "languages": ["ru"],
-    "request_body": null,
-    "headers": ""
-  },
-  "wechat": {
-    "enabled": false,
-    "languages": null,
-    "chunk_size": 4000
+ "ai": {
+  "provider": "openai",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+  "base_url": "https://api.kilo.ai/api/gateway",
+  "api_key_env": "KILO_API_KEY",
+  "temperature": 0.3,
+  "max_tokens": 4096,
+  "throttle_sec": 1,
+  "languages": [
+   "ru",
+   "en"
+  ],
+  "analysis_concurrency": 3,
+  "enrichment_concurrency": 3
+ },
+ "processing": {
+  "profiles_dir": "profiles",
+  "default_profile": "free-ai",
+  "profile_settings": {
+   "free-ai": {
+    "threshold": 5.0,
+    "topic_dedup": true
+   }
   }
+ },
+ "display": {
+  "icon_style": "emoji"
+ },
+ "email": {
+  "enabled": false,
+  "smtp_server": "smtp.qq.com",
+  "smtp_port": 465,
+  "imap_server": "imap.qq.com",
+  "imap_port": 993,
+  "email_address": "xxx@qq.com",
+  "sender_name": "Horizon Daily",
+  "subscribe_keyword": "SUBSCRIBE",
+  "unsubscribe_keyword": "UNSUBSCRIBE"
+ },
+ "sources": {
+  "github": [
+   {
+    "type": "user_events",
+    "username": "karpathy",
+    "enabled": true,
+    "profile": "free-ai"
+   },
+   {
+    "type": "repo_releases",
+    "owner": "ollama",
+    "repo": "ollama",
+    "enabled": true,
+    "profile": "free-ai"
+   },
+   {
+    "type": "repo_releases",
+    "owner": "huggingface",
+    "repo": "transformers",
+    "enabled": true,
+    "profile": "free-ai"
+   },
+   {
+    "type": "repo_releases",
+    "owner": "vllm-project",
+    "repo": "vllm",
+    "enabled": true,
+    "profile": "free-ai"
+   },
+   {
+    "type": "repo_releases",
+    "owner": "open-webui",
+    "repo": "open-webui",
+    "enabled": true,
+    "profile": "free-ai"
+   },
+   {
+    "type": "user_events",
+    "username": "simonw",
+    "enabled": true,
+    "profile": "free-ai"
+   },
+   {
+    "type": "repo_releases",
+    "owner": "ggerganov",
+    "repo": "llama.cpp",
+    "enabled": true,
+    "profile": "free-ai"
+   }
+  ],
+  "hackernews": {
+   "enabled": true,
+   "fetch_top_stories": 50,
+   "min_score": 30,
+   "profile": "free-ai"
+  },
+  "rss": [
+   {
+    "name": "Simon Willison",
+    "url": "https://simonwillison.net/atom/everything/",
+    "enabled": true,
+    "category": "ai-tools",
+    "profile": "free-ai",
+    "content_extractor": "trafilatura"
+   },
+   {
+    "name": "vLLM Blog",
+    "url": "https://vllm.ai/blog/rss.xml",
+    "enabled": true,
+    "category": "llm-inference",
+    "profile": "free-ai",
+    "content_extractor": "trafilatura"
+   },
+   {
+    "name": "HuggingFace Blog",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "enabled": true,
+    "category": "open-models",
+    "profile": "free-ai",
+    "content_extractor": "trafilatura"
+   },
+   {
+    "name": "GitHub Blog",
+    "url": "https://github.blog/feed/",
+    "enabled": true,
+    "category": "dev-tools",
+    "profile": "free-ai",
+    "content_extractor": "trafilatura"
+   },
+   {
+    "name": "BAIR Blog",
+    "url": "https://bair.berkeley.edu/blog/feed.xml",
+    "enabled": true,
+    "category": "research",
+    "profile": "free-ai",
+    "content_extractor": "trafilatura"
+   },
+   {
+    "name": "KDnuggets",
+    "url": "https://www.kdnuggets.com/feed",
+    "enabled": true,
+    "category": "ai-news",
+    "profile": "free-ai",
+    "content_extractor": "trafilatura"
+   }
+  ],
+  "reddit": {
+   "enabled": true,
+   "subreddits": [
+    {
+     "subreddit": "LocalLLaMA",
+     "enabled": true,
+     "sort": "hot",
+     "time_filter": "day",
+     "fetch_limit": 25,
+     "min_score": 15,
+     "profile": "free-ai"
+    },
+    {
+     "subreddit": "artificial",
+     "enabled": true,
+     "sort": "hot",
+     "time_filter": "day",
+     "fetch_limit": 15,
+     "min_score": 10,
+     "profile": "free-ai"
+    },
+    {
+     "subreddit": "MachineLearning",
+     "enabled": true,
+     "sort": "hot",
+     "time_filter": "day",
+     "fetch_limit": 10,
+     "min_score": 50,
+     "profile": "free-ai"
+    },
+    {
+     "subreddit": "ollama",
+     "enabled": true,
+     "sort": "hot",
+     "time_filter": "day",
+     "fetch_limit": 12,
+     "min_score": 10,
+     "profile": "free-ai"
+    },
+    {
+     "subreddit": "selfhosted",
+     "enabled": true,
+     "sort": "hot",
+     "time_filter": "day",
+     "fetch_limit": 15,
+     "min_score": 10,
+     "profile": "free-ai"
+    },
+    {
+     "subreddit": "opensource",
+     "enabled": true,
+     "sort": "hot",
+     "time_filter": "day",
+     "fetch_limit": 10,
+     "min_score": 8,
+     "profile": "free-ai"
+    }
+   ],
+   "users": [],
+   "fetch_comments": 5
+  },
+  "twitter": {
+   "enabled": false,
+   "users": [
+    "karpathy",
+    "ylecun"
+   ],
+   "keywords": [],
+   "fetch_limit": 10,
+   "fetch_reply_text": false,
+   "max_replies_per_tweet": 3,
+   "max_tweets_to_expand": 10,
+   "reply_min_likes": 5,
+   "profile": "free-ai"
+  },
+  "openbb": {
+   "enabled": false,
+   "fetch_filings": false,
+   "filings_provider": "sec",
+   "watchlists": []
+  },
+  "ossinsight": {
+   "enabled": true,
+   "period": "past_24_hours",
+   "languages": [
+    "All",
+    "Python",
+    "TypeScript"
+   ],
+   "keywords": [],
+   "min_stars": 10,
+   "max_items": 30,
+   "profile": "free-ai"
+  },
+  "telegram": {
+   "enabled": true,
+   "channels": [
+    {
+     "channel": "ai_machinelearning_big_data",
+     "enabled": true,
+     "fetch_limit": 20,
+     "profile": [
+      "free-ai"
+     ]
+    },
+    {
+     "channel": "durov",
+     "enabled": true,
+     "fetch_limit": 10,
+     "profile": [
+      "free-ai"
+     ]
+    },
+    {
+     "channel": "telegram",
+     "enabled": true,
+     "fetch_limit": 10,
+     "profile": [
+      "free-ai"
+     ]
+    },
+    {
+     "channel": "BotNews",
+     "enabled": true,
+     "fetch_limit": 10,
+     "profile": [
+      "free-ai"
+     ]
+    }
+   ]
+  },
+  "gdelt": {
+   "enabled": true,
+   "query": "free AI OR open source LLM OR free LLM API",
+   "mode": "ArtList",
+   "max_records": 50,
+   "timespan": null,
+   "language": null,
+   "country": null,
+   "category": "news",
+   "profile": "free-ai"
+  },
+  "google_news": {
+   "enabled": true,
+   "query": "free AI API OR free LLM OR open source AI model",
+   "language": "en",
+   "country": "US",
+   "ceid": null,
+   "max_results": 40,
+   "category": "news",
+   "profile": "free-ai"
+  }
+ },
+ "collection": {
+  "time_window_hours": 24
+ },
+ "digest": {
+  "max_items": 25,
+  "profile_order": [
+   "free-ai"
+  ],
+  "category_groups": {},
+  "default_group": "other",
+  "default_group_limit": null
+ },
+ "webhook": {
+  "enabled": false,
+  "url_env": "HORIZON_WEBHOOK_URL",
+  "delivery": "summary",
+  "overview_position": "first",
+  "platform": "discord",
+  "layout": "markdown",
+  "fallback_layout": "markdown",
+  "languages": [
+   "ru"
+  ],
+  "request_body": null,
+  "headers": ""
+ },
+ "wechat": {
+  "enabled": false,
+  "languages": null,
+  "chunk_size": 4000
+ }
 }
