@@ -41,6 +41,10 @@ jobs:
           restore-keys: |
             horizon-state-
 
+      # ВАЖНО: кеш восстанавливает data целиком и перезаписывает config.json — поэтому копируем конфиг ПОСЛЕ кеша
+      - name: Use Arena config (после восстановления кеша)
+        run: cp data/config.arena.json data/config.json
+
       - name: Run Horizon (с автоповтором при 429/лимитах)
         id: horizon
         continue-on-error: true
@@ -52,7 +56,7 @@ jobs:
         run: |
           for i in 1 2 3 4; do
             echo "=== Попытка $i ==="
-            if uv run horizon --hours 24; then echo "OK"; break; fi
+            if uv run horizon --hours 72; then echo "OK"; break; fi
             echo "Прогон прерван, ждём 30с и продолжаем с чекпоинта..."
             sleep 30
           done
