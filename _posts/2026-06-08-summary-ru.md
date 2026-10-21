@@ -1026,3 +1026,363 @@ Retrieval for search agents is still inherited from non-agentic information retr
 [Источник](https://arxiv.org/abs/2606.06880)
 
 <!-- url_hash:7535851d6dd673191774099db7bd25615b1193e69a75b3507949136740950ba6 -->
+
+
+## Exploring Agentic Tool-Calling Decisions via Uncertainty-Aligned Reinforcement Learning
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Large language model (LLM)-based agents often make suboptimal tool-use decisions, including unsupported tool invocation and hallucinated direct responses, which may accumulate errors throughout multi-step interactions. Existing approaches mainly improve these behaviors through inference-time correction or coarse-grained reward signals based on decision outcomes and structured checklists, leaving the uncertainty characteristics of agent decisions underexplored.
+
+
+[Источник](https://arxiv.org/abs/2606.06976)
+
+<!-- url_hash:ec1f4baef601def12db3964d1e811f82158dcc4feeba335f1aeade00ac90f9e5 -->
+
+
+## ForensicConcept: Transferable Forensic Concepts for AIGI Detection
+
+_arXiv · 2026-06-08 · score 0.8_
+
+AI-generated image detectors achieve high accuracy on in-distribution data but often fail on unseen generators. A key obstacle to understanding this failure is the black-box nature of current detectors: they do not reveal which evidence drives their decisions.
+
+
+[Источник](https://arxiv.org/abs/2606.07034)
+
+<!-- url_hash:15c7dfdbc492e695df7fbd26aa684336ace52557b86ade2fecb153a9880ae556 -->
+
+
+## TrioPose: Native Triple-Stream Diffusion Transformers for Pose-Guided Text-to-Image Generation
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Pose-guided text-to-image generation often suffers from limb distortions and feature crosstalk in complex multi-person scenarios. While existing UNet-based adapters struggle with long-range spatial dependencies, emerging Multimodal Diffusion Transformers (MM-DiTs) offer superior global modeling.
+
+
+[Источник](https://arxiv.org/abs/2606.07053)
+
+<!-- url_hash:cd82bce02dd0058b3b05c2087bc3e33f22991226db5b6e08bf74884d929ec510 -->
+
+
+## Native3D: End-to-End 3D Scene Generation via Unified Mesh-Texture Modeling and Semantic Alignment
+
+_arXiv · 2026-06-08 · score 0.8_
+
+This paper presents Native3D, the first end-to-end 3D scene generation framework that completely bypasses 2D intermediate representations. Traditional approaches typically require adapting 3D representations to the 2D domain to leverage pre-trained diffusion models, which inevitably introduces domain adaptation issues including geometric structural distortion and texture detail degradation.
+
+
+[Источник](https://arxiv.org/abs/2606.07117)
+
+<!-- url_hash:754aa19288bc0ef1fadb8acb97c8e58f5203a8d60cf6e6824d7c416ad83f80b5 -->
+
+
+## Implicit Structural Modeling via Generative Diffusion Frameworks
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Implicit structural modeling can support understanding subsurface spatial configurations, revealing patterns of geological evolution, and enabling quantitative simulation of geological processes, thereby offering substantial scientific and engineering value. Conventional approaches formulate it as an optimization problem or framework interpolation to fit a continuous scalar field, whereas machine learning methods typically adopt discriminative regression to directly predict implicit models.
+
+
+[Источник](https://arxiv.org/abs/2606.07165)
+
+<!-- url_hash:1982e87b730f4e8a6af769a25f03536dad90e09f5227080d88b9059480cfb168 -->
+
+
+## Adjoint-based Perfusion Estimation from Dynamic Contrast-Enhanced Ultrasound: Advection-Diffusion and Two-Compartment Models
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Tumor perfusion and vascular properties are important determinants of a cancer's response to therapy. In this paper, we discuss the estimation of spatially varying blood flow velocities and perfusion parameters from time-resolved contrast agent concentration data.
+
+
+[Источник](https://arxiv.org/abs/2606.07195)
+
+<!-- url_hash:7ac08e8a0a4a9d518835f9c3b6dc7a1c5a941c75dd339929e7ba8e13da1a1a21 -->
+
+
+## When Large Language Models Fail in Healthcare: Evaluating Sensitivity to Prompt Variations
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Large Language Models (LLMs) are increasingly used in healthcare for tasks such as clinical question answering, diagnosis support, and report summarization. Despite their promise, these models remain highly sensitive to subtle prompt perturbations, both lexical and syntactic, posing serious risks in safety-critical clinical applications.
+
+
+[Источник](https://arxiv.org/abs/2606.07237)
+
+<!-- url_hash:a99abec5fe034c2be6bd52584921178e1fd3b4ee3546fcaa319836fd2d2b7893 -->
+
+
+## PLAGUE: Plug-and-play framework for Lifelong Adaptive Generation of Multi-turn Exploits
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Large Language Models (LLMs) are improving at an exceptional rate. With the advent of agentic workflows, multi-turn dialogue has become the de facto mode of interaction with LLMs for completing long and complex tasks.
+
+
+[Источник](https://arxiv.org/abs/2510.17947)
+
+<!-- url_hash:1c5796a04d8c548d9b9df981908007779422eb4930f85b410c6bc3140eaa3f92 -->
+
+
+## Optimal Abatement Schedules for Excess Carbon Emissions Towards a Net-Zero Target
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Achieving net-zero carbon emissions requires a transformation of energy systems, industrial processes, and consumption patterns. In particular, a transition towards that goal involves a gradual reduction of excess carbon emissions that are not essential for the well-functioning of society.
+
+
+[Источник](https://arxiv.org/abs/2601.11348)
+
+<!-- url_hash:795f36c753db7427903783a67f53c53556f6cebbac692c3b7ecc5db98b8afad2 -->
+
+
+## CalBench: Evaluating Coordination-Privacy Trade-offs in Multi-Agent LLMs
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Personal AI assistants are beginning to act as delegates with access to calendars, inboxes, and user preferences. Calendar scheduling makes the trust problem concrete: an assistant must coordinate with other assistants while deciding what to reveal about the person it represents.
+
+
+[Источник](https://arxiv.org/abs/2605.09823)
+
+<!-- url_hash:823176cf02fe8b76e1da93f738a1ef665d5dd8b1ea26a18b5640b03abcd18e25 -->
+
+
+## Rosetta Memory: Adaptive Memory for Cross-LLM Agents
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Memory is the key component for transforming a stateless LLM into a persistent, evolving agent through experience accumulation, long-horizon planning, and continual self-improvement. Existing memory systems typically take the LLM as the center and design memory operations tailored to a specific backbone.
+
+
+[Источник](https://arxiv.org/abs/2606.07711)
+
+<!-- url_hash:89f241bca51fc8e1a008cafc44d83b361677bb537abf4dbf77432c084083744f -->
+
+
+## MatMind: A Structure-Activity Knowledge-Driven Generative Foundation Model for Materials Science
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Progress in AI-driven crystal materials science has so far been carried by narrow architectures purpose-built for individual tasks -- graph neural networks for property prediction, diffusion and flow-matching models for crystal generation -- each excelling within its niche yet unable to act as a shared backbone across the full spectrum of materials problems. Generative large language models offer a fundamentally different paradigm, in which structural representation, quantitative prediction, and structure-activity reasoning can be unified within one model, but the materials community has yet to see this paradigm realized at a level competitive with established narrow specialists.
+
+
+[Источник](https://arxiv.org/abs/2606.07712)
+
+<!-- url_hash:23483460a20970f268e41bd7f16f77b6068b55e0d83bdbdc92587cddbd49b7fb -->
+
+
+## Attention at the Theoretical Minimum: A Mathematics of Arrays Framework for Memory-Optimal Transformer Kernels
+
+_arXiv · 2026-06-08 · score 0.8_
+
+The attention mechanism is the dominant computational bottleneck in modern transformer-based AI. Its standard implementation incurs quadratic memory traffic in the sequence length~$n$, and DRAM accesses cost 100--1000$\times$ more energy than arithmetic operations on contemporary hardware, so any analysis focused solely on FLOP counts fundamentally mischaracterises the bottleneck.
+
+
+[Источник](https://arxiv.org/abs/2606.07713)
+
+<!-- url_hash:f9218ff24a74a13a7706b973da772bc656475b6e37b7ffb93b1135ca50ede7e1 -->
+
+
+## Open quantum system approach to the transverse momentum broadening of a colour dipole
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Using the open quantum systems formalism, we study the propagation of a quark-antiquark pair propagating through a dense QCD plasma of size $L$ and transverse momentum broadening transport coefficient $\hat q$, and we derive the Lindblad evolution equation for the density matrix of the system. We focus on the boosted regime where the opening angle $θ_{q\bar q}$ of this effective colour dipole satisfies $θ_{q\bar q}\ll 1$.
+
+
+[Источник](https://arxiv.org/abs/2606.07744)
+
+<!-- url_hash:0577a3778684bee306ae68e25a8b2ae342d990a5d99652823099446ea7c99584 -->
+
+
+## More Capable, Less Cooperative? When LLMs Fail At Zero-Cost Collaboration
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Large language model (LLM) agents increasingly coordinate in multi-agent systems, yet we lack an understanding of where and why cooperation fails. Many real-world coordination problems are not social dilemmas: helping others -- sharing documentation, unblocking a teammate -- costs the helper almost nothing while producing substantial collective benefit.
+
+
+[Источник](https://arxiv.org/abs/2604.07821)
+
+<!-- url_hash:276908ca211cf678af89de4242aa0bc33453fcc939e024f19aff4135ca2c71ca -->
+
+
+## Physics Guided Generative Optimization for Trotter Suzuki Decomposition
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Trotter Suzuki product formulas are the standard route to Hamiltonian evolution on noisy intermediate-scale quantum (\NISQ{}) hardware, but their accuracy depends on three coupled choices: term grouping, product-formula order, and time-step allocation. Grouping and order are discrete, which makes direct gradient optimization infeasible and forces existing compilers to rely on static heuristics.
+
+
+[Источник](https://arxiv.org/abs/2605.13268)
+
+<!-- url_hash:2a309c0ae09b27093b5af8c3c2fcc2f16ab58096520f465886ebb1b22734f48a -->
+
+
+## IRAF: Interference-Resilient Adaptive Fusion for Noise-Robust End-to-End Full-Duplex Spoken Dialogue Systems
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Full-duplex spoken dialogue models allow voice agents to listen and speak concurrently, enabling natural interaction with real-time overlap. However, end-to-end dual-channel models that jointly encode user and agent streams may degrade in realistic acoustic environments: interfering speakers leaking into the user microphone can be encoded as part of the user query, corrupting the LLM's conditioning and causing unstable turn-taking and reduced response quality.
+
+
+[Источник](https://arxiv.org/abs/2606.06559)
+
+<!-- url_hash:3fdbb8cd101f99055d463e32db02e6a4267aa890234de7601e5da8003a854b7d -->
+
+
+## ChronoForest: Closed-Loop Multi-Tree Diffusion Planning for Efficient Bridge Search and Route Composition
+
+_arXiv · 2026-06-08 · score 0.8_
+
+How can we plan long-horizon routes that reach designated goals, visit required waypoints, and remain short when only short-horizon offline trajectories are available? This problem matters in offline navigation because collecting sufficiently rich long-horizon data is difficult, yet real agents must still solve long-range tasks with route-level efficiency rather than mere feasibility.
+
+
+[Источник](https://arxiv.org/abs/2606.06618)
+
+<!-- url_hash:990813c148f113475debd55cd046803efa83648ca852d1a17a6449444748740d -->
+
+
+## Hardware-aware Low-latency Quantum Compilation with Data-driven Lightweight Error Detection for Early Fault-Tolerant Systems
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Noisy intermediate-scale quantum (NISQ) processors are entering an early fault-tolerance regime where full quantum error correction carries prohibitive resource costs, yet lightweight error detection can meaningfully improve algorithmic success rates. Existing compilation and error-detection toolchains treat these concerns in isolation, with no principled way to balance detection overhead against success probability under latency constraints.
+
+
+[Источник](https://arxiv.org/abs/2606.07666)
+
+<!-- url_hash:efc30f1a6f0b4469aee55c7baaa211dfb429dfb1f1db720493fc9e8a7cb0443b -->
+
+
+## SHAPE: Coalition-Aware Expert Pruning for Sparse Mixture-of-Experts LLMs
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Sparse Mixture-of-Experts (MoE) large language models achieve strong quality with low per-token compute, yet their deployment is often limited by the memory wall: the full expert pool must remain resident to support token-dependent routing. Expert pruning is a direct remedy, but prior criteria typically score experts independently and overlook that MoE inference is inherently \emph{coalitional}, where outputs arise from routed top-$k$ expert combinations.
+
+
+[Источник](https://arxiv.org/abs/2606.09886)
+
+<!-- url_hash:689916cfc746dd083270779600b0303ed87e5ecd867e977b4e0a12866b2ca40d -->
+
+
+## Can You Trust What You See? Human and AI Detection of Synthetic Legal Evidence
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Visual evidence has long been treated as a reliable form of legal proof, but advances in artificial intelligence (AI) are undermining that assumption. This article asks how well humans and frontier multimodal large language models (MLLMs) can distinguish authentic evidentiary photographs from AI-generated counterparts in the object-centric scenarios typical of civil disputes.
+
+
+[Источник](https://arxiv.org/abs/2606.07613)
+
+<!-- url_hash:d7bd6c128b7d2611ab8584208d280c889b0b79a00ae0bda60e4ba5631d4528c4 -->
+
+
+## A Two-Parameter Weibull Framework for Diagnosing Transformer Weight Distributions
+
+_arXiv · 2026-06-08 · score 0.8_
+
+We apply the Weibull distribution -- a two-parameter family from extreme-value theory -- as a diagnostic framework for element-wise weight magnitude distributions in transformers. At initialization, i.i.d.
+
+
+[Источник](https://arxiv.org/abs/2605.18898)
+
+<!-- url_hash:6be00464eea41b96d52f4b0295b9befeb9c02948afa62dd211b2331a6d793f69 -->
+
+
+## Two Wrongs, No Right: Auditing Social-Desirability Bias in LLM Annotators for Computational Social Science
+
+_arXiv · 2026-06-08 · score 0.8_
+
+LLM annotators are increasingly used in computational social science (CSS), but it is unclear whether their alignment-shaped errors preserve the empirical conclusions a researcher would report. We audit three open-source 7B instruction-tuned models (Zephyr, Mistral-Instruct, Qwen2.5-Instruct) across six TweetEval tasks under four prompt conditions (72 cells) and find that social-desirability failures do not run in a single direction.
+
+
+[Источник](https://arxiv.org/abs/2606.12426)
+
+<!-- url_hash:e26f43666572725f517db963fac5d034a944d0a50b412c5071352910d69d02da -->
+
+
+## ECHO: Explainable Co-editing with Human-in-the-loop Operations for Presentation Refinement
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Authoring and refining presentation slides is a highly time-consuming core task in academic and business domains. While generative AI tools have lowered the barrier for creating initial drafts, their "black-box, one-way generation" paradigm severely deprives users of fine-grained control.
+
+
+[Источник](https://arxiv.org/abs/2606.09851)
+
+<!-- url_hash:89d7114546e20a2a0579f7bfed36efe77dd0072b150833f348e5e6c61610e22a -->
+
+
+## Semantic-Structural Alignment for Generative Pictorial Charts
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Traditional statistical graphics are precise but often lack the visual appeal, memorability, and engagement of pictorial charts. We present a generative framework for the automated synthesis of pictorial charts that bridges the gap between semantic expression and structural faithfulness.
+
+
+[Источник](https://arxiv.org/abs/2606.06498)
+
+<!-- url_hash:460912b50cd02ee358d79482be69e23998b6e368b8a0be502e69fb935962b21a -->
+
+
+## DASH: Deterministic Attention Scheduling for High-throughput Reproducible LLM Training
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Determinism is indispensable for reproducibility in large language model (LLM) training, yet it often exacts a steep performance cost. In widely used attention implementations such as FlashAttention-3, the deterministic backward pass can incur up to a 37.9% throughput reduction relative to its non-deterministic counterpart, primarily because gradient accumulation operations must be serialized to guarantee numerical consistency.
+
+
+[Источник](https://arxiv.org/abs/2601.21824)
+
+<!-- url_hash:f087d4901d6b7944501e520808f428d45250093eb2f9deeade19f543380e9a79 -->
+
+
+## Anderson localization of quantum droplets in disordered potentials
+
+_arXiv · 2026-06-08 · score 0.8_
+
+We study Anderson localization of a one-dimensional quantum droplet in a speckle-like potential employing the generalized Gross-Pitaevskii equation. We compute the droplet width, density profiles, diffusion exponent and coefficient, and the localization length for both small and large droplets.
+
+
+[Источник](https://arxiv.org/abs/2512.06087)
+
+<!-- url_hash:f22fe29d393542bb4b104cb9b114732c10f5d7a86f8b10f9ca6bd912f2cc81de -->
+
+
+## Anomalous Diffusion and Emergent Universality in Coupled Memory-Driven Systems
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Understanding how simple local interactions give rise to emergent exploration patterns is a fundamental question in statistical physics. We introduce a minimal model of two coupled agents that avoid retracing their own paths while being attracted to the trails left by one another.
+
+
+[Источник](https://arxiv.org/abs/2411.09092)
+
+<!-- url_hash:41c600b1357bbc085c7eb7221f682f967648622bae208bc8238beacb742099c9 -->
+
+
+## Effect of environmental noise on charge diffusion in DNA: Towards modeling its potential epigenetic impact in live processes
+
+_arXiv · 2026-06-08 · score 0.8_
+
+Charge diffusion through desoxyribonucleic acid (DNA) is a physico-chemical phenomenon that on the one hand is being explored for technological purposes, on the other hand is applied by nature for various informational processes in life. With regard to the latter, increasing experimental and theoretical evidence indicates that charge diffusion through DNA is involved in basic steps of DNA replication and repair, as well as regulation of gene expression via epigenetic mechanisms such as DNA methylation or DNA binding of proteins.
+
+
+[Источник](https://arxiv.org/abs/2407.14252)
+
+<!-- url_hash:6c9d8d58d7fe7342bbbca69ce9515650adbb5cb67f5f6d7b7bf1cceaf9a05b25 -->
+
+
+## I Was Blind but Now I See: Implementing Vision-Enabled Dialogue in Social Robots
+
+_arXiv · 2026-06-08 · score 0.8_
+
+In the rapidly evolving landscape of human-computer interaction, the integration of vision capabilities into conversational agents stands as a crucial advancement. This paper presents an initial implementation of a dialogue manager that leverages the latest progress in Large Language Models (e.g., GPT-4, IDEFICS) to enhance the traditional text-based prompts with real-time visual input.
+
+
+[Источник](https://arxiv.org/abs/2311.08957)
+
+<!-- url_hash:278381a00b31afe41de9c7823070ff0ae402f874aba31f4ab003fe715477aca6 -->

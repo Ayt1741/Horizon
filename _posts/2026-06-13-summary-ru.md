@@ -90,3 +90,63 @@ _Reddit r/singularity · 2026-06-13 · score 0.8_
 [Источник](https://www.reddit.com/r/singularity/comments/1u4tb2j/eu_citizens_write_to_your_meps_and_the_commission/)
 
 <!-- url_hash:9be529ab8441861d0bededc2956b07ff363ca3cdb47fd5a3ebbfb9af9fec1e4a -->
+
+
+## [r/artificial] Which AI model has the most aura?
+
+_Reddit r/artificial · 2026-06-13 · score 0.775_
+
+After all the aura-farming mythos has just done, I am in a dilemma. Which Al model has the most aura? These are my top 5 1. GPT 4: The clear #1. This model marked the true explosion of generative Al into mainstream culture. 2. Claude Mythos/Fable: Historically interesting for Al governance debates and "dangerous capabilities" discourse. 3. GPT o1: A paradigm shift in Al architecture and expectations. As the first prominent reasoning model 4. Deepseek R1: The landmark for open-source, efficiency, and geopolitics in Al. The most shocking release of this list. 5. Claude Opus 4.5: Significant for ...
+
+
+[Источник](https://www.reddit.com/r/artificial/comments/1u52fzy/which_ai_model_has_the_most_aura/)
+
+<!-- url_hash:de17aa94f5e4698f54dcb8f995f57938fc2c4ae661c57931505ae383cf3aaaa4 -->
+
+
+## [r/artificial] Tilelli LLM, a language model that runs on your CPU, says “I don’t know” instead of bluffing. Open Source GitHub repo. See for yourself
+
+_Reddit r/artificial · 2026-06-13 · score 0.775_
+
+Salam Alaykom, ​ After releasing Atome LM, a tiny language model that ships as firmware. ​ A true byte-level, autoregressive language model that runs entirely as firmware on a bare-metal MCU (no OS, no heap, no network, no PSRAM required) ​ Now, Iam releasing a model that I really love, Tilelli LLM.
+
+
+[Источник](https://www.reddit.com/r/artificial/comments/1u4s3z3/tilelli_llm_a_language_model_that_runs_on_your/)
+
+<!-- url_hash:c968980e4f91fe20f961547e69572cfaf3789812582d86ee8db74d8cab03436f -->
+
+
+## [r/MachineLearning] Price is not cost: how we are using the wrong variable to measure the cost of LLMs [D]
+
+_Reddit r/MachineLearning · 2026-06-13 · score 0.775_
+
+Upfront disclosure: this is my write-up (and I'll link it below), but laying out the argument here so you can strawman/steelman it without clicking anything. Assertion 1: per token price is the wrong metric for measuring the cost of work done by LLMs/reasoning models.
+
+
+[Источник](https://www.reddit.com/r/MachineLearning/comments/1u4mues/price_is_not_cost_how_we_are_using_the_wrong/)
+
+<!-- url_hash:6607ef3e3481b80e39ecffa007ef6947e2ed7a3cde1f17635217d881a538f101 -->
+
+
+## [r/artificial] I’ve created a tool that helps you reclaim your privacy in the age of AI
+
+_Reddit r/artificial · 2026-06-13 · score 0.775_
+
+But first, a little background: why did I create this tool? It’s simple: I work at a company where I manage the entire backend, data management, task optimization, automation, and so on.
+
+
+[Источник](https://www.reddit.com/r/artificial/comments/1u4mryu/ive_created_a_tool_that_helps_you_reclaim_your/)
+
+<!-- url_hash:1e40867b99162cc7fdffb18bc21ec0c483d9a7ca0ff776f9dc40a2d42b85f2b3 -->
+
+
+## [r/MachineLearning] Unprofessional Coauthor Behavior with Hallucinated References [D]
+
+_Reddit r/MachineLearning · 2026-06-13 · score 0.775_
+
+Just thought I'd highlight this issue to the ML community, since I recently had this problem arise and it might be useful for some. I had a coauthor who I knew was somewhat untrustworthy when it came to LLM use.
+
+
+[Источник](https://www.reddit.com/r/MachineLearning/comments/1u4m3lz/unprofessional_coauthor_behavior_with/)
+
+<!-- url_hash:13c13dcd62b18cbabfbf7e000beffe7b31bea48f7ca387d69b47871d168be0d3 -->

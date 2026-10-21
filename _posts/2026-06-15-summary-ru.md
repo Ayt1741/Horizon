@@ -1266,3 +1266,303 @@ Floor plans encapsulate compact spatial priors, enabling agents to navigate unse
 [Источник](https://arxiv.org/abs/2606.14267)
 
 <!-- url_hash:fe70e4f982c94caee24b7aa600a1f882941a8b28e9e42bc200a320a7197184bc -->
+
+
+## tap: A File-Based Protocol for Heterogeneous LLM Agent Collaboration
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Existing multi-agent software development systems have proposed many forms of agent collaboration, including role-based collaboration and automated code review. However, many systems assume a common runtime, a central conversation server, or the same API family.
+
+
+[Источник](https://arxiv.org/abs/2606.14445)
+
+<!-- url_hash:ded6ecba085219784f565a9e51b6131ebb9bc45ffdbc1cfcef7e8ce28a60f167 -->
+
+
+## Towards In Silico Cancer Therapy Design: An Agent-Based Approach for GPU-Accelerated Molecular Pathway Simulation
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Agent-based modelling is gaining recognition as a powerful approach for simulating complex cellular pathways, owing to its ability to reproduce emergent biological behaviours without requiring extensive kinetic parameterisation. In this article, we present a GPU-accelerated agent-based simulator specifically designed to model and analyse signalling pathways involved in cancer progression, and to evaluate therapeutic interventions.
+
+
+[Источник](https://arxiv.org/abs/2606.14603)
+
+<!-- url_hash:c83b35f765797012fe96b79c4480b95e9a40b9d9e0fdcb797c7ac154fd5fc289 -->
+
+
+## LATS-RCA: Language Agent Tree Search for Root Cause Analysis in Microservices
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Recent advances in large language models (LLMs) have enabled early attempts to automate root cause analysis (RCA) in microservice systems (MSS). However, existing approaches typically rely on a linear reasoning process that proceeds along a single diagnostic path.
+
+
+[Источник](https://arxiv.org/abs/2605.03505)
+
+<!-- url_hash:5a821f6f8575e7f6695493d74e61ac50c7752e2208643010b1c96e8277cef42d -->
+
+
+## HyDRA: Hybrid Dynamic Routing Architecture for Heterogeneous LLM Pools
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Production LLM deployments increasingly maintain heterogeneous model pools spanning order-of-magnitude cost differences. Existing routers make binary strong-vs-weak decisions and couple learned parameters to specific model identities, requiring retraining whenever the catalog changes.
+
+
+[Источник](https://arxiv.org/abs/2605.17106)
+
+<!-- url_hash:43151798b86ca0462dade4b5b6cec47e28e40ca8e5f85e9a9902279e425e0aa1 -->
+
+
+## VANDERER: Map-Free Exploration using Future-Aware and Visual-Curiosity-Guided Diffusion Policy
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Mobile agents require efficient exploration strategies to map unseen environments and autonomously plan tasks. Traditional methods rely on generating occupancy maps and optimizing the sequence in which unexplored regions are visited.
+
+
+[Источник](https://arxiv.org/abs/2606.14879)
+
+<!-- url_hash:3481381210c061db521e8f58517c05a5658b8e7169c9df235bccff6f74f7e94e -->
+
+
+## Trust Between AI Agents: Measuring Formation, Breakage, and Recovery, with Implications for Governing Multi-Agent Systems
+
+_arXiv · 2026-06-15 · score 0.8_
+
+As language-model agents increasingly work in teams, each agent must decide how much to trust its teammates. Yet we lack a standard way to measure trust between AI agents.
+
+
+[Источник](https://arxiv.org/abs/2606.14923)
+
+<!-- url_hash:455fb4e2fec0b2c3937ad29965b607e8b6fd78e8726c78501abfd05a71fa4c9f -->
+
+
+## Simplifying the Modeling of Arbitrary Conditionals in Natural Language
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Causal Transformers model sequences through an autoregressive factorization of the joint distribution, which enables efficient left-to-right decoding and conditional likelihood computation. However, they cannot tractably sample from or evaluate arbitrary conditionals -- e.g., a block of text conditioned on past and future tokens.
+
+
+[Источник](https://arxiv.org/abs/2606.14943)
+
+<!-- url_hash:e34fe3ea5c598001bbc619cb6f7a3e2bec30540d105da7e933a3b5ea3f630ef8 -->
+
+
+## A Transformer-Based Mixture-of-Experts Framework for False Data Injection Attack Detection and Localization
+
+_arXiv · 2026-06-15 · score 0.8_
+
+False data injection attacks (FDIAs) threaten smart-grid operation by manipulating measurement data and misleading power system state estimation. Although recent data-driven methods have shown promising performance, many existing approaches rely on a single graph-filtering mechanism and therefore struggle to adapt to diverse cyberattack patterns.
+
+
+[Источник](https://arxiv.org/abs/2606.15005)
+
+<!-- url_hash:5d4b84bd5ad067549524fb04cb024ffddb68612a6cbe8bdb673cf1e5b54ca51a -->
+
+
+## Excitonic Condensation in an Asymmetric Electron-Hole Biwire
+
+_arXiv · 2026-06-15 · score 0.8_
+
+We study a mass-asymmetric one-dimensional electron-hole biwire system at zero temperature using the diffusion quantum Monte Carlo method. Pair correlation functions and condensate fraction are obtained over a wide range of carrier densities $r_{\rm s}$ and interwire separations $d$, allowing us to construct the phase diagram.
+
+
+[Источник](https://arxiv.org/abs/2606.17086)
+
+<!-- url_hash:98866e1137779cbcb2ce191ca6094b26c4951e1b21a5959611f72003ea5a1ab9 -->
+
+
+## Generalized Discrete Diffusion with Self-Correction
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Self-correction is an effective technique for maintaining parallel sampling in discrete diffusion models with minimal performance degradation. Prior work has explored self-correction at inference time or during post-training; however, such approaches often suffer from limited generalization and may impair reasoning performance.
+
+
+[Источник](https://arxiv.org/abs/2603.02230)
+
+<!-- url_hash:2907f484c6095ec36394c3d54db83c3e1bd6b70d09accbe234ae8fdea7487baf -->
+
+
+## Efficient On-Device Diffusion LLM Inference with Mobile NPU
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Diffusion large language models (dLLMs) accelerate generation by denoising multiple tokens in parallel, making them attractive for latency-sensitive mobile inference. However, repeated denoising introduces substantial computation on smartphones.
+
+
+[Источник](https://arxiv.org/abs/2606.13740)
+
+<!-- url_hash:ec929b57a180005723fed8992920a402c563886b8ed9cce71323c3d93237478c -->
+
+
+## SpheriCity: Designing Trustworthy Conversational AI for Sustainability Decision Support
+
+_arXiv · 2026-06-15 · score 0.8_
+
+We present SpheriCity, an expert-grounded conversational prototype designed to support trustworthy knowledge sensemaking from sustainability reports. City-level circularity assessment reports contain rich information about materials, infrastructure, and policy interventions, yet their length and heterogeneous structure make cross-document synthesis and comparison difficult for practitioners and researchers working on circular economy initiatives.
+
+
+[Источник](https://arxiv.org/abs/2606.13854)
+
+<!-- url_hash:d7558fa6944f34cdad30c30cd28d86c7c3c9d1c5a5f654313887079df790758d -->
+
+
+## Guided Diffusion with Distilled Vision-Language Reliability for Aerial Navigation
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Autonomous UAV navigation is conventionally solved by pipelines that separate perception, mapping, and planning into distinct stages, which propagates errors, accumulates latency, and requires environment-specific retuning. End-to-end generative models remove these interfaces by mapping raw observations directly to trajectories, but inherit a subtle failure mode: trained on clean data, they cannot recognise when an observation is unreliable, and treat degraded regions such as glass, mirrors, and overexposed surfaces as valid evidence for planning.
+
+
+[Источник](https://arxiv.org/abs/2606.13883)
+
+<!-- url_hash:598c368dfad0efde208989a08abe3878e97a4b3bcdfdd54b48aba123c1301d3b -->
+
+
+## Capability Minimization as a Safety Primitive: Risk-Aware Causal Gating for Least-Privilege LLM Agents
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Modern decision systems increasingly rely on learned components whose outputs may be confident yet wrong, exposing downstream actions to costly errors. We introduce Risk-Aware Causal Gating (RACG), a framework that decides whether to act on, defer, or abstain from a model's prediction by combining causal effect estimation with calibrated risk control.
+
+
+[Источник](https://arxiv.org/abs/2606.13884)
+
+<!-- url_hash:931de72c175633694f76e3ccc7b18821e0a48432348e636af3359d7d972cc6dd -->
+
+
+## Bayesian-Calibrated Detection of Hallucinated Package Imports in AI-Assisted Code
+
+_arXiv · 2026-06-15 · score 0.8_
+
+We present a Bayesian calibration layer for slopsquat detectors -- those that flag hallucinated package imports in code produced by large language models (LLMs). Where existing pipelines emit binary decisions (flag / do-not-flag), our layer emits a Beta-posterior probability per detection, derived from a 3-category epistemic taxonomy that explicitly classifies each prior as empirically calibrated, constructively argued, or engineering-judgement-traced.
+
+
+[Источник](https://arxiv.org/abs/2606.13918)
+
+<!-- url_hash:09084ef62ad4c79f5d27c0842abbaaf791998add15518ab6a9d5fd0b1c07f642 -->
+
+
+## STREAM: Multi-Tier LLM Inference Middleware with Dual-Channel HPC Token Streaming
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Researchers and practitioners working with large language models face a fragmented landscape: local models are free and private but hardware limits the model size and context windows a researcher can use; institutional HPC centers offer powerful GPU resources at no marginal cost and keep data within institutional boundaries, but operate behind firewalls and are designed for batch jobs rather than interactive use; commercial cloud APIs provide frontier-model quality on demand but impose significant cost and data retention policies unsuitable for sensitive research data. No existing system unifies all three.
+
+
+[Источник](https://arxiv.org/abs/2606.13968)
+
+<!-- url_hash:16b8f0e0cf6cbfa07c89a465896137d58504555f2e2ba54b47db32d5411023d4 -->
+
+
+## Double-Bracket Master Equations: Phase-Space Representation and Classical Limit
+
+_arXiv · 2026-06-15 · score 0.8_
+
+We systematically investigate master equations involving double-bracket dissipators in the classical limit. Dissipators defined by double commutators arise naturally in dephasing dynamics, while those defined by double anticommutators are typically associated with noisy Hamiltonians.
+
+
+[Источник](https://arxiv.org/abs/2601.20925)
+
+<!-- url_hash:3231a2ca8f29913b49771db70065e5006b854f4c7e1c54bd6084d512dd908481 -->
+
+
+## Trustworthy Multi-Agent Systems: Mitigating Semantic Drift with the Argent Signaling Protocol
+
+_arXiv · 2026-06-15 · score 0.8_
+
+When multi-agent LLM systems produce bad answers, not all failures are equal: some answers are grounded in the right material but incomplete, while others are simply ungrounded and should be stopped. Current retry strategies treat both cases identically (try again and hope for the best), leaving human supervisors unable to tell whether a retry was warranted or whether the system should have halted instead.
+
+
+[Источник](https://arxiv.org/abs/2606.19356)
+
+<!-- url_hash:7ffb30919b1cde3d519d65829a3b3f67dad91a7ad4f9490dffa681d86e497599 -->
+
+
+## TriBand-BEV: Real-Time LiDAR-Only 3D Pedestrian Detection via Height-Aware BEV and High-Resolution Feature Fusion
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Safe autonomous agents and mobile robots need fast real time 3D perception, especially for vulnerable road users (VRUs) such as pedestrians. We introduce a new bird's eye view (BEV) encoding, which maps the full 3D LiDAR point cloud into a light-weight 2D BEV tensor with three height bands.
+
+
+[Источник](https://arxiv.org/abs/2605.12220)
+
+<!-- url_hash:34a1afc6d1eef53660b45a6f2aa425f21960abe2f2d7a1500eb5ed5d84511590 -->
+
+
+## Controlled Zeno-Induced Localization of Free Fermions in a Quasiperiodic Chain
+
+_arXiv · 2026-06-15 · score 0.8_
+
+We investigate measurement-induced localization in a continuously monitored one-dimensional Aubry--André--Harper model, focusing on the quantum Zeno regime in which the measurements dominate coherent dynamics. The presence of a quasiperiodic potential renders the problem analytically tractable and enables a controlled study of the interplay between monitoring and disorder.
+
+
+[Источник](https://arxiv.org/abs/2602.12340)
+
+<!-- url_hash:1d0aa027aee7b63efca7cc2a4324ba7e56a7b66fb3d1386fc4c79f0a592000d7 -->
+
+
+## Where to Place the Query? Unveiling and Mitigating Positional Bias in In-Context Learning for Diffusion LLMs via Decoding Dynamics
+
+_arXiv · 2026-06-15 · score 0.8_
+
+While In-Context Learning (ICL) is extensively studied in Autoregressive (AR) LLMs, its mechanism within Diffusion Large Language Models (dLLMs) remains largely unexplored. Unlike AR models restricted by unidirectional causal masking, dLLMs intrinsically utilize bidirectional attention, offering extensive spatial flexibility for query placement.
+
+
+[Источник](https://arxiv.org/abs/2606.19349)
+
+<!-- url_hash:86efcc23426c9b953161d7b3539c3e49f756ccafa9f88fe2f380ad50d71f6e9e -->
+
+
+## The Coin Flip Judge? Reliability and Bias in LLM-as-a-Judge Evaluation
+
+_arXiv · 2026-06-15 · score 0.8_
+
+LLM-as-a-Judge is now widely used to rank model outputs, train reward models, and populate public leaderboards, but its run-to-run reliability remains under-characterized. We study repeated identical evaluations on 29 tasks spanning 10 categories using two OpenAI judge models (GPT-4o-mini and GPT-4.1-mini), with 50 pairwise trials and 50 pointwise trials per question, supplemented by temperature and prompt-sensitivity ablations.
+
+
+[Источник](https://arxiv.org/abs/2606.13685)
+
+<!-- url_hash:8b68ede43e520cb97ba3ebfd7313d239dfff48279daab57a0f49c3933f4faf7d -->
+
+
+## Detecting AI-Generated Images via Diffusion Snap-Back Reconstruction: A Forensic Approach
+
+_arXiv · 2026-06-15 · score 0.8_
+
+The rapid advancement of generative image models has transformed digital media to the point where AI generated images can no longer be reliably distinguished from authentic photographs by human observers or many conventional detection methods. Modern text to image systems such as Stable Diffusion and DALL E can now generate images so realistic that they often appear completely natural, leaving little to no visible artifacts for traditional deepfake detectors to rely on.
+
+
+[Источник](https://arxiv.org/abs/2511.00352)
+
+<!-- url_hash:3f4137cfde15ffdd6764152cd7edbde2df356a181fec589711fd41955e910c0c -->
+
+
+## Human-Level Reasoning: A Comparative Study of Large Language Models on Logical and Abstract Reasoning
+
+_arXiv · 2026-06-15 · score 0.8_
+
+Evaluating reasoning ability in Large Language Models (LLMs) is important for advancing artificial intelligence, as it transcends mere linguistic task performance. It involves understanding whether these models truly understand information, perform inferences, and are able to draw conclusions in a logical and valid way.
+
+
+[Источник](https://arxiv.org/abs/2510.24435)
+
+<!-- url_hash:101d68976f88570dd6d71b3d0d7c426819898ca6a44430442a883da5886ed02d -->
+
+
+## Enabling Granular Subgroup Level Model Evaluations by Generating Synthetic Medical Time Series
+
+_arXiv · 2026-06-15 · score 0.8_
+
+We present a novel framework for leveraging synthetic ICU time-series data not only to train but also to rigorously and trustworthily evaluate predictive models, both at the population level and within fine-grained demographic subgroups. Building on prior diffusion and VAE-based generators (TimeDiff, HealthGen, TimeAutoDiff), we introduce \textit{Enhanced TimeAutoDiff}, which augments the latent diffusion objective with distribution-alignment penalties.
+
+
+[Источник](https://arxiv.org/abs/2510.19728)
+
+<!-- url_hash:53d085cdf64608ad31f79fa7b930867e72cb598a66cf435b800276c4055225ce -->

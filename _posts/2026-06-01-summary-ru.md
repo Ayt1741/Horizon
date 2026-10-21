@@ -1614,3 +1614,171 @@ The rapid development of Language Diffusion Models (LDMs) challenges the dominan
 [Источник](https://arxiv.org/abs/2606.00023)
 
 <!-- url_hash:4fa8e9677062138090b683b08a8dc66b30113c2ccbd82bf3485082008741f333 -->
+
+
+## MindGames Arena Generalization Track: In2AI Solution with Delayed Per-Step Reward Attribution
+
+_arXiv · 2026-06-01 · score 0.8_
+
+Training language model agents for multi-agent strategic interaction presents a core difficulty: the quality of any action may depend on future events that never materialize, on moves that violate game rules, or on decisions made by other players. Standard reinforcement learning assumes that rewards can be assigned at each step, but this assumption fails in settings where outcomes are entangled across time and agents.
+
+
+[Источник](https://arxiv.org/abs/2606.00017)
+
+<!-- url_hash:aacae17aa415d52bdc5b4f4dcb642e6c8c69706b9e9fa5d1db7b97de35f453ce -->
+
+
+## MPM: Mutual Pair Merging for Efficient Vision Transformers
+
+_arXiv · 2026-06-01 · score 0.8_
+
+Decreasing sequence length is a common way to accelerate transformers, but prior token reduction work often targets classification and reports proxy metrics rather than end-to-end latency. For semantic segmentation, token reduction is further constrained by the need to reconstruct dense, pixel-aligned features, and on modern accelerators the overhead of computing merge maps can erase expected gains.
+
+
+[Источник](https://arxiv.org/abs/2604.05718)
+
+<!-- url_hash:a3889b397f867e35480642a607e2b09489ecbce53180552ebd41f3f7e80990be -->
+
+
+## Platform and Framework for Time-Resolved Nanoscale Thermal Transport Measurements in STEM
+
+_arXiv · 2026-06-01 · score 0.8_
+
+Understanding heat transport at the nanometer scale is critical for semiconductor devices, quantum materials, and thermal management of nanostructures, yet direct local measurements of thermal conductivity and heat capacity remain scarce. We developed a laser-excitation system integrated into a scanning transmission electron microscope (STEM) for nanoscale thermal transport measurements using ultra-high-resolution electron energy-loss spectroscopy (EELS).
+
+
+[Источник](https://arxiv.org/abs/2602.05911)
+
+<!-- url_hash:8746c9536a804fda4266282c02a253b0f72150e2dce569ef22159dc9d5eb52cf -->
+
+
+## Campus AI vs. Commercial AI: Comparing How Students and Employees Perceive their University's LLM Chatbot vs. ChatGPT
+
+_arXiv · 2026-06-01 · score 0.8_
+
+As the use of LLM chatbots by students and researchers becomes more prevalent, universities are pressed to develop AI strategies. One strategy that many universities pursue is to customize pre-trained LLM as-a-service (LLMaaS).
+
+
+[Источник](https://arxiv.org/abs/2509.15826)
+
+<!-- url_hash:875d9ec9ade43e6dac411c1afb6c29db59d46de0ed8e3106b73a7ceaa01f22b1 -->
+
+
+## Utilizing Novelty-based Evolution Strategies to Train Transformers in Reinforcement Learning
+
+_arXiv · 2026-06-01 · score 0.8_
+
+In this paper, we experiment with novelty-based variants of OpenAI-ES, the NS-ES and NSR-ES algorithms, and evaluate their effectiveness in training complex, transformer-based architectures designed for the problem of reinforcement learning, such as Decision Transformers. We also test if we can accelerate the novelty-based training of these larger models by seeding the training with a pretrained models.
+
+
+[Источник](https://arxiv.org/abs/2502.06301)
+
+<!-- url_hash:b4e790dc80acb5ccd64021a16b2161c59df5dd5fe6cab66a3c419446cfd63ef3 -->
+
+
+## GPU-Acceleration of Parallel Unconditionally Stable Group Explicit Finite Difference Method
+
+_arXiv · 2026-06-01 · score 0.8_
+
+Graphics Processing Units (GPUs) are high performance co-processors originally intended to improve the use and quality of computer graphics applications. Once, researchers and practitioners noticed the potential of using GPU for general purposes, GPUs applications have been extended from graphics applications to other fields.
+
+
+[Источник](https://arxiv.org/abs/1310.3422)
+
+<!-- url_hash:f3129807925f462e04e24572c66018ed4eeb29e49a2ac5e8a9a46b9fa35a199b -->
+
+
+## Entropy dissipative one-leg multistep time approximations of nonlinear diffusive equations
+
+_arXiv · 2026-06-01 · score 0.8_
+
+New one-leg multistep time discretizations of nonlinear evolution equations are investigated. The main features of the scheme are the preservation of the nonnegativity and the entropy-dissipation structure of the diffusive equations.
+
+
+[Источник](https://arxiv.org/abs/1311.7540)
+
+<!-- url_hash:a8b1c72b5cbe86f01b081b307cac2c0220a767d98c21304a9fef8989e41f1e19 -->
+
+
+## An Adaptive Algorithm for Synchronization in Diffusively Coupled Systems
+
+_arXiv · 2026-06-01 · score 0.8_
+
+We present an adaptive algorithm that guarantees synchronization in diffusively coupled systems. We first consider compartmental systems of ODEs, where each compartment represents a spatial domain of components interconnected through diffusion terms with like components in different compartments.
+
+
+[Источник](https://arxiv.org/abs/1309.1794)
+
+<!-- url_hash:f646a7ea5413f055bdac3512787754f60df774530e6084f92470b62b7f14f88f -->
+
+
+## Noise-Induced Spatial Pattern Formation in Stochastic Reaction-Diffusion Systems
+
+_arXiv · 2026-06-01 · score 0.8_
+
+This paper is concerned with stochastic reaction-diffusion kinetics governed by the reaction-diffusion master equation. Specifically, the primary goal of this paper is to provide a mechanistic basis of Turing pattern formation that is induced by intrinsic noise.
+
+
+[Источник](https://arxiv.org/abs/1301.0170)
+
+<!-- url_hash:90b49bfc239f7442fc18bcc0928e270f6309a1c7700909a79af8530a39af1976 -->
+
+
+## Entropy-stable and entropy-dissipative approximations of a fourth-order quantum diffusion equation
+
+_arXiv · 2026-06-01 · score 0.8_
+
+Structure-preserving numerical schemes for a nonlinear parabolic fourth-order equation, modeling the electron transport in quantum semiconductors, with periodic boundary conditions are analyzed. First, a two-step backward differentiation formula (BDF) semi-discretization in time is investigated.
+
+
+[Источник](https://arxiv.org/abs/1208.5474)
+
+<!-- url_hash:25a4a9f5131402a20bdfa673d613c8700d7c0f8a9b76a081621b6efdafc7adbd -->
+
+
+## Performance Limits for Distributed Estimation Over LMS Adaptive Networks
+
+_arXiv · 2026-06-01 · score 0.8_
+
+In this work we analyze the mean-square performance of different strategies for distributed estimation over least-mean-squares (LMS) adaptive networks. The results highlight some useful properties for distributed adaptation in comparison to fusion-based centralized solutions.
+
+
+[Источник](https://arxiv.org/abs/1206.3728)
+
+<!-- url_hash:d8ba80d51ae246feb153af1eb760804d3aaa641a3ebed0c0c6885d9a851627ab -->
+
+
+## On the Convergence of Finite Element Methods for Hamilton-Jacobi-Bellman Equations
+
+_arXiv · 2026-06-01 · score 0.8_
+
+In this note we study the convergence of monotone P1 finite element methods on unstructured meshes for fully non-linear Hamilton-Jacobi-Bellman equations arising from stochastic optimal control problems with possibly degenerate, isotropic diffusions. Using elliptic projection operators we treat discretisations which violate the consistency conditions of the framework by Barles and Souganidis.
+
+
+[Источник](https://arxiv.org/abs/1111.5423)
+
+<!-- url_hash:06bcbc45918f0b27e6954899a874ba71fa062e5ec3e1a42156e429567811a6d4 -->
+
+
+## Recycling BiCG with an Application to Model Reduction
+
+_arXiv · 2026-06-01 · score 0.8_
+
+Science and engineering problems frequently require solving a sequence of dual linear systems. Besides having to store only few Lanczos vectors, using the BiConjugate Gradient method (BiCG) to solve dual linear systems has advantages for specific applications.
+
+
+[Источник](https://arxiv.org/abs/1010.0762)
+
+<!-- url_hash:cdd79273eaa9003ae24efd02f3560b7a8050999ea6f0a461747eef258e76331c -->
+
+
+## Error estimates for finite difference approximations of American put option price
+
+_arXiv · 2026-06-01 · score 0.8_
+
+Finite difference approximations to multi-asset American put option price are considered. The assets are modelled as a multi-dimensional diffusion process with variable drift and volatility.
+
+
+[Источник](https://arxiv.org/abs/1109.4032)
+
+<!-- url_hash:bd94ae7a5062867e3dde7b2064b9f0a7e6ea4c45cb5ed6e970c0e7fc10724b79 -->

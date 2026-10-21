@@ -150,3 +150,135 @@ DeepSeek already has an official OpenAI compatible API, but it's paid. The consu
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1uhqrnb/reverse_engineered_deepseek_chat_into_an_openai/)
 
 <!-- url_hash:57ecce8516c51080452c97ce731a26ae3fa18099f87c0a0f137d137cdc83812a -->
+
+
+## [r/OpenAI] Consumer Ai Models is Dumped?!
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.825_
+
+IMPORTANT: Friends, please share your own experience in the comments. I do not believe I am the only one who has noticed this. My honest impression ⚠️ I am not claiming I know exactly what is happening internally. But after regulators in the US started putting more pressure on companies like Anthropic and OpenAI, it really feels like public-facing models may be getting increasingly: restricted; over-filtered; behaviorally “flattened”; less decisive; less capable of following a long technical chain without drifting. Maybe it is safety tuning. Maybe cost optimization. Maybe routing. Maybe model ...
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1uhtssy/consumer_ai_models_is_dumped/)
+
+<!-- url_hash:cc78c8ebd3056a021df2befe5671d786e6d1421213755f979fb8bc7237122dd7 -->
+
+
+## [r/OpenAI] What happens when you give an AI a budget?
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.8_
+
+Over the past few weeks, I've been exploring whether LLMs can work with execution budgets. We've seen models produce meaningful artifacts with projects like Caveman and Ponytail, but what happens when you give models limited Budget.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1ui4stw/what_happens_when_you_give_an_ai_a_budget/)
+
+<!-- url_hash:2c7e1ee3ddd7e22415e343fba1dfa154916920d7cb5fda2382db59b33603b401 -->
+
+
+## [r/OpenAI] Where’s OpenAI’s designing agent? What’s the alternative to Claude Design?
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.8_
+
+I guess GPT 5.5 even with high thinking cannot design even at par with Claude Design. I used it to design some components (like a chain of events to show on home page) for my application and it sticked to the 90s old fashioned textboxes style design.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1ui29be/wheres_openais_designing_agent_whats_the/)
+
+<!-- url_hash:7e6c6e555500a294df0d9a876762c33ff5fb07abb215c80f527db33f176e949c -->
+
+
+## [r/OpenAI] Question from outside the US: should I just commit to Chinese/Other models now?
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.8_
+
+Watching the last two weeks, it feels like we just saw a new system get built in real time. Commerce pulled Fable and Mythos, then partially gave Mythos back to around 100 US institutions, and now OpenAI's GPT-5.6 is going out to "trusted partners approved with the US government" first WTF?.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1uhvioq/question_from_outside_the_us_should_i_just_commit/)
+
+<!-- url_hash:3ad22039730b9cf9508ec0e601aaede0ba17efba219d5a2d9d671d6d2e6d6ef3 -->
+
+
+## [r/OpenAI] Help me AI, needing advice
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.8_
+
+Hi guys so I use ChatGPT pro pretty much everyday. I use it for all sorts of things. But mainly my health/skin stuff, mental health and general conversation However, I’m finding lately I’m having to check it all the time! It’s super frustrating! Like it’ll fuck up, I’ll pull it up on why it’s fucked up “you’re right to catch that out! I apologise” blah blah blah. Like I know it’s AI but mine can’t even follow a normal conversation most of the time, and I don’t know if the facts it’s gives me are correct as I’ve caught it saying incorrect stuff lots of time. Anyway, I’ve obviously given this ch...
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1uhpj17/help_me_ai_needing_advice/)
+
+<!-- url_hash:1a4ecefc1dca0c304b6fcfe909a3b7c691731f1d9fc3c5b0d52f891655754480 -->
+
+
+## [r/OpenAI] Why does openai-whisper re-download the model every few transcriptions?
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.775_
+
+I've been running openai-whisper installed via pipx for some while now, using it to transcribe voice notes taken via a digital recorder, and while I'm generally very happy with the results I'm confused about one aspect of its behavior. I run a bash script to recurse through an import directory to transcribe any new notes that are present, invoking whisper from the cli.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1ui93rd/why_does_openaiwhisper_redownload_the_model_every/)
+
+<!-- url_hash:be2242ee9c4169954f09a5c2ef2a756a09770af41fabb7941a0c534d97b099ec -->
+
+
+## [r/OpenAI] What does "production-ready" actually mean for AI agents?
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.775_
+
+Everywhere I look, I see announcements for folks who’ve just built an AI agent but seldom do I find conversations about what happens after the demo. For “traditional” software, the requirements for a production-ready system are pretty well-defined: - Monitoring.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1ui566i/what_does_productionready_actually_mean_for_ai/)
+
+<!-- url_hash:f90bbea57f716e3e8f1bda31253f172806a66cf60328e0ac6771c8efe6ede486 -->
+
+
+## [r/OpenAI] What AI workflow became part of your daily routine without you realizing it?
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.775_
+
+One year ago, I only opened ChatGPT when I had a precise question in mind. Now I find myself leveraging AI for a number of miniature operations each and every day on an almost automatic level.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1ui50r7/what_ai_workflow_became_part_of_your_daily/)
+
+<!-- url_hash:90d067903c43e3e7c8a5b65e19bf35c82565bc7ffe75127879107883af21607b -->
+
+
+## [r/OpenAI] AI-assisted Skyrim Modding
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.775_
+
+I am unfortunately one of those modders who always tried to learn as little as possible and just accomplish everything, even when others told me to stop, through the normal mod manager install process. I avoided using any other tools or learning even minimal modding myself.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1uhxj17/aiassisted_skyrim_modding/)
+
+<!-- url_hash:812fdf3c5aa2992ef5df0c01dfd1b4c285004fe913f47b89ec0a44a5b9e7c405 -->
+
+
+## [r/OpenAI] Why is every AI lab suddenly trying to build their own chips?
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.775_
+
+Just saw that OpenAI is dropping their own custom chip - Jalapeño, later this year, and Anthropic is apparently trying to do the exact same thing. I get that compute is scarce right now and there's certain benefits in designing chips based on own requirements.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1uhn4y9/why_is_every_ai_lab_suddenly_trying_to_build/)
+
+<!-- url_hash:7fd32c519403d77810ea873feb8f155ecf1ea244286ea03ff668b6928ad0ef09 -->
+
+
+## [r/OpenAI] chatgpt image generation dimensions inconsistent
+
+_Reddit r/OpenAI · 2026-06-28 · score 0.775_
+
+https://preview.redd.it/r47cgi0e7x9h1.png?width=2746&format=png&auto=webp&s=1f96b498cd6ee412d7b118727899f619b8a42fbf I had chatgpt generate this image for me. It's close to what I want, but the house isn't properly centered on the x-axis like I need it.
+
+
+[Источник](https://www.reddit.com/r/OpenAI/comments/1uhj2h9/chatgpt_image_generation_dimensions_inconsistent/)
+
+<!-- url_hash:c940ca2a9950e3e124db5df116f8f8cdb84f85e0466546de925f65a523c06519 -->
