@@ -1,0 +1,130 @@
+name: Backfill history
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: "Начало периода YYYY-MM-DD"
+        required: true
+        default: "2024-01-01"
+      to:
+        description: "Конец периода YYYY-MM-DD"
+        required: true
+        default: "2026-10-21"
+      window:
+        description: "Окно чанка: 7d / 30d"
+        required: true
+        default: "30d"
+      max_items:
+        description: "Максимум материалов на чанк"
+        required: true
+        default: "200"
+      dry_run:
+        description: "true = без LLM (быстрее)"
+        required: true
+        default: "false"
+concurrency:
+  group: backfill-history
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      months: ${{ steps.mk.outputs.months }}
+    steps:
+      - id: mk
+        run: |
+          python3 - <<'PY'
+          import datetime, json, os
+          d0 = datetime.date.fromisoformat("${{ inputs.from }}")
+          d1 = datetime.date.fromisoformat("${{ inputs.to }}")
+          months, cur = [], datetime.date(d0.year, d0.month, 1)
+          while cur <= d1:
+              months.append(cur.strftime("%Y-%m"))
+              cur = datetime.date(cur.year + (cur.month == 12), 1 if cur.month == 12 else cur.month + 1, 1)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh: fh.write("months=" + json.dumps(months) + "\n")
+          print(months)
+          PY
+  backfill:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      max-parallel: 1
+      fail-fast: false
+      matrix:
+        month: ${{ fromJson(needs.plan.outputs.months) }}
+    steps:
+      - name: Checkout content (gh-pages)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+      - name: Checkout code (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: code
+      - name: Restore state
+        uses: actions/cache/restore@v4
+        with:
+          path: data/
+          key: horizon-backfill-${{ runner.os }}-v1
+          restore-keys: horizon-backfill-${{ runner.os }}-
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          pip install --quiet requests feedparser pyyaml
+          mkdir -p _posts data logs
+      - name: Month slice
+        id: slice
+        run: |
+          python3 - <<'PY'
+          import datetime, os, calendar
+          y, mo = map(int, "${{ matrix.month }}".split("-"))
+          g0 = datetime.date.fromisoformat("${{ inputs.from }}"); g1 = datetime.date.fromisoformat("${{ inputs.to }}")
+          s = max(datetime.date(y, mo, 1), g0)
+          e = min(datetime.date(y, mo, calendar.monthrange(y, mo)[1]), g1)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write(f"mfrom={s.isoformat()}\nmto={e.isoformat()}\n")
+          print(s, e)
+          PY
+      - name: Run backfill
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          set +e
+          DRY=""; [ "${{ inputs.dry_run }}" = "true" ] && DRY="--dry-run"
+          python3 code/tools/backfill/backfill.py \
+            --from ${{ steps.slice.outputs.mfrom }} --to ${{ steps.slice.outputs.mto }} \
+            --window ${{ inputs.window }} --max-items ${{ inputs.max_items }} \
+            --config code/tools/backfill/config.json --state data/state.json \
+            --out-dir _posts $DRY 2>&1 | tee logs/backfill-${{ matrix.month }}.log
+          CODE=${PIPESTATUS[0]}
+          echo "EXIT_CODE=$CODE" >> $GITHUB_ENV
+          if [ "$CODE" -eq 1 ]; then echo "пустой месяц — пропускаем"; exit 0; fi
+          exit $CODE
+      - name: Commit posts and state
+        if: env.EXIT_CODE == '0'
+        run: |
+          git config user.name "horizon-bot"
+          git config user.email "horizon-bot@users.noreply.github.com"
+          git pull --rebase origin gh-pages || true
+          git add _posts/ data/state.json || true
+          git diff --cached --quiet && { echo "нечего коммитить"; exit 0; }
+          git commit -m "backfill ${{ matrix.month }}: ${{ steps.slice.outputs.mfrom }}..${{ steps.slice.outputs.mto }}"
+          for i in 1 2 3; do git push origin HEAD:gh-pages && break || (sleep 5 && git pull --rebase origin gh-pages); done
+      - name: Save state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/
+          key: horizon-backfill-${{ runner.os }}-v1-${{ github.run_id }}-${{ matrix.month }}
+      - name: Upload log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backfill-log-${{ matrix.month }}
+          path: logs/backfill-${{ matrix.month }}.log
+          retention-days: 14
