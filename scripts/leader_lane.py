@@ -50,22 +50,23 @@ def lane(lid, rows):
     if lid == "L2":
         bad = [r for r in by_year.get("2024", []) if r["items"] < 5]
         return {"metric": "качество 2024", "files": len(by_year.get("2024", [])),
-                "thin": len(bad), "thin_dates": [r["date"] for r in bad][:40]}
+                "thin": len(bad), "thin_dates": [r["date"] for r in bad]}
     if lid == "L3":
         bad = [r for r in by_year.get("2025", []) if r["items"] < 5]
         return {"metric": "качество 2025", "files": len(by_year.get("2025", [])),
-                "thin": len(bad), "thin_dates": [r["date"] for r in bad][:40]}
+                "thin": len(bad), "thin_dates": [r["date"] for r in bad]}
     if lid == "L4":
         bad = [r for r in by_year.get("2026", []) if r["items"] < 5]
         months = sorted({r["date"][:7] for r in by_year.get("2026", [])})
         allm = ["2026-%02d" % m for m in range(1, 11)]
         return {"metric": "качество 2026", "files": len(by_year.get("2026", [])),
-                "thin": len(bad), "months_present": months,
+                "thin": len(bad), "thin_dates": [r["date"] for r in bad],
+                "months_present": months,
                 "months_missing": [m for m in allm if m not in months]}
     if lid == "L5":
         bad = [r for r in rows if r["cjk"] > 0]
         return {"metric": "локаль: иероглифы в русской версии", "files": len(bad),
-                "hits": [{"date": r["date"], "cjk": r["cjk"]} for r in bad][:40]}
+                "hits": [{"date": r["date"], "cjk": r["cjk"]} for r in bad]}
     if lid == "L6":
         seen = {}
         for r in rows:
@@ -78,11 +79,11 @@ def lane(lid, rows):
         thin = [r for r in rows if r["bytes"] < 1500]
         return {"metric": "размеры номеров", "min": min(sizes), "max": max(sizes),
                 "median": int(statistics.median(sizes)), "under_1500": len(thin),
-                "under_1500_dates": [r["date"] for r in thin][:40]}
+                "under_1500_dates": [r["date"] for r in thin]}
     if lid == "L8":
         short = [r for r in rows if r["links"] < r["items"]]
         return {"metric": "ссылки: меньше, чем позиций", "files": len(short),
-                "dates": [r["date"] for r in short][:40]}
+                "dates": [r["date"] for r in short]}
     if lid == "L9":
         daily = sum(1 for r in rows if r["format"] == "daily")
         back = sum(1 for r in rows if r["format"] == "backfill")
