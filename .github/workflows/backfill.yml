@@ -22,6 +22,9 @@ on:
         description: "true = без LLM (быстрее)"
         required: true
         default: "false"
+permissions:
+  contents: write
+
 concurrency:
   group: backfill-history
   cancel-in-progress: false
@@ -110,11 +113,13 @@ jobs:
         run: |
           git config user.name "horizon-bot"
           git config user.email "horizon-bot@users.noreply.github.com"
-          git pull --rebase origin gh-pages || true
-          git add _posts/ data/state.json || true
-          git diff --cached --quiet && { echo "нечего коммитить"; exit 0; }
+          git add -A _posts data || true
+          if git diff --cached --quiet; then echo "нечего коммитить"; exit 0; fi
           git commit -m "backfill ${{ matrix.month }}: ${{ steps.slice.outputs.mfrom }}..${{ steps.slice.outputs.mto }}"
-          for i in 1 2 3; do git push origin HEAD:gh-pages && break || (sleep 5 && git pull --rebase origin gh-pages); done
+          for i in 1 2 3 4; do
+            git pull --rebase --autostash origin gh-pages && git push origin HEAD:gh-pages && { echo "pushed on try $i"; break; }
+            echo "retry $i"; sleep 6
+          done
       - name: Save state
         if: always()
         uses: actions/cache/save@v4
