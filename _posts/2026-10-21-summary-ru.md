@@ -697,3 +697,63 @@ telegram · seeallochnaya · Oct 20, 21:35
 **Tags**: `#\#SpaceX`, `#\#Starship`, `#\#LaunchAnnouncement`, `#\#Promotional`, `#\#LowTechnicalDepth`
 
 ---
+
+
+## [r/LocalLLaMA] Cosmos3-Edge in under 8 GB: VLM out now, video gen and robot policy next.
+
+_Reddit r/LocalLLaMA · 2026-10-21 · score 0.825_
+
+Hey guys, posted about optimized Cosmos Reason 2 model here a few months ago. Wanted to share a build of the latest Cosmos3 model, with even more optimizations!
+
+
+[Источник](https://www.reddit.com/r/LocalLLaMA/comments/1xbph8w/cosmos3edge_in_under_8_gb_vlm_out_now_video_gen/)
+
+<!-- url_hash:1c4a62a47d4261011b2884ff14207f2c1536d6ba49f71409f37db485f1aba5b4 -->
+
+
+## [r/LocalLLaMA] llampart - a local Web UI for llama-server, vLLM and OpenAI-compatible APIs - v2.0.1
+
+_Reddit r/LocalLLaMA · 2026-10-21 · score 0.8_
+
+Hi everyone! I'm the developer of **llampart**, an open-source Web UI for chatting with LLMs. I've just released **v2.0.1**, and since version 1.9.0 the project has changed quite a bit, so I wanted to share what I've been working on. For anyone seeing it for the first time, llampart is a self-hosted, desktop-focused chat interface built with Svelte 5 and SvelteKit. It started from the llama.cpp / llama-ui foundation and has gradually grown into its own project so different from original base. The idea is pretty simple: I wanted a comfortable interface for working with local models, with good c...
+
+
+[Источник](https://www.reddit.com/r/LocalLLaMA/comments/1xbnm5c/llampart_a_local_web_ui_for_llamaserver_vllm_and/)
+
+<!-- url_hash:b892c7393819cafd8f6900823d0ea9a18f66dda93de1f890c6527d46a9cc42c7 -->
+
+
+## [r/LocalLLaMA] 8B Llama model running at 17,000 tok/s on ONLY a single chip!!!
+
+_Reddit r/LocalLLaMA · 2026-10-21 · score 0.8_
+
+I found this project that I never saw talked about enough which is absolutley baffling to me. The title is not clickbait, and I can't blame you if you thought it is, because I was in your shoes once.
+
+
+[Источник](https://www.reddit.com/r/LocalLLaMA/comments/1xbluj9/8b_llama_model_running_at_17000_toks_on_only_a/)
+
+<!-- url_hash:f478b3a2d0ff8f05a1f6df9f74e361281c61e4424a2d538fca822dd31a850144 -->
+
+
+## [r/LocalLLaMA] KRAFTON/Raon-1-mini-preview · Hugging Face
+
+_Reddit r/LocalLLaMA · 2026-10-21 · score 0.8_
+
+Raon-1 mini is a 30B-A4B Mixture-of-Experts (MoE) language model, designed and **trained from scratch** by [KRAFTON AI](https://krafton.ai/en/). It demonstrates **strong capabilities in Korean conversation and agentic tasks**.
+
+
+[Источник](https://www.reddit.com/r/LocalLLaMA/comments/1xbh0ev/kraftonraon1minipreview_hugging_face/)
+
+<!-- url_hash:55d5e190edfe364a2148711ff0ac3da72c371d197c92fd059573d838b4dcb418 -->
+
+
+## [r/LocalLLaMA] Training Factory from ThousandML
+
+_Reddit r/LocalLLaMA · 2026-10-21 · score 0.8_
+
+Hello All! I built a platform to fine-tune open models. I am focusing on fine-tuning 4-bit quantized models by QLoRa instead of full precision fine-tuning to reduce GPU costs. The quant that this finetuning uses is called CQ (Coded Quantization) which is a calibration-free quantization that I built that performs as good as leading quants ensuring that the fine-tuning is using a good base. Here are simple steps to use: 1. Install: `sudo apt-get update` `sudo apt-get install -y git-lfs` `git lfs install` `git clone` [`https://github.com/thousandml/training-factory.git`](https://github.com/thousa...
+
+
+[Источник](https://www.reddit.com/r/LocalLLaMA/comments/1xbg3xl/training_factory_from_thousandml/)
+
+<!-- url_hash:bce19ed92de0118c74ac45ddd067c7bb445277557e89b47be5f4008b2c37b898 -->

@@ -366,3 +366,15 @@ Multi-turn LLM agents often receive sparse task feedback across several interact
 [Источник](https://arxiv.org/abs/2610.08402)
 
 <!-- url_hash:df55494d9e28531506986e738cfb3079b984f0bd3b1a53d3daa4a95eda3765e6 -->
+
+
+## [r/MachineLearning] SWE-Race: a coding-agent benchmark of 188 real concurrency bugs, with results from three models [P]
+
+_Reddit r/MachineLearning · 2026-10-06 · score 0.8_
+
+We've been building a benchmark out of real concurrency bugs (race conditions, deadlocks, cancellation issues) taken from merged PRs in about 100 Python projects. Each task gets graded by the project's own tests, in a container with no network, and the repo is cut down to a single commit so the agent can't recover the fix from git history.
+
+
+[Источник](https://www.reddit.com/r/MachineLearning/comments/1wyw0my/swerace_a_codingagent_benchmark_of_188_real/)
+
+<!-- url_hash:a78b33678668bd2e27036d554116e18f74fae7e5cdd316ef45bfd390fd732683 -->

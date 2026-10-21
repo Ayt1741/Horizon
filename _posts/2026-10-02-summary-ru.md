@@ -306,3 +306,243 @@ Future 6G systems share a central challenge with Physical AI: combining sensing,
 [Источник](https://arxiv.org/abs/2610.03139)
 
 <!-- url_hash:847e21eb8b41900f9bca9efa190d7a836ea2a286f7ffee338e923b9a04951d52 -->
+
+
+## Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Video generation models produce strikingly realistic sequences and are increasingly proposed as world models, yet recent benchmarks reveal pronounced deficits in their physical reasoning. This raises the question of whether these models internalize physical principles or merely reproduce familiar motion patterns.
+
+
+[Источник](https://arxiv.org/abs/2610.03154)
+
+<!-- url_hash:650bb18f0699ff4571d47a2ff4e5e1f10b59f906f050b78a0ec73512971e0418 -->
+
+
+## COSMI: COmpositional Synthesis of Multi-object Interactions
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Generative models of human-object interaction are bounded by the data that exists: everyday activities involve several objects, but most captured datasets record one at a time, as multi-object capture is combinatorially expensive. Our observation is that interactions are local, so single-object captures already contain the parts of multi-object activities.
+
+
+[Источник](https://arxiv.org/abs/2610.03252)
+
+<!-- url_hash:b737201dea2794dfe795dd9fa4b82a57156e1510664d5c31f64a5af3a070f5fd -->
+
+
+## VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Agentic Reinforcement Learning (RL) trains LLM agents through multi-turn interactions with external tool environments. Its multi-turn nature exposes two system-level bottlenecks unaddressed by existing agentic RL frameworks.
+
+
+[Источник](https://arxiv.org/abs/2610.03286)
+
+<!-- url_hash:2d1aa501067e00ec1c73e48ce14ec07669c87dda0a7f09304a5c8a5a3e3295be -->
+
+
+## Preserving Mathematical Reasoning in Compressed Diffusion Language Models via Trajectory-Aware Low-Rank Approximation
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Diffusion language model (dLLM) compression faces a known challenge because calibration is typically performed on clean, fully visible activations, whereas inference traverses partially masked intermediate states. For low-rank compression, this raises two questions.
+
+
+[Источник](https://arxiv.org/abs/2610.03326)
+
+<!-- url_hash:83b5fa248a139c2f1244c383034ff994231e76cf52d14c296e3c8445f67f72cd -->
+
+
+## EdgeAgent: Orchestrating On-Device LLM inference for End-User Multi-Agent Systems on CPU-GPU Unified Memory Architectures
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Emerging multi-agent LLMs demand privacy-preserving edge deployment, yet current inference systems struggle with these collaborative workflows. Specifically, the memory-bound decode phase causes severe bus contention on unified memory architectures (UMA), paralyzing naive CPU-GPU co-execution.
+
+
+[Источник](https://arxiv.org/abs/2610.03394)
+
+<!-- url_hash:b9307b6e0cc5c06b6e260a9dab1f8cb4c2a8419fcc11be50a74b7a50a1c52b0d -->
+
+
+## XGenAct: Geometry-Enhanced World Action Models through Cross-Task Generation
+
+_arXiv · 2026-10-02 · score 0.8_
+
+World action models (WAMs) have advanced robot control by predicting how observations and actions evolve over time. Despite this progress, RGB and action based future prediction does not explicitly address the spatial understanding needed for robot manipulation.
+
+
+[Источник](https://arxiv.org/abs/2610.03516)
+
+<!-- url_hash:63a4c1add3dccb71c80c48b46cf81ddf80e8ae3fb5bfaf26a21e600918d2164b -->
+
+
+## Rethinking What to Cache in Few-Step Diffusion Transformers: Solver-Aware Target Selection
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Diffusion Transformers (DiTs) can generate high-quality images and videos, but generating each sample requires multiple costly DiT forward passes. Two common ways to accelerate DiT sampling are step distillation, which reduces the number of sampling steps, and caching, which skips some DiT evaluations by reusing a tensor computed at an earlier step.
+
+
+[Источник](https://arxiv.org/abs/2610.03577)
+
+<!-- url_hash:69da13526c784b9e39131aff7afc3e89f271a28ffb3773b3cd5d5b52f2d3a10b -->
+
+
+## Threat-Preserving Representation Sensitivity in Agent-Security Benchmarks
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Security benchmarks for LLM-based agents often report the attack success rate (ASR) as a measure of model robustness and use these scores to compare different models and defense mechanisms, assuming that they describe the security of the agent. In this paper, we explore whether it also influences the benchmark's measurement.
+
+
+[Источник](https://arxiv.org/abs/2610.03585)
+
+<!-- url_hash:4341e2133b24567ae952c937844da207a1fa6294e00b4ca72b0eb745db0f5635 -->
+
+
+## NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Designing a scientific instrument tests whether language-model agents can do physics rather than recall it, provided the grading cannot be argued with. We introduce NeutronGym, to our knowledge the first executable environment for neutron instrument design: agents build instruments through validating tools, McStas ray-traces what they build, and a level-resolved ladder grades syntax, runtime, structure and science with no LLM judge.
+
+
+[Источник](https://arxiv.org/abs/2610.03631)
+
+<!-- url_hash:981e5b3aecb1af4450da678ceb36e8bb73816503802a4ffa611f98b4660c116f -->
+
+
+## FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution
+
+_arXiv · 2026-10-02 · score 0.8_
+
+LLM-guided evolutionary methods, such as AlphaEvolve, have emerged as powerful approaches for challenging computational optimization problems, such as circle packing. However, prior work typically optimizes performance gain over a fixed number of iterations.
+
+
+[Источник](https://arxiv.org/abs/2610.03675)
+
+<!-- url_hash:d5c1498fc933fa60d2637c4331d3e9d18b55ac67aab1cf1ad961237500c933ab -->
+
+
+## All you need to break LLMs are Black-Box, Adapting, Efficient, Transferable, Harmful, Applicable ... Attacks
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Accurately evaluating adversarial robustness is a longstanding challenge. A flawed attack design can inflate robustness estimates, making deployment risk assessment and defense comparison unreliable.
+
+
+[Источник](https://arxiv.org/abs/2606.03647)
+
+<!-- url_hash:b706258195503ed0f7ef59597294909f07f5db04b8c5c4b996d73ddc2558a6e1 -->
+
+
+## Cache Merging as a Convergent Replicated State for Multi-Agent Latent Reasoning
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Multi-agent latent reasoning composes the KV-cache contributions of several agents into one context for a final agent. Prior work (Agent Primitives) does this by concatenating per-agent caches with RoPE re-encoding, a construction we name BagMerge.
+
+
+[Источник](https://arxiv.org/abs/2607.01308)
+
+<!-- url_hash:bc6649ef41f8d893ade1ccf41fe553049ee71a36f2f731f631db7811b4f9ac5d -->
+
+
+## Collective Regimes in Multi-Agent LLMs under Reasoning Effort and Communication Topology
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Multi-agent LLM systems are increasingly used for deliberation and evaluation, often under the assumption that greater peer interaction leads to more reliable consensus. Existing work largely evaluates these systems through final accuracy or aggregate agreement.
+
+
+[Источник](https://arxiv.org/abs/2609.35885)
+
+<!-- url_hash:d75e9fd53c02b593f7d765f6174d83910c562b7592afb1a05ae47fa69ff414cf -->
+
+
+## Pay for the Fault, Not the Flow: Label-Free In-Flow Multi-Agent Workflow Optimization
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Large language models (LLMs) increasingly construct multi-agent workflows that decompose a complex task and assign specialist agents from a pool. However, building such a workflow well remains challenging: how finely to divide the task, which agent to trust with each subtask, and when to create a new specialist are all critical decisions a workflow constructor needs to settle up front.
+
+
+[Источник](https://arxiv.org/abs/2610.01017)
+
+<!-- url_hash:1e8220c2d716178c7f9f01bbaf8e523f0ccf3856aedb61b3a5a0196b55dd5bf2 -->
+
+
+## From Requirements to Attack Trees: Grounded LLM Agents for Design-Time Security Review
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Design-level security weaknesses can arise from requirements, trust assumptions, missing controls, and data flows before implementation begins. Existing security practices often identify these issues after code is written.
+
+
+[Источник](https://arxiv.org/abs/2610.03820)
+
+<!-- url_hash:29bd08c99d81abfcdffcc87dea743e94ce0fb93272773900e6cce3a7b932650c -->
+
+
+## Training Numerical Intelligence via Auto-Diagnosis and Skill Discovery
+
+_arXiv · 2026-10-02 · score 0.8_
+
+AI agents are becoming increasingly capable of generating scientific code, but generating code is not the same as improving the algorithms behind it. For numerical solvers, execution feedback can expose poor performance, but rarely reveals its underlying cause and how to address it.
+
+
+[Источник](https://arxiv.org/abs/2610.03872)
+
+<!-- url_hash:3d1071f76624a9b8bb55c7dd9661a462e2c6c04cb11c4b23a8c28924def4eb68 -->
+
+
+## Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities
+
+_arXiv · 2026-10-02 · score 0.8_
+
+A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run. Frontier chat APIs hide the model's token probabilities; the agent's stated confidence barely beats chance on the mistakes that matter; and resampling does not help, since frontier models are highly repetitive, reproducing the same call across samples.
+
+
+[Источник](https://arxiv.org/abs/2610.03894)
+
+<!-- url_hash:546d29b8d8bbe789556f0c3b98f7f1ec1050cbf3215409385c5e26bcdf24c63f -->
+
+
+## The Cost of a Hop: Benchmarking NLIP and A2A
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Autonomous agents built on Large Language Models (LLMs) need standardized protocols to interoperate across systems. Several now exist (A2A, MCP, ACP, ANP, NLIP), but the Natural Language Interaction Protocol (NLIP) has not appeared in any controlled performance study, and no work has measured where an agent protocol's latency is spent.
+
+
+[Источник](https://arxiv.org/abs/2610.04053)
+
+<!-- url_hash:4304d24189627f29ef631d308acdedf04e3633137af63eac79f266e099fb45b5 -->
+
+
+## Pareto-Dominant Clarification: Post-Training Coding LLMs via PPO-Lagrangian Budget Constraints
+
+_arXiv · 2026-10-02 · score 0.8_
+
+Coding agents operating under ambiguous instructions or user prompts must decide whether to ask clarifying questions or attempt a solution directly. While clarification from the user may improve the correctness of the agent's solution, each back-and-forth interaction incurs user and system costs, forming an explicit accuracy vs.
+
+
+[Источник](https://arxiv.org/abs/2610.04089)
+
+<!-- url_hash:7de79ca51dda457c9f1a39ac45aa2ee0b34b8ccc5d8a7353a7bf1fdf366520e7 -->
+
+
+## Trajectory-Derived Confidence for Reliable, Resource-Aware Clinical Text-to-SQL Agents
+
+_arXiv · 2026-10-02 · score 0.8_
+
+LLM agents for clinical text-to-SQL applications reason autonomously over multiple steps but cannot assess whether their own reasoning or outputs can be trusted. In high leverage applications such as healthcare, this presents a critical risk where system mistakes can be costly.
+
+
+[Источник](https://arxiv.org/abs/2610.04156)
+
+<!-- url_hash:236fc2a062af90530f2d91226c071b048f6d18b9a2c45efa00ea61dd80843237 -->

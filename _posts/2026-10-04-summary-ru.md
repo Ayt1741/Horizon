@@ -390,3 +390,15 @@ Few-shot class-incremental learning (FSCIL) aims to learn novel classes from lim
 [Источник](https://arxiv.org/abs/2610.07008)
 
 <!-- url_hash:7773936cbc2270eb7a00f493e0d5f38068393321f5a9c1817a7d595393f0347f -->
+
+
+## GitSwarm: Decentralized Compounding Inference
+
+_arXiv · 2026-10-04 · score 0.825_
+
+Long-horizon problem solving and scientific research require computation to accumulate across successive attempts. Partial solutions, experimental findings, and unsuccessful approaches can inform later work, yet most inference-time computation is organized around individual trajectories or candidates rather than a persistent body of reusable work.
+
+
+[Источник](https://arxiv.org/abs/2610.04862)
+
+<!-- url_hash:aa714b09dd384ec006a7ea0e7b03c447b2aaa1436db52c3fb6fe0f9cfde603fa -->
