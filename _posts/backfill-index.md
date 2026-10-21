@@ -5,27 +5,38 @@ title: "Индекс бэкфилла"
 
 # Индекс бэкфилла
 
-Всего дней: 123 · Всего материалов: 452
+Всего дней: 134 · Всего материалов: 852
 
 | Дата | Материалов | Файл |
 |---|---|---|
-| 2024-01-02 | 1 | [2024-01-02-summary-ru.md](./2024-01-02-summary-ru.md) |
-| 2024-01-04 | 2 | [2024-01-04-summary-ru.md](./2024-01-04-summary-ru.md) |
-| 2024-01-08 | 1 | [2024-01-08-summary-ru.md](./2024-01-08-summary-ru.md) |
-| 2024-01-10 | 3 | [2024-01-10-summary-ru.md](./2024-01-10-summary-ru.md) |
-| 2024-01-12 | 2 | [2024-01-12-summary-ru.md](./2024-01-12-summary-ru.md) |
-| 2024-01-13 | 1 | [2024-01-13-summary-ru.md](./2024-01-13-summary-ru.md) |
-| 2024-01-14 | 1 | [2024-01-14-summary-ru.md](./2024-01-14-summary-ru.md) |
-| 2024-01-15 | 2 | [2024-01-15-summary-ru.md](./2024-01-15-summary-ru.md) |
-| 2024-01-16 | 1 | [2024-01-16-summary-ru.md](./2024-01-16-summary-ru.md) |
-| 2024-01-18 | 1 | [2024-01-18-summary-ru.md](./2024-01-18-summary-ru.md) |
-| 2024-01-19 | 2 | [2024-01-19-summary-ru.md](./2024-01-19-summary-ru.md) |
-| 2024-01-24 | 1 | [2024-01-24-summary-ru.md](./2024-01-24-summary-ru.md) |
-| 2024-01-25 | 2 | [2024-01-25-summary-ru.md](./2024-01-25-summary-ru.md) |
-| 2024-01-26 | 1 | [2024-01-26-summary-ru.md](./2024-01-26-summary-ru.md) |
-| 2024-01-29 | 1 | [2024-01-29-summary-ru.md](./2024-01-29-summary-ru.md) |
-| 2024-01-30 | 1 | [2024-01-30-summary-ru.md](./2024-01-30-summary-ru.md) |
-| 2024-01-31 | 2 | [2024-01-31-summary-ru.md](./2024-01-31-summary-ru.md) |
+| 2024-01-01 | 23 | [2024-01-01-summary-ru.md](./2024-01-01-summary-ru.md) |
+| 2024-01-02 | 3 | [2024-01-02-summary-ru.md](./2024-01-02-summary-ru.md) |
+| 2024-01-03 | 4 | [2024-01-03-summary-ru.md](./2024-01-03-summary-ru.md) |
+| 2024-01-04 | 9 | [2024-01-04-summary-ru.md](./2024-01-04-summary-ru.md) |
+| 2024-01-05 | 7 | [2024-01-05-summary-ru.md](./2024-01-05-summary-ru.md) |
+| 2024-01-06 | 1 | [2024-01-06-summary-ru.md](./2024-01-06-summary-ru.md) |
+| 2024-01-08 | 10 | [2024-01-08-summary-ru.md](./2024-01-08-summary-ru.md) |
+| 2024-01-09 | 3 | [2024-01-09-summary-ru.md](./2024-01-09-summary-ru.md) |
+| 2024-01-10 | 8 | [2024-01-10-summary-ru.md](./2024-01-10-summary-ru.md) |
+| 2024-01-11 | 3 | [2024-01-11-summary-ru.md](./2024-01-11-summary-ru.md) |
+| 2024-01-12 | 5 | [2024-01-12-summary-ru.md](./2024-01-12-summary-ru.md) |
+| 2024-01-13 | 2 | [2024-01-13-summary-ru.md](./2024-01-13-summary-ru.md) |
+| 2024-01-14 | 3 | [2024-01-14-summary-ru.md](./2024-01-14-summary-ru.md) |
+| 2024-01-15 | 5 | [2024-01-15-summary-ru.md](./2024-01-15-summary-ru.md) |
+| 2024-01-16 | 5 | [2024-01-16-summary-ru.md](./2024-01-16-summary-ru.md) |
+| 2024-01-17 | 6 | [2024-01-17-summary-ru.md](./2024-01-17-summary-ru.md) |
+| 2024-01-18 | 4 | [2024-01-18-summary-ru.md](./2024-01-18-summary-ru.md) |
+| 2024-01-19 | 4 | [2024-01-19-summary-ru.md](./2024-01-19-summary-ru.md) |
+| 2024-01-20 | 2 | [2024-01-20-summary-ru.md](./2024-01-20-summary-ru.md) |
+| 2024-01-21 | 4 | [2024-01-21-summary-ru.md](./2024-01-21-summary-ru.md) |
+| 2024-01-22 | 2 | [2024-01-22-summary-ru.md](./2024-01-22-summary-ru.md) |
+| 2024-01-23 | 3 | [2024-01-23-summary-ru.md](./2024-01-23-summary-ru.md) |
+| 2024-01-24 | 32 | [2024-01-24-summary-ru.md](./2024-01-24-summary-ru.md) |
+| 2024-01-25 | 32 | [2024-01-25-summary-ru.md](./2024-01-25-summary-ru.md) |
+| 2024-01-26 | 11 | [2024-01-26-summary-ru.md](./2024-01-26-summary-ru.md) |
+| 2024-01-29 | 7 | [2024-01-29-summary-ru.md](./2024-01-29-summary-ru.md) |
+| 2024-01-30 | 25 | [2024-01-30-summary-ru.md](./2024-01-30-summary-ru.md) |
+| 2024-01-31 | 202 | [2024-01-31-summary-ru.md](./2024-01-31-summary-ru.md) |
 | 2024-02-01 | 3 | [2024-02-01-summary-ru.md](./2024-02-01-summary-ru.md) |
 | 2024-02-02 | 1 | [2024-02-02-summary-ru.md](./2024-02-02-summary-ru.md) |
 | 2024-02-03 | 1 | [2024-02-03-summary-ru.md](./2024-02-03-summary-ru.md) |
