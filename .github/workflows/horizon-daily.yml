@@ -45,6 +45,15 @@ jobs:
       - name: Use Arena config (после восстановления кеша)
         run: cp data/config.arena.json data/config.json
 
+      - name: DEBUG какой конфиг грузится
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          echo "--- data/config.json ---"; head -12 data/config.json
+          echo "--- ключи ---"; echo "MISTRAL len=${#MISTRAL_API_KEY} prefix=${MISTRAL_API_KEY:0:4}"; echo "GROQ len=${#GROQ_API_KEY} prefix=${GROQ_API_KEY:0:4}"
+          uv run python -c "from src.storage.manager import StorageManager; c=StorageManager(data_dir='data').load_config(); print('LOADED AI:', c.ai)"
+
       - name: Run Horizon (с автоповтором при 429/лимитах)
         id: horizon
         env:
