@@ -26,7 +26,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: backfill-history
+  group: backfill-${{ github.run_id }}
   cancel-in-progress: false
 jobs:
   plan:
@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     strategy:
-      max-parallel: 1
+      max-parallel: 10
       fail-fast: false
       matrix:
         month: ${{ fromJson(needs.plan.outputs.months) }}
