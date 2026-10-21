@@ -9,7 +9,7 @@ on:
 jobs:
   digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
     permissions:
       contents: write # нужно для публикации сайта
 
@@ -36,7 +36,7 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           KILO_API_KEY: ${{ secrets.KILO_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run horizon --hours 72
+        run: uv run horizon --hours 24
 
       - name: Set current date
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
