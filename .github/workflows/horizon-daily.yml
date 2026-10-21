@@ -2,16 +2,16 @@ name: Horizon Daily Digest
 
 on:
   schedule:
-    # 01:00 UTC = 08:00 Новосибирск (вместе со сторожем балансов)
+    # 01:00 UTC = 08:00 Новосибирск
     - cron: '0 1 * * *'
-  workflow_dispatch: # ручной запуск кнопкой
+  workflow_dispatch: # ручной запуск
 
 jobs:
   digest:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     permissions:
-      contents: write # нужно для публикации сайта
+      contents: write
 
     steps:
       - name: Checkout code
@@ -31,17 +31,44 @@ jobs:
       - name: Use Arena config (Groq, free)
         run: cp data/config.arena.json data/config.json
 
-      - name: Run Horizon
+      # ЧЕКПОИНТ: состояние Horizon (summaries/state) переживает падение и продолжается со следующего запуска
+      - name: Restore Horizon state (checkpoint)
+        id: state
+        uses: actions/cache/restore@v4
+        with:
+          path: data
+          key: horizon-state-${{ github.run_id }}
+          restore-keys: |
+            horizon-state-
+
+      - name: Run Horizon (с автоповтором при 429/лимитах)
+        id: horizon
+        continue-on-error: true
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           KILO_API_KEY: ${{ secrets.KILO_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run horizon --hours 24
+        run: |
+          for i in 1 2 3 4; do
+            echo "=== Попытка $i ==="
+            if uv run horizon --hours 24; then echo "OK"; break; fi
+            echo "Прогон прерван, ждём 30с и продолжаем с чекпоинта..."
+            sleep 30
+          done
+
+      - name: Save Horizon state (ВСЕГДА, даже при ошибке)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data
+          key: horizon-state-${{ github.run_id }}
 
       - name: Set current date
+        if: always()
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Deploy to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
