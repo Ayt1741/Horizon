@@ -1,0 +1,393 @@
+{
+ "shards_expected": 30,
+ "shards_returned": 30,
+ "files_checked": 652,
+ "items_total": 12356,
+ "links_total": 13042,
+ "bad_files": 153,
+ "bad_examples": [
+  {
+   "date": "2024-02-03",
+   "file": "2024-02-03-summary-ru.md",
+   "items": 3,
+   "links": 3,
+   "bytes": 1466,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 3",
+    "размер вне нормы: 1466 байт"
+   ]
+  },
+  {
+   "date": "2025-08-06",
+   "file": "2025-08-06-summary-ru.md",
+   "items": 2,
+   "links": 2,
+   "bytes": 1376,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 2",
+    "размер вне нормы: 1376 байт"
+   ]
+  },
+  {
+   "date": "2024-01-02",
+   "file": "2024-01-02-summary-ru.md",
+   "items": 3,
+   "links": 3,
+   "bytes": 1481,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 3",
+    "размер вне нормы: 1481 байт"
+   ]
+  },
+  {
+   "date": "2024-02-04",
+   "file": "2024-02-04-summary-ru.md",
+   "items": 2,
+   "links": 2,
+   "bytes": 1380,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 2",
+    "размер вне нормы: 1380 байт"
+   ]
+  },
+  {
+   "date": "2024-03-07",
+   "file": "2024-03-07-summary-ru.md",
+   "items": 3,
+   "links": 3,
+   "bytes": 1735,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 3"
+   ]
+  },
+  {
+   "date": "2024-05-15",
+   "file": "2024-05-15-summary-ru.md",
+   "items": 4,
+   "links": 4,
+   "bytes": 2405,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 4"
+   ]
+  },
+  {
+   "date": "2024-09-02",
+   "file": "2024-09-02-summary-ru.md",
+   "items": 3,
+   "links": 3,
+   "bytes": 1689,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 3"
+   ]
+  },
+  {
+   "date": "2024-11-17",
+   "file": "2024-11-17-summary-ru.md",
+   "items": 2,
+   "links": 2,
+   "bytes": 1231,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 2",
+    "размер вне нормы: 1231 байт"
+   ]
+  },
+  {
+   "date": "2025-02-07",
+   "file": "2025-02-07-summary-ru.md",
+   "items": 2,
+   "links": 2,
+   "bytes": 1559,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 2"
+   ]
+  },
+  {
+   "date": "2025-09-14",
+   "file": "2025-09-14-summary-ru.md",
+   "items": 4,
+   "links": 4,
+   "bytes": 2815,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 4"
+   ]
+  },
+  {
+   "date": "2026-01-03",
+   "file": "2026-01-03-summary-ru.md",
+   "items": 1,
+   "links": 1,
+   "bytes": 921,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 1",
+    "размер вне нормы: 921 байт"
+   ]
+  },
+  {
+   "date": "2024-01-03",
+   "file": "2024-01-03-summary-ru.md",
+   "items": 4,
+   "links": 4,
+   "bytes": 2653,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 4"
+   ]
+  },
+  {
+   "date": "2024-04-11",
+   "file": "2024-04-11-summary-ru.md",
+   "items": 4,
+   "links": 4,
+   "bytes": 2049,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 4"
+   ]
+  },
+  {
+   "date": "2025-01-03",
+   "file": "2025-01-03-summary-ru.md",
+   "items": 4,
+   "links": 4,
+   "bytes": 2652,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 4"
+   ]
+  },
+  {
+   "date": "2026-01-05",
+   "file": "2026-01-05-summary-ru.md",
+   "items": 3,
+   "links": 3,
+   "bytes": 1976,
+   "format": "backfill",
+   "problems": [
+    "мало позиций: 3"
+   ]
+  }
+ ],
+ "per_shard": [
+  {
+   "shard": 0,
+   "files": 22,
+   "items": 340,
+   "links": 355,
+   "bad": 2
+  },
+  {
+   "shard": 1,
+   "files": 22,
+   "items": 439,
+   "links": 439,
+   "bad": 9
+  },
+  {
+   "shard": 2,
+   "files": 22,
+   "items": 305,
+   "links": 305,
+   "bad": 5
+  },
+  {
+   "shard": 3,
+   "files": 22,
+   "items": 386,
+   "links": 386,
+   "bad": 2
+  },
+  {
+   "shard": 4,
+   "files": 22,
+   "items": 191,
+   "links": 192,
+   "bad": 6
+  },
+  {
+   "shard": 5,
+   "files": 22,
+   "items": 280,
+   "links": 287,
+   "bad": 5
+  },
+  {
+   "shard": 6,
+   "files": 22,
+   "items": 435,
+   "links": 466,
+   "bad": 4
+  },
+  {
+   "shard": 7,
+   "files": 22,
+   "items": 307,
+   "links": 318,
+   "bad": 5
+  },
+  {
+   "shard": 8,
+   "files": 22,
+   "items": 362,
+   "links": 368,
+   "bad": 2
+  },
+  {
+   "shard": 9,
+   "files": 22,
+   "items": 284,
+   "links": 287,
+   "bad": 4
+  },
+  {
+   "shard": 10,
+   "files": 22,
+   "items": 344,
+   "links": 347,
+   "bad": 5
+  },
+  {
+   "shard": 11,
+   "files": 22,
+   "items": 290,
+   "links": 292,
+   "bad": 11
+  },
+  {
+   "shard": 12,
+   "files": 22,
+   "items": 255,
+   "links": 274,
+   "bad": 7
+  },
+  {
+   "shard": 13,
+   "files": 22,
+   "items": 421,
+   "links": 443,
+   "bad": 7
+  },
+  {
+   "shard": 14,
+   "files": 22,
+   "items": 442,
+   "links": 471,
+   "bad": 5
+  },
+  {
+   "shard": 15,
+   "files": 22,
+   "items": 585,
+   "links": 599,
+   "bad": 5
+  },
+  {
+   "shard": 16,
+   "files": 22,
+   "items": 505,
+   "links": 553,
+   "bad": 4
+  },
+  {
+   "shard": 17,
+   "files": 22,
+   "items": 703,
+   "links": 785,
+   "bad": 7
+  },
+  {
+   "shard": 18,
+   "files": 22,
+   "items": 311,
+   "links": 312,
+   "bad": 8
+  },
+  {
+   "shard": 19,
+   "files": 22,
+   "items": 282,
+   "links": 283,
+   "bad": 5
+  },
+  {
+   "shard": 20,
+   "files": 22,
+   "items": 240,
+   "links": 300,
+   "bad": 5
+  },
+  {
+   "shard": 21,
+   "files": 22,
+   "items": 522,
+   "links": 598,
+   "bad": 5
+  },
+  {
+   "shard": 22,
+   "files": 21,
+   "items": 376,
+   "links": 385,
+   "bad": 4
+  },
+  {
+   "shard": 23,
+   "files": 21,
+   "items": 493,
+   "links": 536,
+   "bad": 3
+  },
+  {
+   "shard": 24,
+   "files": 21,
+   "items": 568,
+   "links": 585,
+   "bad": 1
+  },
+  {
+   "shard": 25,
+   "files": 21,
+   "items": 546,
+   "links": 577,
+   "bad": 4
+  },
+  {
+   "shard": 26,
+   "files": 21,
+   "items": 248,
+   "links": 272,
+   "bad": 7
+  },
+  {
+   "shard": 27,
+   "files": 21,
+   "items": 375,
+   "links": 424,
+   "bad": 8
+  },
+  {
+   "shard": 28,
+   "files": 21,
+   "items": 409,
+   "links": 423,
+   "bad": 4
+  },
+  {
+   "shard": 29,
+   "files": 21,
+   "items": 1112,
+   "links": 1180,
+   "bad": 4
+  }
+ ]
+}
