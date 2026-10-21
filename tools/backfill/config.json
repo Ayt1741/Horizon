@@ -1,0 +1,398 @@
+{
+ "provider": {
+  "name": "mistral",
+  "base_url": "https://api.mistral.ai/v1",
+  "model": "mistral-small-latest",
+  "api_key_env": "MISTRAL_API_KEY"
+ },
+ "throttle": {
+  "delay_between_feeds_ms": 1200,
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+ },
+ "limits": {
+  "max_items_per_chunk": 200,
+  "max_tokens_per_item": 800,
+  "daily_token_limit": 180000
+ },
+ "archive_sources": [],
+ "sources": [
+  {
+   "id": "openai_news",
+   "name": "OpenAI News",
+   "lang": "en",
+   "archive": true,
+   "feed_url": "https://openai.com/news/rss.xml"
+  },
+  {
+   "id": "huggingface_blog",
+   "name": "HuggingFace Blog",
+   "lang": "en",
+   "archive": true,
+   "feed_url": "https://huggingface.co/blog/feed.xml"
+  },
+  {
+   "id": "google_ai_blog",
+   "name": "Google AI Blog",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://blog.google/technology/ai/rss/"
+  },
+  {
+   "id": "microsoft_research",
+   "name": "Microsoft Research",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.microsoft.com/en-us/research/feed/"
+  },
+  {
+   "id": "mit_technology_review",
+   "name": "MIT Technology Review",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.technologyreview.com/feed/"
+  },
+  {
+   "id": "marktechpost",
+   "name": "MarkTechPost",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.marktechpost.com/feed"
+  },
+  {
+   "id": "the_gradient",
+   "name": "The Gradient",
+   "lang": "en",
+   "archive": true,
+   "feed_url": "https://thegradient.pub/rss/"
+  },
+  {
+   "id": "habr_ml_",
+   "name": "Habr, ML-хаб",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://habr.com/ru/rss/hubs/machine_learning/articles/?fl=ru"
+  },
+  {
+   "id": "the_verge",
+   "name": "The Verge",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.theverge.com/rss/index.xml"
+  },
+  {
+   "id": "ars_technica",
+   "name": "Ars Technica",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://feeds.arstechnica.com/arstechnica/index"
+  },
+  {
+   "id": "techcrunch",
+   "name": "TechCrunch",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://techcrunch.com/feed/"
+  },
+  {
+   "id": "3dnews",
+   "name": "3DNews",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://3dnews.ru/news/rss/"
+  },
+  {
+   "id": "cnews",
+   "name": "CNews",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://www.cnews.ru/inc/rss/news.xml"
+  },
+  {
+   "id": "ixbt",
+   "name": "iXBT",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://www.ixbt.com/export/news.rss"
+  },
+  {
+   "id": "vc_ru",
+   "name": "vc.ru",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://vc.ru/rss"
+  },
+  {
+   "id": "habr_",
+   "name": "Habr, лучшее/сутки",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://habr.com/ru/rss/best/daily/?fl=ru"
+  },
+  {
+   "id": "wired",
+   "name": "Wired",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.wired.com/feed/rss"
+  },
+  {
+   "id": "nature",
+   "name": "Nature",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.nature.com/nature.rss"
+  },
+  {
+   "id": "phys_org",
+   "name": "Phys.org",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://phys.org/rss-feed/"
+  },
+  {
+   "id": "sciencedaily",
+   "name": "ScienceDaily",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.sciencedaily.com/rss/all.xml"
+  },
+  {
+   "id": "n_1",
+   "name": "N+1",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://nplus1.ru/rss"
+  },
+  {
+   "id": "naked_science",
+   "name": "Naked Science",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://naked-science.ru/feed"
+  },
+  {
+   "id": "stack_overflow_blog",
+   "name": "Stack Overflow Blog",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://stackoverflow.blog/feed/"
+  },
+  {
+   "id": "github_blog",
+   "name": "GitHub Blog",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://github.blog/feed/"
+  },
+  {
+   "id": "dev_to",
+   "name": "DEV.to",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://dev.to/feed"
+  },
+  {
+   "id": "smashing_magazine",
+   "name": "Smashing Magazine",
+   "lang": "en",
+   "archive": true,
+   "feed_url": "https://www.smashingmagazine.com/feed/"
+  },
+  {
+   "id": "ieee_spectrum",
+   "name": "IEEE Spectrum",
+   "lang": "en",
+   "archive": true,
+   "feed_url": "https://spectrum.ieee.org/feeds/feed.rss"
+  },
+  {
+   "id": "coindesk",
+   "name": "CoinDesk",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.coindesk.com/arc/outboundfeeds/rss/"
+  },
+  {
+   "id": "cointelegraph",
+   "name": "Cointelegraph",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://cointelegraph.com/rss"
+  },
+  {
+   "id": "bitcoin_magazine",
+   "name": "Bitcoin Magazine",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://bitcoinmagazine.com/feed"
+  },
+  {
+   "id": "forklog",
+   "name": "ForkLog",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://forklog.com/feed/"
+  },
+  {
+   "id": "cnbc_top_news",
+   "name": "CNBC Top News",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+  },
+  {
+   "id": "_",
+   "name": "Коммерсантъ",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://www.kommersant.ru/RSS/news.xml"
+  },
+  {
+   "id": "gsmarena",
+   "name": "GSMArena",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.gsmarena.com/rss-news-reviews.php3"
+  },
+  {
+   "id": "xda_developers",
+   "name": "XDA Developers",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.xda-developers.com/feed/"
+  },
+  {
+   "id": "4pda",
+   "name": "4PDA",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://4pda.to/feed/"
+  },
+  {
+   "id": "nasa_news_releases",
+   "name": "NASA News Releases",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.nasa.gov/news-release/feed/"
+  },
+  {
+   "id": "space_com",
+   "name": "Space.com",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.space.com/feeds/all"
+  },
+  {
+   "id": "spacenews",
+   "name": "SpaceNews",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://spacenews.com/feed/"
+  },
+  {
+   "id": "ars_technica_space",
+   "name": "Ars Technica Space",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://arstechnica.com/space/feed/"
+  },
+  {
+   "id": "spaceflight_now",
+   "name": "Spaceflight Now",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://spaceflightnow.com/feed/"
+  },
+  {
+   "id": "stat_news",
+   "name": "STAT News",
+   "lang": "en",
+   "archive": true,
+   "feed_url": "https://www.statnews.com/feed/"
+  },
+  {
+   "id": "medicalxpress",
+   "name": "MedicalXpress",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://medicalxpress.com/rss-feed/"
+  },
+  {
+   "id": "the_lancet",
+   "name": "The Lancet",
+   "lang": "en",
+   "archive": true,
+   "feed_url": "https://www.thelancet.com/rssfeed/lancet_online.xml"
+  },
+  {
+   "id": "doctorpiter_",
+   "name": "Doctorpiter (здоровье)",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://www.doctorpiter.ru/rss/"
+  },
+  {
+   "id": "pv_magazine",
+   "name": "pv magazine",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.pv-magazine.com/feed/"
+  },
+  {
+   "id": "cleantechnica",
+   "name": "CleanTechnica",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://cleantechnica.com/feed/"
+  },
+  {
+   "id": "world_nuclear_news",
+   "name": "World Nuclear News",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.world-nuclear-news.org/rss"
+  },
+  {
+   "id": "utility_dive",
+   "name": "Utility Dive",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.utilitydive.com/feeds/news/"
+  },
+  {
+   "id": "power_magazine",
+   "name": "Power Magazine",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://www.powermag.com/feed/"
+  },
+  {
+   "id": "_",
+   "name": "Лента.ру",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://lenta.ru/rss"
+  },
+  {
+   "id": "meduza",
+   "name": "Meduza",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://meduza.io/rss/all"
+  },
+  {
+   "id": "hacker_news_hnrss_",
+   "name": "Hacker News (hnrss)",
+   "lang": "en",
+   "archive": false,
+   "feed_url": "https://hnrss.org/frontpage"
+  },
+  {
+   "id": "_",
+   "name": "РИА Новости",
+   "lang": "ru",
+   "archive": false,
+   "feed_url": "https://ria.ru/export/rss2/index.xml"
+  }
+ ]
+}
