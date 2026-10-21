@@ -47,19 +47,25 @@ jobs:
 
       - name: Run Horizon (с автоповтором при 429/лимитах)
         id: horizon
-        continue-on-error: true
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           KILO_API_KEY: ${{ secrets.KILO_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -o pipefail
+          ok=0
           for i in 1 2 3 4; do
             echo "=== Попытка $i ==="
-            if uv run horizon --hours 72; then echo "OK"; break; fi
-            echo "Прогон прерван, ждём 30с и продолжаем с чекпоинта..."
+            uv run horizon --hours 24 2>&1 | tee horizon-run.log || true
+            if grep -q "Selected 0 items" horizon-run.log; then
+              echo "НУЛЕВОЙ ОТБОР (вероятно лимит LLM) — ждём и повторяем"
+              sleep 45; continue
+            fi
+            if grep -qE "Enriched [1-9]" horizon-run.log; then echo "OK"; ok=1; break; fi
             sleep 30
           done
+          test "$ok" = "1" || { echo "Все попытки без результата"; exit 1; }
 
       - name: Save Horizon state (ВСЕГДА, даже при ошибке)
         if: always()
@@ -67,6 +73,15 @@ jobs:
         with:
           path: data
           key: horizon-state-${{ github.run_id }}
+
+      - name: Drop empty digest
+        run: |
+          for f in docs/_posts/*summary-*.md _posts/*summary-*.md; do
+            [ -f "$f" ] || continue
+            if grep -qE "none met the importance threshold|^---$" "$f" && [ "$(wc -c < "$f")" -lt 900 ]; then
+              echo "удаляю пустышку: $f"; rm -f "$f";
+            fi
+          done
 
       - name: Set current date
         if: always()
