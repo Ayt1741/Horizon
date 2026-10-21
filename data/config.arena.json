@@ -1,18 +1,18 @@
 {
  "ai": {
   "provider": "openai",
-  "model": "nvidia/nemotron-3-ultra-550b-a55b:free",
-  "base_url": "https://api.kilo.ai/api/gateway",
-  "api_key_env": "KILO_API_KEY",
+  "model": "openai/gpt-oss-120b",
+  "base_url": "https://api.groq.com/openai/v1",
+  "api_key_env": "GROQ_API_KEY",
   "temperature": 0.3,
-  "max_tokens": 4096,
-  "throttle_sec": 60,
+  "max_tokens": 2048,
+  "throttle_sec": 0,
   "languages": [
    "ru",
    "en"
   ],
-  "analysis_concurrency": 3,
-  "enrichment_concurrency": 3
+  "analysis_concurrency": 8,
+  "enrichment_concurrency": 8
  },
  "processing": {
   "profiles_dir": "profiles",
