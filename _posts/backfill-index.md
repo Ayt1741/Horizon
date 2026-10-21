@@ -1,0 +1,66 @@
+---
+layout: page
+title: "Индекс бэкфилла"
+---
+
+# Индекс бэкфилла
+
+Всего дней: 55 · Всего материалов: 318
+
+| Дата | Материалов | Файл |
+|---|---|---|
+| 2024-01-02 | 1 | [2024-01-02-summary-ru.md](./2024-01-02-summary-ru.md) |
+| 2024-01-04 | 2 | [2024-01-04-summary-ru.md](./2024-01-04-summary-ru.md) |
+| 2024-01-08 | 1 | [2024-01-08-summary-ru.md](./2024-01-08-summary-ru.md) |
+| 2024-01-10 | 3 | [2024-01-10-summary-ru.md](./2024-01-10-summary-ru.md) |
+| 2024-01-12 | 2 | [2024-01-12-summary-ru.md](./2024-01-12-summary-ru.md) |
+| 2024-01-13 | 1 | [2024-01-13-summary-ru.md](./2024-01-13-summary-ru.md) |
+| 2024-01-14 | 1 | [2024-01-14-summary-ru.md](./2024-01-14-summary-ru.md) |
+| 2024-01-15 | 2 | [2024-01-15-summary-ru.md](./2024-01-15-summary-ru.md) |
+| 2024-01-16 | 1 | [2024-01-16-summary-ru.md](./2024-01-16-summary-ru.md) |
+| 2024-01-18 | 1 | [2024-01-18-summary-ru.md](./2024-01-18-summary-ru.md) |
+| 2024-01-19 | 2 | [2024-01-19-summary-ru.md](./2024-01-19-summary-ru.md) |
+| 2024-01-24 | 1 | [2024-01-24-summary-ru.md](./2024-01-24-summary-ru.md) |
+| 2024-01-25 | 2 | [2024-01-25-summary-ru.md](./2024-01-25-summary-ru.md) |
+| 2024-01-26 | 1 | [2024-01-26-summary-ru.md](./2024-01-26-summary-ru.md) |
+| 2024-01-29 | 1 | [2024-01-29-summary-ru.md](./2024-01-29-summary-ru.md) |
+| 2024-01-30 | 1 | [2024-01-30-summary-ru.md](./2024-01-30-summary-ru.md) |
+| 2024-01-31 | 2 | [2024-01-31-summary-ru.md](./2024-01-31-summary-ru.md) |
+| 2026-09-01 | 7 | [2026-09-01-summary-ru.md](./2026-09-01-summary-ru.md) |
+| 2026-09-02 | 2 | [2026-09-02-summary-ru.md](./2026-09-02-summary-ru.md) |
+| 2026-09-03 | 9 | [2026-09-03-summary-ru.md](./2026-09-03-summary-ru.md) |
+| 2026-09-06 | 2 | [2026-09-06-summary-ru.md](./2026-09-06-summary-ru.md) |
+| 2026-09-07 | 1 | [2026-09-07-summary-ru.md](./2026-09-07-summary-ru.md) |
+| 2026-09-08 | 9 | [2026-09-08-summary-ru.md](./2026-09-08-summary-ru.md) |
+| 2026-09-09 | 8 | [2026-09-09-summary-ru.md](./2026-09-09-summary-ru.md) |
+| 2026-09-10 | 10 | [2026-09-10-summary-ru.md](./2026-09-10-summary-ru.md) |
+| 2026-09-11 | 4 | [2026-09-11-summary-ru.md](./2026-09-11-summary-ru.md) |
+| 2026-09-14 | 4 | [2026-09-14-summary-ru.md](./2026-09-14-summary-ru.md) |
+| 2026-09-15 | 6 | [2026-09-15-summary-ru.md](./2026-09-15-summary-ru.md) |
+| 2026-09-16 | 8 | [2026-09-16-summary-ru.md](./2026-09-16-summary-ru.md) |
+| 2026-09-17 | 4 | [2026-09-17-summary-ru.md](./2026-09-17-summary-ru.md) |
+| 2026-09-18 | 4 | [2026-09-18-summary-ru.md](./2026-09-18-summary-ru.md) |
+| 2026-09-20 | 1 | [2026-09-20-summary-ru.md](./2026-09-20-summary-ru.md) |
+| 2026-09-21 | 7 | [2026-09-21-summary-ru.md](./2026-09-21-summary-ru.md) |
+| 2026-09-22 | 8 | [2026-09-22-summary-ru.md](./2026-09-22-summary-ru.md) |
+| 2026-09-23 | 13 | [2026-09-23-summary-ru.md](./2026-09-23-summary-ru.md) |
+| 2026-09-24 | 2 | [2026-09-24-summary-ru.md](./2026-09-24-summary-ru.md) |
+| 2026-09-25 | 4 | [2026-09-25-summary-ru.md](./2026-09-25-summary-ru.md) |
+| 2026-09-28 | 11 | [2026-09-28-summary-ru.md](./2026-09-28-summary-ru.md) |
+| 2026-09-29 | 9 | [2026-09-29-summary-ru.md](./2026-09-29-summary-ru.md) |
+| 2026-09-30 | 10 | [2026-09-30-summary-ru.md](./2026-09-30-summary-ru.md) |
+| 2026-10-05 | 1 | [2026-10-05-summary-ru.md](./2026-10-05-summary-ru.md) |
+| 2026-10-06 | 1 | [2026-10-06-summary-ru.md](./2026-10-06-summary-ru.md) |
+| 2026-10-07 | 2 | [2026-10-07-summary-ru.md](./2026-10-07-summary-ru.md) |
+| 2026-10-09 | 2 | [2026-10-09-summary-ru.md](./2026-10-09-summary-ru.md) |
+| 2026-10-11 | 1 | [2026-10-11-summary-ru.md](./2026-10-11-summary-ru.md) |
+| 2026-10-12 | 3 | [2026-10-12-summary-ru.md](./2026-10-12-summary-ru.md) |
+| 2026-10-13 | 3 | [2026-10-13-summary-ru.md](./2026-10-13-summary-ru.md) |
+| 2026-10-14 | 1 | [2026-10-14-summary-ru.md](./2026-10-14-summary-ru.md) |
+| 2026-10-15 | 4 | [2026-10-15-summary-ru.md](./2026-10-15-summary-ru.md) |
+| 2026-10-16 | 6 | [2026-10-16-summary-ru.md](./2026-10-16-summary-ru.md) |
+| 2026-10-17 | 2 | [2026-10-17-summary-ru.md](./2026-10-17-summary-ru.md) |
+| 2026-10-18 | 2 | [2026-10-18-summary-ru.md](./2026-10-18-summary-ru.md) |
+| 2026-10-19 | 14 | [2026-10-19-summary-ru.md](./2026-10-19-summary-ru.md) |
+| 2026-10-20 | 45 | [2026-10-20-summary-ru.md](./2026-10-20-summary-ru.md) |
+| 2026-10-21 | 63 | [2026-10-21-summary-ru.md](./2026-10-21-summary-ru.md) |
