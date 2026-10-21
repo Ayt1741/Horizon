@@ -6,13 +6,13 @@
   "api_key_env": "GROQ_API_KEY",
   "temperature": 0.3,
   "max_tokens": 2048,
-  "throttle_sec": 0,
+  "throttle_sec": 2.0,
   "languages": [
    "ru",
    "en"
   ],
-  "analysis_concurrency": 8,
-  "enrichment_concurrency": 8
+  "analysis_concurrency": 1,
+  "enrichment_concurrency": 1
  },
  "processing": {
   "profiles_dir": "profiles",
@@ -109,120 +109,102 @@
   ],
   "hackernews": {
    "enabled": true,
-   "fetch_top_stories": 50,
-   "min_score": 20,
-   "profile": "free-ai"
+   "fetch_limit": 30,
+   "min_score": 100,
+   "category": "free-ai"
   },
   "rss": [
+   {
+    "name": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "enabled": true,
+    "category": "free-ai",
+    "profile": "free-ai"
+   },
+   {
+    "name": "OpenAI News",
+    "url": "https://openai.com/news/rss.xml",
+    "enabled": true,
+    "category": "free-ai",
+    "profile": "free-ai"
+   },
+   {
+    "name": "Google AI Blog",
+    "url": "https://blog.google/technology/ai/rss/",
+    "enabled": true,
+    "category": "free-ai",
+    "profile": "free-ai"
+   },
+   {
+    "name": "Microsoft AI Blog",
+    "url": "https://blogs.microsoft.com/ai/feed/",
+    "enabled": true,
+    "category": "free-ai",
+    "profile": "free-ai"
+   },
+   {
+    "name": "Mistral News",
+    "url": "https://mistral.ai/news/feed.xml",
+    "enabled": true,
+    "category": "free-ai",
+    "profile": "free-ai"
+   },
    {
     "name": "Simon Willison",
     "url": "https://simonwillison.net/atom/everything/",
     "enabled": true,
-    "category": "ai-tools",
-    "profile": "free-ai",
-    "content_extractor": "trafilatura"
+    "category": "free-ai",
+    "profile": "free-ai"
    },
    {
-    "name": "vLLM Blog",
-    "url": "https://vllm.ai/blog/rss.xml",
+    "name": "Hacker News AI",
+    "url": "https://hnrss.org/newest?q=LLM+OR+AI+OR+%22open+model%22&points=50",
     "enabled": true,
-    "category": "llm-inference",
-    "profile": "free-ai",
-    "content_extractor": "trafilatura"
+    "category": "free-ai",
+    "profile": "free-ai"
    },
    {
-    "name": "HuggingFace Blog",
-    "url": "https://huggingface.co/blog/feed.xml",
+    "name": "ArXiv cs.AI",
+    "url": "https://rss.arxiv.org/rss/cs.AI",
     "enabled": true,
-    "category": "open-models",
-    "profile": "free-ai",
-    "content_extractor": "trafilatura"
-   },
-   {
-    "name": "GitHub Blog",
-    "url": "https://github.blog/feed/",
-    "enabled": true,
-    "category": "dev-tools",
-    "profile": "free-ai",
-    "content_extractor": "trafilatura"
-   },
-   {
-    "name": "BAIR Blog",
-    "url": "https://bair.berkeley.edu/blog/feed.xml",
-    "enabled": true,
-    "category": "research",
-    "profile": "free-ai",
-    "content_extractor": "trafilatura"
-   },
-   {
-    "name": "KDnuggets",
-    "url": "https://www.kdnuggets.com/feed",
-    "enabled": true,
-    "category": "ai-news",
-    "profile": "free-ai",
-    "content_extractor": "trafilatura"
+    "category": "free-ai",
+    "profile": "free-ai"
    }
   ],
   "reddit": {
    "enabled": true,
+   "fetch_comments": 5,
    "subreddits": [
     {
      "subreddit": "LocalLLaMA",
-     "enabled": true,
-     "sort": "top",
-     "time_filter": "all",
-     "fetch_limit": 30,
-     "min_score": 15,
-     "profile": "free-ai"
-    },
-    {
-     "subreddit": "artificial",
-     "enabled": true,
-     "sort": "top",
-     "time_filter": "all",
-     "fetch_limit": 20,
-     "min_score": 10,
-     "profile": "free-ai"
+     "sort": "hot",
+     "fetch_limit": 25,
+     "min_score": 20,
+     "category": "free-ai"
     },
     {
      "subreddit": "MachineLearning",
-     "enabled": true,
-     "sort": "top",
-     "time_filter": "all",
+     "sort": "hot",
      "fetch_limit": 20,
-     "min_score": 50,
-     "profile": "free-ai"
+     "min_score": 30,
+     "category": "free-ai"
     },
     {
-     "subreddit": "ollama",
-     "enabled": true,
-     "sort": "top",
-     "time_filter": "all",
-     "fetch_limit": 15,
-     "min_score": 10,
-     "profile": "free-ai"
+     "subreddit": "OpenAI",
+     "sort": "hot",
+     "fetch_limit": 20,
+     "min_score": 50,
+     "category": "free-ai"
     },
     {
      "subreddit": "selfhosted",
-     "enabled": true,
-     "sort": "top",
-     "time_filter": "all",
+     "sort": "hot",
      "fetch_limit": 15,
-     "min_score": 10,
-     "profile": "free-ai"
-    },
-    {
-     "subreddit": "opensource",
-     "enabled": true,
-     "sort": "top",
-     "time_filter": "all",
-     "fetch_limit": 10,
-     "min_score": 8,
-     "profile": "free-ai"
+     "min_score": 40,
+     "category": "free-ai"
     }
    ],
-   "users": [],
-   "fetch_comments": 5
+   "users": []
   },
   "twitter": {
    "enabled": false,
@@ -261,36 +243,22 @@
    "enabled": true,
    "channels": [
     {
-     "channel": "ai_machinelearning_big_data",
+     "channel": "ai_newz",
      "enabled": true,
      "fetch_limit": 20,
-     "profile": [
-      "free-ai"
-     ]
+     "category": "free-ai"
     },
     {
-     "channel": "durov",
+     "channel": "seeallochnaya",
      "enabled": true,
-     "fetch_limit": 10,
-     "profile": [
-      "free-ai"
-     ]
+     "fetch_limit": 20,
+     "category": "free-ai"
     },
     {
-     "channel": "telegram",
+     "channel": "data_secrets",
      "enabled": true,
-     "fetch_limit": 10,
-     "profile": [
-      "free-ai"
-     ]
-    },
-    {
-     "channel": "BotNews",
-     "enabled": true,
-     "fetch_limit": 10,
-     "profile": [
-      "free-ai"
-     ]
+     "fetch_limit": 20,
+     "category": "free-ai"
     }
    ]
   },
