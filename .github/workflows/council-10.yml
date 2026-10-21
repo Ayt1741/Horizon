@@ -1,0 +1,51 @@
+name: Council 10
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: council10-${{ github.run_id }}
+jobs:
+  leaders:
+    name: ${{ matrix.leader }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        leader: [L1,L2,L3,L4,L5,L6,L7,L8,L9,L10]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gp
+      - name: Work
+        run: |
+          python3 scripts/leader_lane.py --id ${{ matrix.leader }} --dir gp/_posts --out result-${{ matrix.leader }}.json
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: leader-${{ matrix.leader }}
+          path: result-${{ matrix.leader }}.json
+          retention-days: 2
+  collect:
+    name: collect
+    needs: leaders
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+      - name: Aggregate
+        run: python3 scripts/collect_leaders.py artifacts docs/council-10.json
+      - name: Publish
+        run: |
+          git config user.name "fleet-bot"
+          git config user.email "fleet-bot@users.noreply.github.com"
+          git add docs/council-10.json
+          git commit -m "council10: run ${{ github.run_id }}" || echo "нет изменений"
+          git push || echo "push не прошёл"
