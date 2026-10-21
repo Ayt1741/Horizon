@@ -1,12 +1,12 @@
 {
  "ai": {
   "provider": "openai",
-  "model": "openai/gpt-oss-120b",
-  "base_url": "https://api.groq.com/openai/v1",
-  "api_key_env": "GROQ_API_KEY",
+  "model": "mistral-small-latest",
+  "base_url": "https://api.mistral.ai/v1",
+  "api_key_env": "MISTRAL_API_KEY",
   "temperature": 0.3,
   "max_tokens": 2048,
-  "throttle_sec": 2.0,
+  "throttle_sec": 1.5,
   "languages": [
    "ru",
    "en"
