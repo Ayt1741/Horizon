@@ -19,7 +19,7 @@
   "default_profile": "free-ai",
   "profile_settings": {
    "free-ai": {
-    "threshold": 5.0,
+    "threshold": 4.0,
     "topic_dedup": true
    }
   }
@@ -320,7 +320,7 @@
   "time_window_hours": 24
  },
  "digest": {
-  "max_items": 25,
+  "max_items": 40,
   "profile_order": [
    "free-ai"
   ],
