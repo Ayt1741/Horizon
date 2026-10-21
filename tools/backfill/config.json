@@ -14,7 +14,34 @@
   "max_tokens_per_item": 800,
   "daily_token_limit": 180000
  },
- "archive_sources": [],
+ "archive_sources": [
+  {
+   "id": "hn_algolia",
+   "name": "Hacker News (Algolia)",
+   "type": "algolia",
+   "enabled": true
+  },
+  {
+   "id": "reddit_ml",
+   "name": "Reddit ML (Arctic Shift)",
+   "type": "arctic",
+   "enabled": true,
+   "subs": [
+    "MachineLearning",
+    "LocalLLaMA",
+    "artificial",
+    "OpenAI",
+    "singularity"
+   ],
+   "limit": 100
+  },
+  {
+   "id": "arxiv_oai",
+   "name": "arXiv OAI",
+   "type": "oai",
+   "enabled": true
+  }
+ ],
  "sources": [
   {
    "id": "openai_news",
