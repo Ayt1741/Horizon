@@ -1,7 +1,7 @@
 {
  "ai": {
   "provider": "openai",
-  "model": "mistral-small-latest",
+  "model": "ministral-8b-latest",
   "base_url": "https://api.mistral.ai/v1",
   "api_key_env": "MISTRAL_API_KEY",
   "temperature": 0.3,
