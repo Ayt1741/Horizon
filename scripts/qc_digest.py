@@ -357,8 +357,9 @@ def main() -> int:
         after = scan(fixed, a.lang)
         result.update({"fix": frep, "after": after,
                        "front_matter_ok": front_matter_ok(fixed),
-                       "verdict": "PASS" if after["foreign_chars"] == 0 and after["cjk_punct"] == 0
-                       and (after["items"] >= 10 or after["links"] >= 10) else "FAIL"})
+                       "verdict": ("PASS" if after["foreign_chars"] == 0 and after["cjk_punct"] == 0
+                                   and after.get("any_cjk_broad", 0) == 0
+                                   and (after["items"] >= 10 or after["links"] >= 10) else "FAIL")})
         if a.write:
             with open(a.file, "w", encoding="utf-8") as f:
                 f.write(fixed)
@@ -376,6 +377,7 @@ def main() -> int:
     result["after"] = after
     result["front_matter_ok"] = front_matter_ok(text)
     result["verdict"] = ("PASS" if after["foreign_chars"] == 0 and after["cjk_punct"] == 0
+                         and after.get("any_cjk_broad", 0) == 0
                          and (after["items"] >= 10 or after["links"] >= 10) and after["links"] > 0 else "FAIL")
     print(json.dumps(result, ensure_ascii=False, indent=1))
     return 0 if result["verdict"] == "PASS" else 1
