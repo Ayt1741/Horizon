@@ -99,31 +99,45 @@ jobs:
             fi
           done
 
-      # ЗАКОН 34: языковой контроль выпуска. Модель-обогатитель иногда отвечает языком
-      # источника (китайский вместо русского) — чиним ДО публикации: переводим строки
-      # через бесплатную модель, а неисправимое вырезаем. Отчёт: state/qc-digest-*.json
-      - name: Языковой контроль выпуска (ru)
-        if: always()
+      # ЗАКОН 34: языковой контроль выпуска для КАЖДОГО языка (ru и en).
+      # Почему это здесь, а не только при генерации: артефакты приходят из кэша data/summaries,
+      # то есть материал мог быть создан ещё до появления стража в коде. Поэтому проверяем
+      # сами файлы, которые уйдут на сайт, и чиним их (перевод через бесплатную модель).
+      # Если брак остался — job падает и публикации НЕ будет (deploy ниже: if: success()).
+      - name: Языковой контроль выпуска (ru + en)
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: |
+          set -uo pipefail
           shopt -s nullglob
-          for f in _posts/*summary-ru.md docs/_posts/*summary-ru.md; do
-            [ -f "$f" ] || continue
-            echo "=== QC: $f"
-            python3 scripts/qc_digest.py fix "$f" --lang ru --write || true
-            python3 scripts/qc_digest.py verify "$f" --lang ru || echo "QC FAIL: $f" >> qc-failed.txt
+          rm -f qc-failed.txt
+          check() {  # $1 = файл, $2 = язык
+            local f="$1" lang="$2"
+            [ -f "$f" ] || return 0
+            echo "=== QC($lang): $f"
+            python3 scripts/qc_digest.py fix "$f" --lang "$lang" --write || echo "QC fix error: $f" >&2
+            if ! python3 scripts/qc_digest.py verify "$f" --lang "$lang"; then
+              echo "QC FAIL: $f ($lang)" | tee -a qc-failed.txt
+            fi
+          }
+          for lang in ru en; do
+            for f in _posts/*summary-$lang.md docs/_posts/*summary-$lang.md; do
+              check "$f" "$lang"
+            done
           done
-          if [ -f qc-failed.txt ]; then echo "--- ЕСТЬ БРАК ---"; cat qc-failed.txt; exit 1; fi
+          if [ -f qc-failed.txt ]; then
+            echo "--- БРАК ОСТАЛСЯ, ПУБЛИКАЦИЯ ОТМЕНЕНА ---"; cat qc-failed.txt; exit 1
+          fi
+          echo "QC PASS: все языковые выпуски чистые"
 
       - name: Set current date
         if: always()
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Deploy to GitHub Pages
-        if: always()
+        if: success()
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
