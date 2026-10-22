@@ -132,7 +132,7 @@ A proposal for stabilizing user continuity across major model updates For intern
 
 _Reddit r/LocalLLaMA · 2026-01-31 · score 0.8_
 
-아래는 요청하신 전체 글의 영어 번역입니다. I found that MXFP4 has lower perplexity than Q4\_K\_M and Q4\_K\_XL. This post was originally written in Korean and then translated into English using ChatGPT. Hello, I am currently serving LLM models using a Tesla P40 and llama.cpp. When running models in the 30–32B range, I usually rely on 4-bit quantization. Until now, I primarily used Q4\_K\_XL, and if Q4\_K\_XL was not available, I used Q4\_K\_M instead. I initially avoided MXFP4 quantization because, compared to other 4-bit quantization methods, it has a smaller size, so I naturally assumed its accuracy would be ...
+Ниже приведён полный английский перевод запрошенного текста. Я обнаружил, что MXFP4 имеет более низкую перплексию, чем Q4\_K\_M и Q4\_K\_XL. Эта запись изначально была написана на корейском языке, а затем переведена на английский с помощью ChatGPT. Здравствуйте! В настоящее время я обслуживаю LLM-модели, используя Tesla P40 и llama.cpp. При запуске моделей диапазона 30–32B я обычно использую 4-битное квантование. До сих пор я в основном использовал Q4\_K\_XL, а если Q4\_K\_XL был недоступен, то использовал Q4\_K\_M. Изначально я избегал квантования MXFP4, поскольку по сравнению с другими методами 4-битного квантования оно имеет меньший размер, поэтому я естественным образом предположил, что его точность будет ...
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1qrzyaz/i_found_that_mxfp4_has_lower_perplexity_than_q4_k/)
