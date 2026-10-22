@@ -99,6 +99,25 @@ jobs:
             fi
           done
 
+      # ЗАКОН 34: языковой контроль выпуска. Модель-обогатитель иногда отвечает языком
+      # источника (китайский вместо русского) — чиним ДО публикации: переводим строки
+      # через бесплатную модель, а неисправимое вырезаем. Отчёт: state/qc-digest-*.json
+      - name: Языковой контроль выпуска (ru)
+        if: always()
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          shopt -s nullglob
+          for f in _posts/*summary-ru.md docs/_posts/*summary-ru.md; do
+            [ -f "$f" ] || continue
+            echo "=== QC: $f"
+            python3 scripts/qc_digest.py fix "$f" --lang ru --write || true
+            python3 scripts/qc_digest.py verify "$f" --lang ru || echo "QC FAIL: $f" >> qc-failed.txt
+          done
+          if [ -f qc-failed.txt ]; then echo "--- ЕСТЬ БРАК ---"; cat qc-failed.txt; exit 1; fi
+
       - name: Set current date
         if: always()
         run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
