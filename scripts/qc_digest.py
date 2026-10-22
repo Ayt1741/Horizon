@@ -38,6 +38,18 @@ CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\u3040-\u30ff\uac00-\
 CYR = re.compile(r"[\u0400-\u04ff]")
 LAT = re.compile(r"[A-Za-z]")
 CYR_OR_LAT = re.compile(r"[\u0400-\u04ffA-Za-z]")
+# CJK-пунктуация: для русского выпуска это тоже брак («『』【】、。！？：・　» и т.п.)
+CJK_PUNCT = re.compile(r"[\u3000-\u303f\uff01-\uff5e]")
+PUNCT_MAP = {
+    "\u300c": "«", "\u300d": "»", "\u300e": "«", "\u300f": "»",
+    "\u3010": "«", "\u3011": "»", "\u3014": "(", "\u3015": ")",
+    "\u3001": ",", "\u3002": ".", "\uff0c": ",", "\uff0e": ".",
+    "\uff1a": ":", "\uff1b": ";", "\uff01": "!", "\uff1f": "?",
+    "\uff08": "(", "\uff09": ")", "\u30fb": "·", "\u3000": " ",
+    "\uff0d": "-", "\u2015": "—", "\uff5e": "~", "\uff05": "%",
+    "\uff03": "#", "\uff0f": "/", "\u201c": "«", "\u201d": "»",
+    "\u2018": "«", "\u2019": "»",
+}
 
 # порог: строка считается битой, если чужой письменности в ней >= 4 символов
 MIN_FOREIGN = 4
@@ -126,6 +138,17 @@ def ask_llm(prompt: str, keys: dict, temperature: float = 0.2) -> str | None:
 
 
 # --- анализ -----------------------------------------------------------------
+def normalize_punct(text: str) -> str:
+    """Заменяет CJK-пунктуацию на русскую/ASCII (без изменения смысла)."""
+    for src, dst in PUNCT_MAP.items():
+        text = text.replace(src, dst)
+    return re.sub(r"[ \t]{2,}", " ", text)
+
+
+def punct_count(text: str) -> int:
+    return len(CJK_PUNCT.findall(text))
+
+
 def foreign_count(line: str, lang: str) -> int:
     if lang == "zh":
         return len(CYR.findall(line))
@@ -146,6 +169,7 @@ def scan(text: str, lang: str) -> dict:
         "chars": len(text),
         "foreign_lines": len(bad),
         "foreign_chars": sum(foreign_count(l, lang) for _, l in bad),
+        "cjk_punct": punct_count(text),
         "items": len(items),
         "links": links,
         "samples": [l[:120] for _, l in bad[:5]],
@@ -307,7 +331,7 @@ def main() -> int:
     result = {"file": a.file, "lang": a.lang, "before": before, "cmd": a.cmd}
 
     if a.cmd == "report":
-        result["verdict"] = "PASS" if before["foreign_chars"] == 0 else "FAIL"
+        result["verdict"] = "PASS" if before["foreign_chars"] == 0 and before["cjk_punct"] == 0 else "FAIL"
         print(json.dumps(result, ensure_ascii=False, indent=1))
         return 0 if result["verdict"] == "PASS" else 1
 
@@ -320,7 +344,8 @@ def main() -> int:
         after = scan(fixed, a.lang)
         result.update({"fix": frep, "after": after,
                        "front_matter_ok": front_matter_ok(fixed),
-                       "verdict": "PASS" if after["foreign_chars"] == 0 and after["items"] >= 10 else "FAIL"})
+                       "verdict": "PASS" if after["foreign_chars"] == 0 and after["cjk_punct"] == 0
+                       and after["items"] >= 10 else "FAIL"})
         if a.write:
             with open(a.file, "w", encoding="utf-8") as f:
                 f.write(fixed)
@@ -337,7 +362,8 @@ def main() -> int:
     after = scan(text, a.lang)
     result["after"] = after
     result["front_matter_ok"] = front_matter_ok(text)
-    result["verdict"] = "PASS" if after["foreign_chars"] == 0 and after["items"] >= 10 and after["links"] > 0 else "FAIL"
+    result["verdict"] = ("PASS" if after["foreign_chars"] == 0 and after["cjk_punct"] == 0
+                         and after["items"] >= 10 and after["links"] > 0 else "FAIL")
     print(json.dumps(result, ensure_ascii=False, indent=1))
     return 0 if result["verdict"] == "PASS" else 1
 
