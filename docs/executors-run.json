@@ -1,10 +1,10 @@
 {
  "shards_expected": 30,
  "shards_returned": 30,
- "files_checked": 653,
- "items_total": 12391,
- "links_total": 13110,
- "bad_files": 150,
+ "files_checked": 656,
+ "items_total": 12470,
+ "links_total": 13265,
+ "bad_files": 153,
  "bad_examples": [
   {
    "date": "2024-02-03",
@@ -323,42 +323,42 @@
    "shard": 20,
    "files": 22,
    "items": 240,
-   "links": 300,
+   "links": 251,
    "bad": 5
   },
   {
    "shard": 21,
    "files": 22,
-   "items": 522,
-   "links": 598,
-   "bad": 4
+   "items": 486,
+   "links": 578,
+   "bad": 5
   },
   {
    "shard": 22,
    "files": 22,
-   "items": 411,
-   "links": 453,
-   "bad": 4
+   "items": 416,
+   "links": 456,
+   "bad": 5
   },
   {
    "shard": 23,
-   "files": 21,
-   "items": 493,
-   "links": 536,
+   "files": 22,
+   "items": 533,
+   "links": 615,
    "bad": 3
   },
   {
    "shard": 24,
-   "files": 21,
-   "items": 568,
-   "links": 585,
-   "bad": 1
+   "files": 22,
+   "items": 603,
+   "links": 659,
+   "bad": 2
   },
   {
    "shard": 25,
-   "files": 21,
-   "items": 546,
-   "links": 577,
+   "files": 22,
+   "items": 581,
+   "links": 645,
    "bad": 4
   },
   {
