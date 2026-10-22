@@ -1,10 +1,10 @@
 {
  "shards_expected": 30,
  "shards_returned": 30,
- "files_checked": 652,
- "items_total": 12356,
- "links_total": 13042,
- "bad_files": 153,
+ "files_checked": 653,
+ "items_total": 12391,
+ "links_total": 13110,
+ "bad_files": 151,
  "bad_examples": [
   {
    "date": "2024-02-03",
@@ -296,7 +296,7 @@
    "files": 22,
    "items": 505,
    "links": 553,
-   "bad": 4
+   "bad": 3
   },
   {
    "shard": 17,
@@ -331,13 +331,13 @@
    "files": 22,
    "items": 522,
    "links": 598,
-   "bad": 5
+   "bad": 4
   },
   {
    "shard": 22,
-   "files": 21,
-   "items": 376,
-   "links": 385,
+   "files": 22,
+   "items": 411,
+   "links": 453,
    "bad": 4
   },
   {
