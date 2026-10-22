@@ -19,7 +19,7 @@ from rich.progress import (
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from .client import AIClient
-from .localization import normalize_language
+from .localization import normalize_language, script_mismatch
 from .prompting.enrichment import (
     MAX_TOOL_REQUESTS,
     artifact_prompt,
@@ -234,6 +234,16 @@ class ContentEnricher:
             for block in generated.blocks:
                 block.title = normalize_language(block.title, language)
                 block.content = normalize_language(block.content, language)
+            # Языковой страж (ЗАКОН 34): материал, написанный не тем алфавитом, не должен попасть
+            # в выпуск. Модель 8B иногда отвечает на языке источника (китайский вместо русского) —
+            # такой артефакт отклоняем, и HORIZON повторит генерацию.
+            wrong = [generated.title] + [block.content for block in generated.blocks]
+            wrong += [block.title for block in generated.blocks if block.title]
+            if any(script_mismatch(text, language) for text in wrong if text):
+                raise ValueError(
+                    f"artifact language mismatch: expected {language}, "
+                    "the model answered in the source script"
+                )
             referenced = {
                 source_id
                 for block in generated.blocks
