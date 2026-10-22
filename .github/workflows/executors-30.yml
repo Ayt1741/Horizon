@@ -1,6 +1,8 @@
 name: Executors 30
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '45 */6 * * *'
     inputs:
       total:
         description: "Сколько полос (исполнителей)"
