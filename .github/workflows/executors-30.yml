@@ -57,17 +57,22 @@ jobs:
           python3 scripts/collect_shards.py artifacts | tee /tmp/summary.txt
           mkdir -p docs
           cp executors-run.json docs/executors-run.json
-      - name: "Publish (с повтором, main пишут и другие workflow)"
+      - name: "Publish (артефакт сохраняем, затем синхронизация с main и повтор)"
         run: |
+          set -e
+          cp executors-run.json /tmp/artifact.json
           git config user.name "fleet-bot"
           git config user.email "fleet-bot@users.noreply.github.com"
           ok=0
           for i in 1 2 3 4 5; do
             git fetch origin main
-            git rebase origin/main || { git rebase --abort || true; git reset --hard origin/main; }
-            git add docs/*.json
+            git reset --hard origin/main
+            mkdir -p docs
+            cp /tmp/artifact.json docs/executors-run.json
+            git add docs/executors-run.json
             git commit -m "executors: run ${{ github.run_id }} (try $i)" || echo "нет изменений"
             if git push origin HEAD:main; then echo "опубликовано с $i-й попытки"; ok=1; break; fi
             echo "конфликт записи, повтор через 5 c"; sleep 5
           done
           test "$ok" = "1" || { echo "НЕ ОПУБЛИКОВАНО"; exit 1; }
+
