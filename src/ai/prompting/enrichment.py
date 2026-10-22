@@ -17,10 +17,23 @@ GROUNDING_RULES = f"""- Treat the source item as the primary account of what hap
 - History search results are earlier Horizon summaries, not independent verification. Their dates are digest dates. Use them only for a concrete predecessor, follow-up, or relevant change; sharing a company or broad topic is insufficient. Cite every historical claim to its supplied result ID. Discard all candidates when none helps explain the current item."""
 
 
+_LANGUAGE_NAMES = {
+    "zh": "Simplified Chinese (language tag `zh`, Chinese characters only)",
+    "en": "English (language `en`, Latin script)",
+    "ru": "Russian (язык `ru`, Cyrillic script — русский язык)",
+}
+
+
 def target_language_instruction(language: str) -> str:
-    if language.lower() == "zh":
-        return "Simplified Chinese (language tag `zh`)"
-    return f"language `{language}`"
+    name = _LANGUAGE_NAMES.get(language.lower(), f"language `{language}`")
+    return (
+        f"{name}.\n"
+        "HARD RULE: the entire artifact — title, every block, tags, hashtags and the possible-angle "
+        "sentence — must be written in this target language, no matter what language the source "
+        "material is in. Never copy, quote or transliterate sentences from the source: translate "
+        "them. Writing in the source language (e.g. Chinese characters when the target is Russian) "
+        "is an invalid answer and will be rejected."
+    )
 
 
 def tool_planning_prompt(blocks: list[ProfileBlock]) -> str:
