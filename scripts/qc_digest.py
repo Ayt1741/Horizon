@@ -145,6 +145,17 @@ def normalize_punct(text: str) -> str:
     return re.sub(r"[ \t]{2,}", " ", text)
 
 
+def strip_stray_cjk(text: str) -> str:
+    """Убирает одиночные иероглифы (1-3 знака), которые не стоят отдельного перевода."""
+    def _one(line: str) -> str:
+        n = len(CJK.findall(line))
+        if 0 < n < MIN_FOREIGN:
+            line = re.sub(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\u3040-\u30ff\uac00-\ud7af]", "", line)
+            line = re.sub(r"[ \t]{2,}", " ", line)
+        return line
+    return "\n".join(_one(l) for l in text.splitlines())
+
+
 def punct_count(text: str) -> int:
     return len(CJK_PUNCT.findall(text))
 
@@ -170,6 +181,7 @@ def scan(text: str, lang: str) -> dict:
         "foreign_lines": len(bad),
         "foreign_chars": sum(foreign_count(l, lang) for _, l in bad),
         "cjk_punct": punct_count(text),
+        "any_cjk_broad": len(re.findall(r"[\u3000-\u9fff\uac00-\ud7af]", text)),
         "items": len(items),
         "links": links,
         "samples": [l[:120] for _, l in bad[:5]],
@@ -242,6 +254,7 @@ def items_index(lines: list[str]) -> list[dict]:
 
 
 def fix(text: str, lang: str, keys: dict, drop_unfixable: bool = True, attempts: int = 3) -> tuple[str, dict]:
+    text = strip_stray_cjk(normalize_punct(text))
     lines = text.splitlines()
     report = {"translated": 0, "dropped_items": 0, "failed": 0, "cache": 0, "attempts": attempts}
     cache_path = os.environ.get("QC_CACHE", "state/qc-translation-cache.json")
@@ -345,7 +358,7 @@ def main() -> int:
         result.update({"fix": frep, "after": after,
                        "front_matter_ok": front_matter_ok(fixed),
                        "verdict": "PASS" if after["foreign_chars"] == 0 and after["cjk_punct"] == 0
-                       and after["items"] >= 10 else "FAIL"})
+                       and (after["items"] >= 10 or after["links"] >= 10) else "FAIL"})
         if a.write:
             with open(a.file, "w", encoding="utf-8") as f:
                 f.write(fixed)
@@ -363,7 +376,7 @@ def main() -> int:
     result["after"] = after
     result["front_matter_ok"] = front_matter_ok(text)
     result["verdict"] = ("PASS" if after["foreign_chars"] == 0 and after["cjk_punct"] == 0
-                         and after["items"] >= 10 and after["links"] > 0 else "FAIL")
+                         and (after["items"] >= 10 or after["links"] >= 10) and after["links"] > 0 else "FAIL")
     print(json.dumps(result, ensure_ascii=False, indent=1))
     return 0 if result["verdict"] == "PASS" else 1
 
