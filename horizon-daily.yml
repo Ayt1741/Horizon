@@ -1,0 +1,134 @@
+name: Horizon Daily Digest
+
+on:
+  schedule:
+    # 01:00 UTC = 08:00 Новосибирск
+    - cron: '0 1 * * *'
+  workflow_dispatch: # ручной запуск
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Use Arena config (Groq, free)
+        run: cp data/config.arena.json data/config.json
+
+      # ЧЕКПОИНТ: состояние Horizon (summaries/state) переживает падение и продолжается со следующего запуска
+      - name: Restore Horizon state (checkpoint)
+        id: state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            data/seen.json
+            data/summaries
+          key: horizon-state-${{ github.run_id }}
+          restore-keys: |
+            horizon-state-
+
+      # ВАЖНО: кеш восстанавливает data целиком и перезаписывает config.json — поэтому копируем конфиг ПОСЛЕ кеша
+      - name: Use Arena config (из git, устойчиво к кэшу)
+        run: |
+          git checkout -- data/config.arena.json
+          git show HEAD:data/config.arena.json > data/config.json
+          echo "AI из git: $(python3 -c "import json;d=json.load(open('data/config.json'))['ai'];print(d['provider'],d['model'],d['base_url'])")"''
+
+      - name: DEBUG какой конфиг грузится
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          echo "--- data/config.json ---"; head -12 data/config.json
+          echo "--- ключи ---"; echo "MISTRAL len=${#MISTRAL_API_KEY} prefix=${MISTRAL_API_KEY:0:4}"; echo "GROQ len=${#GROQ_API_KEY} prefix=${GROQ_API_KEY:0:4}"
+          uv run python -c "from src.storage.manager import StorageManager; c=StorageManager(data_dir='data').load_config(); print('LOADED AI:', c.ai)"
+
+      - name: Run Horizon (с автоповтором при 429/лимитах)
+        id: horizon
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          KILO_API_KEY: ${{ secrets.KILO_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -o pipefail
+          ok=0
+          for i in 1 2 3 4; do
+            echo "=== Попытка $i ==="
+            uv run horizon --hours 24 2>&1 | tee horizon-run.log || true
+            if grep -q "Selected 0 items" horizon-run.log; then
+              echo "НУЛЕВОЙ ОТБОР (вероятно лимит LLM) — ждём и повторяем"
+              sleep 45; continue
+            fi
+            if grep -qE "Enriched [1-9]" horizon-run.log; then echo "OK"; ok=1; break; fi
+            sleep 30
+          done
+          test "$ok" = "1" || { echo "Все попытки без результата"; exit 1; }
+
+      - name: Save Horizon state (ВСЕГДА, даже при ошибке)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            data/seen.json
+            data/summaries
+          key: horizon-state-${{ github.run_id }}
+
+      - name: Drop empty digest
+        run: |
+          for f in docs/_posts/*summary-*.md _posts/*summary-*.md; do
+            [ -f "$f" ] || continue
+            if grep -qE "none met the importance threshold|^---$" "$f" && [ "$(wc -c < "$f")" -lt 900 ]; then
+              echo "удаляю пустышку: $f"; rm -f "$f";
+            fi
+          done
+
+      # ЗАКОН 34: языковой контроль выпуска. Модель-обогатитель иногда отвечает языком
+      # источника (китайский вместо русского) — чиним ДО публикации: переводим строки
+      # через бесплатную модель, а неисправимое вырезаем. Отчёт: state/qc-digest-*.json
+      - name: Языковой контроль выпуска (ru)
+        if: always()
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          shopt -s nullglob
+          for f in _posts/*summary-ru.md docs/_posts/*summary-ru.md; do
+            [ -f "$f" ] || continue
+            echo "=== QC: $f"
+            python3 scripts/qc_digest.py fix "$f" --lang ru --write || true
+            python3 scripts/qc_digest.py verify "$f" --lang ru || echo "QC FAIL: $f" >> qc-failed.txt
+          done
+          if [ -f qc-failed.txt ]; then echo "--- ЕСТЬ БРАК ---"; cat qc-failed.txt; exit 1; fi
+
+      - name: Set current date
+        if: always()
+        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Deploy to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          keep_files: true
+          commit_message: "📝 Daily Summary: ${{ env.DATE }}"
+          publish_branch: gh-pages
+          enable_jekyll: true
