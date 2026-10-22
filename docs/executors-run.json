@@ -4,7 +4,7 @@
  "files_checked": 653,
  "items_total": 12391,
  "links_total": 13110,
- "bad_files": 151,
+ "bad_files": 150,
  "bad_examples": [
   {
    "date": "2024-02-03",
@@ -303,7 +303,7 @@
    "files": 22,
    "items": 703,
    "links": 785,
-   "bad": 7
+   "bad": 6
   },
   {
    "shard": 18,
