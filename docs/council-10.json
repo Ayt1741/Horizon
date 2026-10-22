@@ -40,7 +40,7 @@
      }
     },
     "2026": {
-     "days": 142,
+     "days": 143,
      "months": {
       "2026-01": 17,
       "2026-02": 14,
@@ -48,28 +48,28 @@
       "2026-04": 14,
       "2026-05": 31,
       "2026-06": 30,
-      "2026-10": 21
+      "2026-10": 22
      }
     }
    },
    "leader": "L1",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L10": {
    "metric": "сводка журнала",
-   "files": 652,
-   "items_total": 12356,
-   "links_total": 13042,
+   "files": 653,
+   "items_total": 12391,
+   "links_total": 13110,
    "years": {
     "2024": 270,
     "2025": 240,
-    "2026": 142
+    "2026": 143
    },
    "source": "https://github.com/Ayt1741/Horizon/tree/gh-pages/_posts",
    "date": "2026-10-21",
    "leader": "L10",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L2": {
@@ -166,7 +166,7 @@
     "2024-12-30"
    ],
    "leader": "L2",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L3": {
@@ -223,12 +223,12 @@
     "2025-12-29"
    ],
    "leader": "L3",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L4": {
    "metric": "качество 2026",
-   "files": 142,
+   "files": 143,
    "thin": 16,
    "thin_dates": [
     "2026-01-03",
@@ -263,12 +263,12 @@
     "2026-09"
    ],
    "leader": "L4",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L5": {
    "metric": "локаль: иероглифы в русской версии",
-   "files": 4,
+   "files": 5,
    "hits": [
     {
      "date": "2025-05-31",
@@ -285,10 +285,14 @@
     {
      "date": "2026-10-21",
      "cjk": 1007
+    },
+    {
+     "date": "2026-10-22",
+     "cjk": 771
     }
    ],
    "leader": "L5",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L6": {
@@ -296,14 +300,14 @@
    "groups": 0,
    "examples": [],
    "leader": "L6",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L7": {
    "metric": "размеры номеров",
    "min": 413,
    "max": 231867,
-   "median": 5870,
+   "median": 5885,
    "under_1500": 60,
    "under_1500_dates": [
     "2024-01-02",
@@ -368,7 +372,7 @@
     "2026-06-26"
    ],
    "leader": "L7",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L8": {
@@ -376,12 +380,12 @@
    "files": 0,
    "dates": [],
    "leader": "L8",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   },
   "L9": {
    "metric": "формат номеров",
-   "daily": 2,
+   "daily": 3,
    "backfill": 650,
    "backfill_dates_sample": [
     "2024-01-01",
@@ -406,7 +410,7 @@
     "2024-01-21"
    ],
    "leader": "L9",
-   "files_in_archive": 652,
+   "files_in_archive": 653,
    "generated": "2026-10-21"
   }
  }
