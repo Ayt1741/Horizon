@@ -62,10 +62,13 @@ FRONT = re.compile(r"^---\s*$")
 PROVIDERS = [
     ("openrouter/gemma-4-31b", "https://openrouter.ai/api/v1/chat/completions",
      "OPENROUTER_API_KEY", "google/gemma-4-31b-it:free"),
-    ("openrouter/minimax", "https://openrouter.ai/api/v1/chat/completions",
+    ("openrouter/minimax-m3.1", "https://openrouter.ai/api/v1/chat/completions",
      "OPENROUTER_API_KEY", "minimax/minimax-m3.1-flash:free"),
     ("openrouter/gemma-4-26b", "https://openrouter.ai/api/v1/chat/completions",
      "OPENROUTER_API_KEY", "google/gemma-4-26b-a4b-it:free"),
+    ("openrouter/nemotron-3-super", "https://openrouter.ai/api/v1/chat/completions",
+     "OPENROUTER_API_KEY", "nvidia/nemotron-3-super-120b-a12b:free"),
+    # ниже — только если ключи живы; битые ключи отсеиваются по 401/403 за один заход
     ("groq", "https://api.groq.com/openai/v1/chat/completions", "GROQ_API_KEY",
      "llama-3.3-70b-versatile"),
     ("mistral", "https://api.mistral.ai/v1/chat/completions", "MISTRAL_API_KEY",
