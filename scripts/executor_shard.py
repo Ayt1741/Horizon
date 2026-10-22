@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Исполнитель-полоса: реальная проверка своей доли архива газеты (только stdlib).
 
-Вход: каталог с *_summary-ru.md, номер полосы, общее число полос.
+Вход: каталог с *-summary-ru.md и *-summary-en.md, номер полосы, общее число полос.
 Выход: JSON-отчёт по своей доле + код возврата 0 (нет брака) / 1 (есть брак) / 2 (нет входа).
 
 Проверки каждого номера:
@@ -67,7 +67,10 @@ def main():
     if not os.path.isdir(a.dir):
         print(json.dumps({"error": "нет каталога " + a.dir}))
         return 2
-    files = sorted(f for f in os.listdir(a.dir) if f.endswith("-summary-ru.md"))
+    # оба языка: раньше исполнитель видел только ru и не замечал брак в en-выпуске
+    langs = ("ru", "en")
+    files = sorted(f for f in os.listdir(a.dir)
+                   if any(f.endswith("-summary-%s.md" % l) for l in langs))
     mine = [f for i, f in enumerate(files) if i % a.total == a.index]
     rows = [examine(os.path.join(a.dir, f)) for f in mine]
     bad = [r for r in rows if r["problems"]]

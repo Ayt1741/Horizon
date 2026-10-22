@@ -17,17 +17,27 @@ LINK = re.compile(r'https?://')
 TITLE = re.compile(r'^title:\s*(.+)$', re.M)
 
 
+LANGS = ("ru", "en")
+
+
 def load(folder):
+    """Читает выпуски ОБОИХ языков: ru и en.
+
+    Раньше здесь был только "-summary-ru.md", поэтому полоса руководителя физически
+    не могла увидеть брак в английском выпуске (иероглифы в en-выпуске 21-22.10.2026
+    прошли 10 проверок незамеченными). Теперь каждый файл несёт поле lang.
+    """
     out = []
     for name in sorted(os.listdir(folder)):
-        if not name.endswith("-summary-ru.md"):
+        lang = next((l for l in LANGS if name.endswith("-summary-%s.md" % l)), None)
+        if lang is None:
             continue
         raw = open(os.path.join(folder, name), "rb").read()
         text = raw.decode("utf-8", errors="replace")
         day = len(DAY.findall(text))
         back = len(BI.findall(text))
         m = TITLE.search(text)
-        out.append({"date": name[:10], "file": name, "bytes": len(raw),
+        out.append({"date": name[:10], "file": name, "lang": lang, "bytes": len(raw),
                     "items": day if day else back, "links": len(LINK.findall(text)),
                     "cjk": len(CJK.findall(text)), "format": "daily" if day else "backfill",
                     "title": (m.group(1).strip() if m else "")})
