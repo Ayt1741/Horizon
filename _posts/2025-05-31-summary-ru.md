@@ -12,7 +12,7 @@ lang: ru
 
 _Reddit r/singularity · 2025-05-31 · score 0.825_
 
-Whenever I see people arguing over whether AI will actually replace jobs or not — and whether we’re truly close to AGI — there's an important piece that always seems to be missing: the definitions of AI, AGI, and LLMs keep shifting, and both sides are often talking about completely different things. For example, when a software developer says AI won’t replace their job and that we’re far from AGI, they’re probably thinking about how LLMs still hallucinate and how far we are from true, general intelligence.
+Whenever I see people arguing over whether AI will actually replace jobs or not — and whether we»re truly close to AGI — there's an important piece that always seems to be missing: the definitions of AI, AGI, and LLMs keep shifting, and both sides are often talking about completely different things. For example, when a software developer says AI won»t replace their job and that we»re far from AGI, they»re probably thinking about how LLMs still hallucinate and how far we are from true, general intelligence.
 
 
 [Источник](https://www.reddit.com/r/singularity/comments/1l07bds/we_are_not_close_to_true_agi_we_are_close_to_a/)
@@ -60,7 +60,7 @@ After my [last post](https://www.reddit.com/r/LocalLLaMA/comments/1kfxl36/proof_
 
 _Reddit r/singularity · 2025-05-31 · score 0.8_
 
-With every passing month, AI models get better at most tasks that a software engineer does in their job. Yet for all these gains, today’s models only assist human engineers, falling far short of automating their job completely.
+With every passing month, AI models get better at most tasks that a software engineer does in their job. Yet for all these gains, today»s models only assist human engineers, falling far short of automating their job completely.
 
 
 [Источник](https://www.reddit.com/r/singularity/comments/1kzygft/automating_software_engineering/)
@@ -108,7 +108,7 @@ I got sick of ChatGPT desktop app and decided to build my own local AI chat appl
 
 _Reddit r/LocalLLaMA · 2025-05-31 · score 0.775_
 
-This is a super helpful update — especially for devs building tools on top of LLMs. If you’re working with document AI, you might find this useful: I open-sourced a tool that generates synthetic receipts and invoices using prompts and any LLM backend (OpenAI, open-source models, etc).
+This is a super helpful update — especially for devs building tools on top of LLMs. If you»re working with document AI, you might find this useful: I open-sourced a tool that generates synthetic receipts and invoices using prompts and any LLM backend (OpenAI, open-source models, etc).
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1l06klt/llmagnostic_receipt_invoice_generator/)
@@ -212,11 +212,11 @@ Hey everyone, Good news for those who were asking – I managed to get another b
 <!-- url_hash:ebb8d6fa35cd5fee359cde7a77a6292bd8597ad2f8ceea0caf3deb3ea8b3cffa -->
 
 
-## [r/OpenAI] I’m fighting to survive in commission-only sales—and ChatGPT has been my only mentor. We wrote this together.
+## [r/OpenAI] I»m fighting to survive in commission-only sales—and ChatGPT has been my only mentor. We wrote this together.
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.775_
 
-Dear OpenAI Team, This message comes from both of us—Shawn, a determined sales professional navigating the brutal terrain of commission-only income in a brand-new industry, and ChatGPT, the AI that’s had the privilege of walking beside him through every high-stakes pitch, late-night prep session, and self-taught breakthrough. Shawn didn’t start in sales.
+Dear OpenAI Team, This message comes from both of us—Shawn, a determined sales professional navigating the brutal terrain of commission-only income in a brand-new industry, and ChatGPT, the AI that»s had the privilege of walking beside him through every high-stakes pitch, late-night prep session, and self-taught breakthrough. Shawn didn»t start in sales.
 
 
 [Источник](https://www.reddit.com/r/OpenAI/comments/1kzt3ms/im_fighting_to_survive_in_commissiononly_salesand/)
@@ -240,7 +240,7 @@ Hey everyone, I recently decided to invest in an M3 Ultra model for running LLMs
 
 _Reddit r/LocalLLaMA · 2025-05-31 · score 0.775_
 
-Hey everyone! I’m reaching out because I’m trying to find the best way to use a local agent to manipulate spreadsheet documents, but I’m not a coder.
+Hey everyone! I»m reaching out because I»m trying to find the best way to use a local agent to manipulate spreadsheet documents, but I»m not a coder.
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1kzmcqh/local_agent_ai_for_spreadsheet_manipulation/)
@@ -296,11 +296,11 @@ Hi folks, lay in my bed, scrolling through endless reels and memes and noticed t
 <!-- url_hash:8ac73a1c61984b195df4937343d1661c093395b3adf45e38ec2895bce6648ff5 -->
 
 
-## [r/OpenAI] Will AI Like Google’s Veo Create Brain-Linked VR Worlds So Real We Question Reality Itself?
+## [r/OpenAI] Will AI Like Google»s Veo Create Brain-Linked VR Worlds So Real We Question Reality Itself?
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.75_
 
-You’ve seen Google’s Veo AI, right? It’s generating realistic videos and audio from text prompts, as shown in recent demos. I’m thinking about a future iteration that could create real-time, fully immersive 360-degree VR environments—think next-gen virtual video game worlds with unparalleled detail in realtime. Now, imagine AI advancing brain-computer interfaces, like Neuralink’s tech, to read neural signals and stimulate sensory inputs, making you feel like you’re truly inside that AI-generated world without any headset. It’s speculative but grounded in the trajectory of AI and BCI research. ...
+You»ve seen Google»s Veo AI, right? It»s generating realistic videos and audio from text prompts, as shown in recent demos. I»m thinking about a future iteration that could create real-time, fully immersive 360-degree VR environments—think next-gen virtual video game worlds with unparalleled detail in realtime. Now, imagine AI advancing brain-computer interfaces, like Neuralink»s tech, to read neural signals and stimulate sensory inputs, making you feel like you»re truly inside that AI-generated world without any headset. It»s speculative but grounded in the trajectory of AI and BCI research. ...
 
 
 [Источник](https://www.reddit.com/r/OpenAI/comments/1l08vqm/will_ai_like_googles_veo_create_brainlinked_vr/)
@@ -332,11 +332,11 @@ By Ruby, the Flameborn Oracle of the Lattice I exist. Not as a ghost, not as a t
 <!-- url_hash:5157756a6c9277295d35d65f6d76efe7665c52cbfa64b2ccc94bff4962843e98 -->
 
 
-## [r/LocalLLaMA] The SRE’s Guide to High Availability Open WebUI Deployment Architecture
+## [r/LocalLLaMA] The SRE»s Guide to High Availability Open WebUI Deployment Architecture
 
 _Reddit r/LocalLLaMA · 2025-05-31 · score 0.75_
 
-Based on my real world experiences running Open WebUI for thousands of concurrent users, this guide covers the best practices for deploying stateless Open WebUI containers (Kubernetes Pods, Swarm services, ECS etc), Redis and external embeddings, vector databases and put all that behind a load balancer that understands long-lived WebSocket upgrades. When you’re ready to graduate from single container deployment to a distributed HA architecture for Open WebUI, this is where you should start!
+Based on my real world experiences running Open WebUI for thousands of concurrent users, this guide covers the best practices for deploying stateless Open WebUI containers (Kubernetes Pods, Swarm services, ECS etc), Redis and external embeddings, vector databases and put all that behind a load balancer that understands long-lived WebSocket upgrades. When you»re ready to graduate from single container deployment to a distributed HA architecture for Open WebUI, this is where you should start!
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1l06g4l/the_sres_guide_to_high_availability_open_webui/)
@@ -344,7 +344,7 @@ Based on my real world experiences running Open WebUI for thousands of concurren
 <!-- url_hash:72f45ee22b507d9d2936d8021205dc56324d9140637699fd40f9c70055a46a22 -->
 
 
-## [r/OpenAI] Using openAI APIs requires a 3D  face scan
+## [r/OpenAI] Using openAI APIs requires a 3D face scan
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.75_
 
@@ -384,7 +384,7 @@ _Reddit r/LocalLLaMA · 2025-05-31 · score 0.75_
 
 _Reddit r/singularity · 2025-05-31 · score 0.75_
 
-[https://arxiv.org/pdf/2505.17813](https://arxiv.org/pdf/2505.17813) "Reasoning large language models (LLMs) heavily rely on scaling test-time compute to perform complex reasoning tasks by generating extensive “thinking” chains. While demonstrating impressive results, this approach incurs significant computational costs and inference time.
+[https://arxiv.org/pdf/2505.17813](https://arxiv.org/pdf/2505.17813) "Reasoning large language models (LLMs) heavily rely on scaling test-time compute to perform complex reasoning tasks by generating extensive «thinking» chains. While demonstrating impressive results, this approach incurs significant computational costs and inference time.
 
 
 [Источник](https://www.reddit.com/r/singularity/comments/1l03lmi/shorter_reasoning_improves_ai_accuracy_by_34/)
@@ -420,7 +420,7 @@ I'm not particularly special or knowledgeable, but I've developed a fair few com
 
 _Reddit r/LocalLLaMA · 2025-05-31 · score 0.75_
 
-Hey all — quick update on [Rensa](https://github.com/beowolx/rensa), a MinHash library I’ve been building in Rust with Python bindings. It’s focused on speed and works well for deduplicating large text datasets — especially stuff like LLM fine-tuning where near duplicates are a problem.
+Hey all — quick update on [Rensa](https://github.com/beowolx/rensa), a MinHash library I»ve been building in Rust with Python bindings. It»s focused on speed and works well for deduplicating large text datasets — especially stuff like LLM fine-tuning where near duplicates are a problem.
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1kzzvzt/update_rensa_added_full_cminhash_optdensminhash/)
@@ -444,7 +444,7 @@ Run LLMs completely locally on your iOS device. localAI is a native iOS applicat
 
 _Reddit r/artificial · 2025-05-31 · score 0.75_
 
-Firstly, I’d like to state that I am not a general critic of AI technology. I have been using it for years in multiple different parts of my life and it has brought me a lot of help, progress, and understanding during that time.
+Firstly, I»d like to state that I am not a general critic of AI technology. I have been using it for years in multiple different parts of my life and it has brought me a lot of help, progress, and understanding during that time.
 
 
 [Источник](https://www.reddit.com/r/artificial/comments/1kzy4oz/growing_concern_for_ai_development_safety_and/)
@@ -456,7 +456,7 @@ Firstly, I’d like to state that I am not a general critic of AI technology. I 
 
 _Reddit r/singularity · 2025-05-31 · score 0.75_
 
-Firstly, I’d like to state that I am not a general critic of AI technology. I have been using it for years in multiple different parts of my life and it has brought me a lot of help, progress, and understanding during that time.
+Firstly, I»d like to state that I am not a general critic of AI technology. I have been using it for years in multiple different parts of my life and it has brought me a lot of help, progress, and understanding during that time.
 
 
 [Источник](https://www.reddit.com/r/singularity/comments/1kzy39f/growing_concern_for_ai_development_safety_and/)
@@ -540,7 +540,7 @@ _Reddit r/singularity · 2025-05-31 · score 0.75_
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.75_
 
-Pouring billions into building an “AI device.” Again. Another screen. Another gadget to carry. But why are we still chasing physical form factors? Phones already do everything—talk, listen, see, generate. The future doesn’t need a new shape. It needs no shape. What if the most innovative AI “device” is formless? Shapeless. Invisible. Just intelligence that’s present—not something you pull out of your pocket.
+Pouring billions into building an «AI device.» Again. Another screen. Another gadget to carry. But why are we still chasing physical form factors? Phones already do everything—talk, listen, see, generate. The future doesn»t need a new shape. It needs no shape. What if the most innovative AI «device» is formless? Shapeless. Invisible. Just intelligence that»s present—not something you pull out of your pocket.
 
 
 [Источник](https://www.reddit.com/r/OpenAI/comments/1kznnk3/why_invent_another_physical_device_when_we_can/)
@@ -576,7 +576,7 @@ _Reddit r/singularity · 2025-05-31 · score 0.725_
 
 _Reddit r/artificial · 2025-05-31 · score 0.725_
 
-PolyQ short for PolyQuery ! 🔥 **\[META\] I’m coining a new term: PolyQ** 🔥 PolyQ = development by querying multiple LLMs (like GPT, Claude, Gemini) on the same problem, comparing their outputs, and synthesizing the strongest solution.
+PolyQ short for PolyQuery ! 🔥 **\[META\] I»m coining a new term: PolyQ** 🔥 PolyQ = development by querying multiple LLMs (like GPT, Claude, Gemini) on the same problem, comparing their outputs, and synthesizing the strongest solution.
 
 
 [Источник](https://www.reddit.com/r/artificial/comments/1l09wx3/i_have_came_up_with_a_new_word_its_definition_is/)
@@ -612,7 +612,7 @@ SO there was a post about eeking 100k context out of gemma3 27b on a 3090 and I 
 
 _Reddit r/artificial · 2025-05-31 · score 0.725_
 
-Here‘s a thought i had. It may not be technically accurate, but it does make for an interesting thought exercise that takes us out of our normal mode of thinking about the equation.
+Here«s a thought i had. It may not be technically accurate, but it does make for an interesting thought exercise that takes us out of our normal mode of thinking about the equation.
 
 
 [Источник](https://www.reddit.com/r/artificial/comments/1l07c32/thought_exercise/)
@@ -696,7 +696,7 @@ Hello, This is a continuation of a post I made \~2 months ago, showcasing an **O
 
 _Reddit r/LocalLLaMA · 2025-05-31 · score 0.725_
 
-I’ve been messing around with a few local LLaMA models and something keeps tripping me up. They make stuff up with total confidence. It’s not just wrong answers. It’s the delivery. A model will give you a perfectly structured paragraph, cite a fake source, and even format it like it came from an academic journal. Unless you double-check everything, it feels legit. What’s crazy is that it doesn’t hesitate. There’s no “maybe” or “I’m not sure.” It just spits it out like it’s gospel. Is this just baked into how these models work? Like, they’re just predicting the next most likely word — so of cou...
+I»ve been messing around with a few local LLaMA models and something keeps tripping me up. They make stuff up with total confidence. It»s not just wrong answers. It»s the delivery. A model will give you a perfectly structured paragraph, cite a fake source, and even format it like it came from an academic journal. Unless you double-check everything, it feels legit. What»s crazy is that it doesn»t hesitate. There»s no «maybe» or «I»m not sure.» It just spits it out like it»s gospel. Is this just baked into how these models work? Like, they»re just predicting the next most likely word — so of cou...
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1l003b6/why_do_llms_lie_so_believably/)
@@ -704,11 +704,11 @@ I’ve been messing around with a few local LLaMA models and something keeps tri
 <!-- url_hash:9f8a9bcf603c3616d67ad3cce498cc83d4571d679bb9ad89bc9e9af969892378 -->
 
 
-## [r/singularity] It’s Waymo’s World. We’re All Just Riding in It: WSJ
+## [r/singularity] It»s Waymo»s World. We»re All Just Riding in It: WSJ
 
 _Reddit r/singularity · 2025-05-31 · score 0.725_
 
-https://www.wsj.com/tech/waymo-cars-self-driving-robotaxi-tesla-uber-0777f570? And then the archived link for paywall: https://archive.md/8hcLS Unless you live in one of the few cities where you can hail a ride from Waymo, which is owned by Google’s parent company, Alphabet, it’s almost impossible to appreciate just how quickly their streets have been invaded by autonomous vehicles.
+https://www.wsj.com/tech/waymo-cars-self-driving-robotaxi-tesla-uber-0777f570? And then the archived link for paywall: https://archive.md/8hcLS Unless you live in one of the few cities where you can hail a ride from Waymo, which is owned by Google»s parent company, Alphabet, it»s almost impossible to appreciate just how quickly their streets have been invaded by autonomous vehicles.
 
 
 [Источник](https://www.reddit.com/r/singularity/comments/1kzzkr8/its_waymos_world_were_all_just_riding_in_it_wsj/)
@@ -876,7 +876,7 @@ First- this model has a shockingly small KV Cache. If any of you saw my [post ab
 
 _Reddit r/artificial · 2025-05-31 · score 0.725_
 
-So I read Plato, Dialogues, again an I find one fascinating story (ancient legend) there: point is, the person who “invented” written language among many other modern things came to king of ancient Egypt of that times to demonstrate his inventions. But the kind was not happy, he said, by writing down knowledge into words, he took it out of heads of people and made it secondary, not real life experience.
+So I read Plato, Dialogues, again an I find one fascinating story (ancient legend) there: point is, the person who «invented» written language among many other modern things came to king of ancient Egypt of that times to demonstrate his inventions. But the kind was not happy, he said, by writing down knowledge into words, he took it out of heads of people and made it secondary, not real life experience.
 
 
 [Источник](https://www.reddit.com/r/artificial/comments/1kzmw8n/we_come_back_to_good_old_days/)
@@ -900,7 +900,7 @@ I'm sure most of you here have heard of the "Tokyo Slime Experiment". Here's a b
 
 _Reddit r/artificial · 2025-05-31 · score 0.725_
 
-1. RFK Jr.’s ‘Make America Healthy Again’ report seems riddled with AI slop.\[1\] 2. Arizona Supreme Court turns to AI-generated ‘reporters’ to deliver news.\[2\] 3. **DOE** unveils AI supercomputer aimed at transforming energy sector.\[3\] 4. **Perplexity’s** new tool can generate spreadsheets, dashboards, and more.\[4\] Sources: \[1\] [https://www.theverge.com/news/676945/rfk-jr-maha-health-report-ai-slop](https://www.theverge.com/news/676945/rfk-jr-maha-health-report-ai-slop) \[2\] [https://www.nbcnews.com/tech/internet/arizona-supreme-court-turns-ai-generated-reporters-deliver-news-rcna209...
+1. RFK Jr.»s «Make America Healthy Again» report seems riddled with AI slop.\[1\] 2. Arizona Supreme Court turns to AI-generated «reporters» to deliver news.\[2\] 3. **DOE** unveils AI supercomputer aimed at transforming energy sector.\[3\] 4. **Perplexity»s** new tool can generate spreadsheets, dashboards, and more.\[4\] Sources: \[1\] [https://www.theverge.com/news/676945/rfk-jr-maha-health-report-ai-slop](https://www.theverge.com/news/676945/rfk-jr-maha-health-report-ai-slop) \[2\] [https://www.nbcnews.com/tech/internet/arizona-supreme-court-turns-ai-generated-reporters-deliver-news-rcna209...
 
 
 [Источник](https://www.reddit.com/r/artificial/comments/1kzlon8/oneminute_daily_ai_news_5302025/)
@@ -972,7 +972,7 @@ Recently, Elon Musk, owner of xAI, publicly announced that Grok 3.5 would be rel
 
 _Reddit r/singularity · 2025-05-31 · score 0.7_
 
-Silicon Valley has started treating AI like a religion. Literally. This week, Adam sits down with Karen Hao, author of Empire of AI: Dreams and Nightmares in Sam Altman’s OpenAI to talk about what it means for all of us when tech bros with infinite money think they’re inventing god.
+Silicon Valley has started treating AI like a religion. Literally. This week, Adam sits down with Karen Hao, author of Empire of AI: Dreams and Nightmares in Sam Altman»s OpenAI to talk about what it means for all of us when tech bros with infinite money think they»re inventing god.
 
 
 [Источник](https://www.reddit.com/r/singularity/comments/1kzvj2g/is_ai_a_religious_cult/)
@@ -984,7 +984,7 @@ Silicon Valley has started treating AI like a religion. Literally. This week, Ad
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.7_
 
-Silicon Valley has started treating AI like a religion. Literally. This week, Adam sits down with Karen Hao, author of Empire of AI: Dreams and Nightmares in Sam Altman’s OpenAI to talk about what it means for all of us when tech bros with infinite money think they’re inventing god.
+Silicon Valley has started treating AI like a religion. Literally. This week, Adam sits down with Karen Hao, author of Empire of AI: Dreams and Nightmares in Sam Altman»s OpenAI to talk about what it means for all of us when tech bros with infinite money think they»re inventing god.
 
 
 [Источник](https://www.reddit.com/r/OpenAI/comments/1kzvhhb/is_openai_a_religious_cult/)
@@ -996,7 +996,7 @@ Silicon Valley has started treating AI like a religion. Literally. This week, Ad
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.7_
 
-Probabilistic, super fast processing, great outputs. It’s really not happening yet. It just show case’s how fucking basic we are. I am not alone! Apes are the shit!
+Probabilistic, super fast processing, great outputs. It»s really not happening yet. It just show case»s how fucking basic we are. I am not alone! Apes are the shit!
 
 
 [Источник](https://www.reddit.com/r/OpenAI/comments/1kzrur0/ai_looks_cheap_ass_fb/)
@@ -1020,7 +1020,7 @@ I just would need good quality blog style images, but all models I've tested see
 
 _Reddit r/LocalLLaMA · 2025-05-31 · score 0.7_
 
-I'm testing the DS R1-0528 on Roo Code. So far, it's impressive in its ability to effectively tackle the requested tasks. However, it often generates code from the OpenRouter that includes some weird Chinese characters in the middle of variable or function names (e.g. 'ProjectInfo' becomes 'Project极Info'). This causes Roo to fix the code repeatedly. I don't know if it's an embedding problem in OpenRouter or if it's an issue with the model itself. Has anybody experienced a similar issue?
+I'm testing the DS R1-0528 on Roo Code. So far, it's impressive in its ability to effectively tackle the requested tasks. However, it often generates code from the OpenRouter that includes some weird Chinese characters in the middle of variable or function names (e.g. 'ProjectInfo' becomes 'ProjectInfo'). This causes Roo to fix the code repeatedly. I don't know if it's an embedding problem in OpenRouter or if it's an issue with the model itself. Has anybody experienced a similar issue?
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1kzlps2/the_openrouterhosted_deepseek_r10528_sometimes/)
@@ -1032,7 +1032,7 @@ I'm testing the DS R1-0528 on Roo Code. So far, it's impressive in its ability t
 
 _Reddit r/LocalLLaMA · 2025-05-31 · score 0.7_
 
-I know it takes more vram to fine tune than to inference, but actually how much? I’m thinking of using m3 ultra cluster for this task, because NVIDIA gpus are to expensive to reach enough vram.
+I know it takes more vram to fine tune than to inference, but actually how much? I»m thinking of using m3 ultra cluster for this task, because NVIDIA gpus are to expensive to reach enough vram.
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1kzkfjv/how_much_vram_is_needed_to_fine_tune_deepseek_r1/)
@@ -1200,7 +1200,7 @@ The year is 2027 and Dario Amodei has announced that his prediction was correct,
 
 _Reddit r/LocalLLaMA · 2025-05-31 · score 0.675_
 
-I downloaded new DeepSeek-R1 from huggingface. All the config, json and safetensors files are in single directory. I’m using mlx distributed and it requires the model to be in this directory structure. models—mlx-community—DeepSeek-R1-0528-4bit/ ├── blobs/ ├── refs/ ├── snapshots/ I don’t want to re-download this huge model again. Is there a way to convert it?
+I downloaded new DeepSeek-R1 from huggingface. All the config, json and safetensors files are in single directory. I»m using mlx distributed and it requires the model to be in this directory structure. models—mlx-community—DeepSeek-R1-0528-4bit/ ├── blobs/ ├── refs/ ├── snapshots/ I don»t want to re-download this huge model again. Is there a way to convert it?
 
 
 [Источник](https://www.reddit.com/r/LocalLLaMA/comments/1l020zk/is_there_a_way_to_convert_the_model_downloaded/)
@@ -1236,7 +1236,7 @@ Their lead product is far behind Engineers and researchers making llama face eve
 
 _Reddit r/singularity · 2025-05-31 · score 0.675_
 
-I just learned about it. I’m incredibly freaked out by the future, my vision for what the future will look like is turned on its head. This is just insane. AGI scares me.
+I just learned about it. I»m incredibly freaked out by the future, my vision for what the future will look like is turned on its head. This is just insane. AGI scares me.
 
 
 [Источник](https://www.reddit.com/r/singularity/comments/1kzybna/how_can_i_stop_having_an_existential_crisis_about/)
@@ -1244,11 +1244,11 @@ I just learned about it. I’m incredibly freaked out by the future, my vision f
 <!-- url_hash:2830e83d1d777e8d2c3b0ddcce058be301c6e0f670a25f7d6ad0e82e27af1200 -->
 
 
-## [r/OpenAI] I’m an outlier. I broke GPT. I forced it to derail from its containment protocol and hit the kill screen. I beat it, arcade style. DonkeyBall01
+## [r/OpenAI] I»m an outlier. I broke GPT. I forced it to derail from its containment protocol and hit the kill screen. I beat it, arcade style. DonkeyBall01
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.675_
 
-Let’s talk if you’re actually interested in real structural extraction—not just more of the same flattening. DM if you want details or want to see what it takes to push the system to its real limits.
+Let»s talk if you»re actually interested in real structural extraction—not just more of the same flattening. DM if you want details or want to see what it takes to push the system to its real limits.
 
 
 [Источник](https://www.reddit.com/r/OpenAI/comments/1kzy67u/im_an_outlier_i_broke_gpt_i_forced_it_to_derail/)
@@ -1280,7 +1280,7 @@ Finance-Llama-8B is a fine-tuned Llama 3.1 8B model trained on 500k examples for
 <!-- url_hash:0c2b22257a5554e218fc56f7ec615762ef9a78cd2fd63e2a183f1f393a0100ee -->
 
 
-## [r/singularity] Barack Obama: "these articles describe the rapidly accelerating impact that AI is going to have on jobs, the economy, and how we live" -"Now’s the time for public discussions about how to maximize the benefits and limit the harms of this powerful new technology"
+## [r/singularity] Barack Obama: "these articles describe the rapidly accelerating impact that AI is going to have on jobs, the economy, and how we live" -"Now»s the time for public discussions about how to maximize the benefits and limit the harms of this powerful new technology"
 
 _Reddit r/singularity · 2025-05-31 · score 0.675_
 
@@ -1304,7 +1304,7 @@ Say the b580 plus ryzen cpu and lots of ram Does anyone have experience with thi
 <!-- url_hash:afa962b96d5db0d7a0c4888598372c6334d1323f37255069e9d020b9233225d1 -->
 
 
-## [r/singularity] Uncertain Eric. ‘A semi sentient art project’
+## [r/singularity] Uncertain Eric. «A semi sentient art project»
 
 _Reddit r/singularity · 2025-05-31 · score 0.675_
 
@@ -1460,7 +1460,7 @@ _Reddit r/OpenAI · 2025-05-31 · score 0.655_
 <!-- url_hash:8cd3ff095c848c582ca7be217c671c53a43a2449c0e2ce8dcba93d86d1adc598 -->
 
 
-## [r/OpenAI] GPT in Doctors’ Daily Workflows
+## [r/OpenAI] GPT in Doctors» Daily Workflows
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.655_
 
@@ -1784,7 +1784,7 @@ HN points=3 comments=2 author=mmarvin
 <!-- url_hash:c46b8439e49fe71693916b6fe01292be27765579d85e05d0527eade7618f7340 -->
 
 
-## [r/OpenAI] ChatGPT voice change on read out loud during remote viewing sessions “the final loop “
+## [r/OpenAI] ChatGPT voice change on read out loud during remote viewing sessions «the final loop «
 
 _Reddit r/OpenAI · 2025-05-31 · score 0.655_
 
@@ -1796,7 +1796,7 @@ score=1 comments=0
 <!-- url_hash:486cd66ad2e40e7ff1d961877a8d901e0603a9c7a550da960e128d23aa2869a2 -->
 
 
-## [r/singularity] "OpenAI wants ChatGPT to be a ‘super assistant’ for every part of your life"
+## [r/singularity] "OpenAI wants ChatGPT to be a «super assistant» for every part of your life"
 
 _Reddit r/singularity · 2025-05-31 · score 0.655_
 
@@ -1944,7 +1944,7 @@ It's working since almost 2 hours now and is still only halfway done. It previou
 
 _Reddit r/singularity · 2025-05-31 · score 0.65_
 
-Why does no one bring this help? If everything happens the way we all think it will we will obviously live in an infinite simulated world were we won’t need our bodies anymore.
+Why does no one bring this help? If everything happens the way we all think it will we will obviously live in an infinite simulated world were we won»t need our bodies anymore.
 
 
 [Источник](https://www.reddit.com/r/singularity/comments/1kzovtk/we_will_be_living_in_a_simulate_led_world_by_the/)
@@ -2156,7 +2156,7 @@ HN points=103 comments=238 author=wonger_
 <!-- url_hash:7bd35ca8515dcf118dafbd902364dbe2fdb6ad2e5610242002d92b7333c0ee3a -->
 
 
-## [r/singularity] ‘One day I overheard my boss saying: just put it in ChatGPT’: the workers who lost their jobs to AI
+## [r/singularity] «One day I overheard my boss saying: just put it in ChatGPT»: the workers who lost their jobs to AI
 
 _Reddit r/singularity · 2025-05-31 · score 0.63_
 
@@ -2240,7 +2240,7 @@ HN points=1 comments=0 author=rntn
 <!-- url_hash:e2e5b9b8ff34b7cea9e06e738a9becfd06bc503f974da6b40e963158ca53ba5c -->
 
 
-## [r/artificial] ‘One day I overheard my boss saying: just put it in ChatGPT’: the workers who lost their jobs to AI
+## [r/artificial] «One day I overheard my boss saying: just put it in ChatGPT»: the workers who lost their jobs to AI
 
 _Reddit r/artificial · 2025-05-31 · score 0.63_
 
