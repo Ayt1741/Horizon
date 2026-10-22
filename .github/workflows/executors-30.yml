@@ -1,13 +1,13 @@
 name: Executors 30
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '45 */6 * * *'
     inputs:
       total:
         description: "Сколько полос (исполнителей)"
         required: false
         default: "30"
+  schedule:
+    - cron: '45 */6 * * *'
 permissions:
   contents: write
 concurrency:
