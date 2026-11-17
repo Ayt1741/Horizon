@@ -1,0 +1,47 @@
+name: kuhnya-probe
+# Проверка, какие из ключей репозитория ещё живы. Печатает ТОЛЬКО коды ответов и лимиты, ключи не выводятся.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Проверка ключей (только коды)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          KILO_API_KEY: ${{ secrets.KILO_API_KEY }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+          def вызов(имя, url, ключ, модель):
+              if not ключ:
+                  print("%-10s %-42s КЛЮЧА НЕТ" % (имя, модель)); return
+              тело = json.dumps({"model": модель, "messages": [{"role": "user", "content": "Ответь одним словом: да"}], "max_tokens": 20}).encode()
+              req = urllib.request.Request(url, data=тело, headers={"Authorization": "Bearer " + ключ, "Content-Type": "application/json", "User-Agent": "KuhnyaCouncil/1.0"})
+              try:
+                  r = urllib.request.urlopen(req, timeout=60); код, з, б = r.status, r.headers, r.read()
+              except urllib.error.HTTPError as e:
+                  код, з, б = e.code, e.headers, e.read()
+              лим = {k: v for k, v in з.items() if k.lower().startswith(("x-ratelimit", "retry-after"))}
+              print("%-10s %-42s HTTP %s %s %s" % (имя, модель, код, json.dumps(лим)[:240], "" if код == 200 else б[:160].decode("utf-8", "ignore").replace(chr(10), " ")))
+          g, m, o = os.environ.get("GROQ_API_KEY"), os.environ.get("MISTRAL_API_KEY"), os.environ.get("OPENROUTER_API_KEY")
+          вызов("groq", "https://api.groq.com/openai/v1/chat/completions", g, "openai/gpt-oss-120b")
+          вызов("groq", "https://api.groq.com/openai/v1/chat/completions", g, "qwen/qwen3.8-27b")
+          вызов("mistral", "https://api.mistral.ai/v1/chat/completions", m, "mistral-large-latest")
+          вызов("mistral", "https://api.mistral.ai/v1/chat/completions", m, "mistral-small-latest")
+          вызов("openrouter", "https://openrouter.ai/api/v1/chat/completions", o, "openai/gpt-oss-120b:free")
+          вызов("openrouter", "https://openrouter.ai/api/v1/chat/completions", o, "meta-llama/llama-3.3-70b-instruct:free")
+          print("KILO ключ в секретах:", "есть" if os.environ.get("KILO_API_KEY") else "нет")
+          if o:
+              req = urllib.request.Request("https://openrouter.ai/api/v1/models", headers={"Authorization": "Bearer " + o, "User-Agent": "KuhnyaCouncil/1.0"})
+              try:
+                  ms = json.loads(urllib.request.urlopen(req, timeout=60).read())["data"]
+                  print("бесплатных моделей на OpenRouter:", len([x for x in ms if x["id"].endswith(":free")]), [x["id"] for x in ms if x["id"].endswith(":free")][:16])
+              except Exception as e:
+                  print("список моделей OpenRouter: ошибка", type(e).__name__)
+          PY
